@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-05-22T10:07:50.132Z",
+  "lastUpdated": "2026-05-22T14:47:20.032Z",
   "eventStartDate": "2025-05-22",
   "eventEndDate": "2025-05-25",
   "stats": {
     "totalContributors": 4,
-    "totalPrsMerged": 32,
-    "totalPrsOpened": 25,
-    "totalIssuesClosed": 16,
-    "totalIssuesOpened": 27,
-    "totalPrsReviewed": 26,
+    "totalPrsMerged": 0,
+    "totalPrsOpened": 0,
+    "totalIssuesClosed": 0,
+    "totalIssuesOpened": 0,
+    "totalPrsReviewed": 0,
     "daysElapsed": 4,
     "daysRemaining": 0
   },
@@ -20,12 +20,12 @@
         "dev-sarah",
         "coder-alex"
       ],
-      "totalScore": 405,
-      "totalPrsMerged": 21,
-      "totalPrsOpened": 14,
-      "totalPrsReviewed": 21,
-      "totalIssuesClosed": 8,
-      "totalIssuesOpened": 15
+      "totalScore": 0,
+      "totalPrsMerged": 0,
+      "totalPrsOpened": 0,
+      "totalPrsReviewed": 0,
+      "totalIssuesClosed": 0,
+      "totalIssuesOpened": 0
     },
     {
       "name": "Team Beta",
@@ -34,1146 +34,260 @@
         "backend-mia",
         "docs-guru-chen"
       ],
-      "totalScore": 236,
-      "totalPrsMerged": 11,
-      "totalPrsOpened": 11,
-      "totalPrsReviewed": 5,
-      "totalIssuesClosed": 8,
-      "totalIssuesOpened": 12
+      "totalScore": 0,
+      "totalPrsMerged": 0,
+      "totalPrsOpened": 0,
+      "totalPrsReviewed": 0,
+      "totalIssuesClosed": 0,
+      "totalIssuesOpened": 0
     }
   ],
   "contributors": [
     {
       "username": "dev-sarah",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/4483535?v=4",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/0?v=4",
       "profileUrl": "https://github.com/dev-sarah",
       "team": "Team Alpha",
-      "prsOpened": 8,
-      "prsMerged": 10,
-      "prsReviewed": 16,
-      "issuesOpened": 11,
-      "issuesClosed": 3,
-      "score": 222,
-      "activityLevel": "High",
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "prsReviewed": 0,
+      "issuesOpened": 0,
+      "issuesClosed": 0,
+      "score": 0,
+      "activityLevel": "Low",
       "dailyActivity": [
         {
           "date": "2025-05-22",
-          "prsOpened": 2,
-          "prsMerged": 2,
-          "prsReviewed": 3,
-          "issuesOpened": 2,
-          "issuesClosed": 1,
-          "score": 47
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
         },
         {
           "date": "2025-05-23",
-          "prsOpened": 1,
-          "prsMerged": 3,
-          "prsReviewed": 6,
-          "issuesOpened": 2,
-          "issuesClosed": 1,
-          "score": 61
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
         },
         {
           "date": "2025-05-24",
-          "prsOpened": 4,
-          "prsMerged": 3,
-          "prsReviewed": 4,
-          "issuesOpened": 2,
-          "issuesClosed": 1,
-          "score": 70
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
         },
         {
           "date": "2025-05-25",
-          "prsOpened": 1,
-          "prsMerged": 2,
-          "prsReviewed": 3,
-          "issuesOpened": 5,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
           "issuesClosed": 0,
-          "score": 44
+          "score": 0
         }
       ],
-      "contributions": [
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Add keyboard map guides in drawer toggle panel",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/254",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Interactive book sandbox returns 404 console error",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/42",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Add PDF/PNG export support in simulator layout",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/48",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Dark mode style sheets have low contrast margins",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/91",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Subcircuit inputs fail to trigger state updates",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/159",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Upgrade Next.js framework build dependencies",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/63",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Dark mode style sheets have low contrast margins",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/72",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "pr_opened",
-          "title": "[PR] Fix memory threshold limits in gate drag listeners",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/123",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Add PDF/PNG export support in simulator layout",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/271",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Fix simulator canvas rendering in high-DPI screens",
-          "url": "https://github.com/CircuitVerse/Interactive-Book/pull/92",
-          "repo": "CircuitVerse/Interactive-Book",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Add PDF/PNG export support in simulator layout",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/125",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Touch gate drag and drop snaps misaligned in view",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/69",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Implement search filtration in contributor table",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/203",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "issue_closed",
-          "title": "[Issue] Touch gate drag and drop snaps misaligned in view",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/215",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_opened",
-          "title": "[PR] Fix memory threshold limits in gate drag listeners",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/125",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Add PDF/PNG export support in simulator layout",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/60",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Simulator UI freeze on large recursive circuit runs",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/74",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Fix simulator canvas rendering in high-DPI screens",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/257",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_opened",
-          "title": "[PR] Fix touch viewport alignment bugs on iOS Chrome",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/145",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_opened",
-          "title": "[PR] Add custom clock timing constraints in settings",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/144",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Fix memory threshold limits in gate drag listeners",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/131",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Fix simulator canvas rendering in high-DPI screens",
-          "url": "https://github.com/CircuitVerse/Interactive-Book/pull/145",
-          "repo": "CircuitVerse/Interactive-Book",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_opened",
-          "title": "[PR] Improve test coverage metrics in canvas component",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/66",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Add dark mode support to interactive book docs",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/29",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Improve test coverage metrics in canvas component",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/113",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Improve test coverage metrics in canvas component",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/157",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Add PDF/PNG export support in simulator layout",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/56",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Full-screen simulator mode overlaps notification panels",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/34",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Add internationalization support for Hindi/Spanish",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/40",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Fix touch viewport alignment bugs on iOS Chrome",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/101",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Full-screen simulator mode overlaps notification panels",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/270",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Add PDF/PNG export support in simulator layout",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/141",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "pr_opened",
-          "title": "[PR] Add custom clock timing constraints in settings",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/70",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Refactor sequential logic flip-flop simulation",
-          "url": "https://github.com/CircuitVerse/Interactive-Book/pull/62",
-          "repo": "CircuitVerse/Interactive-Book",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "issue_closed",
-          "title": "[Issue] Subcircuit inputs fail to trigger state updates",
-          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/81",
-          "repo": "CircuitVerse/Interactive-Book",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Add custom clock timing constraints in settings",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/34",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Fix memory threshold limits in gate drag listeners",
-          "url": "https://github.com/CircuitVerse/Interactive-Book/pull/199",
-          "repo": "CircuitVerse/Interactive-Book",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Optimize truth table generation gate recursion",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/160",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Implement search filtration in contributor table",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/186",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-22"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Refactor sequential logic flip-flop simulation",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/149",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-22"
-        },
-        {
-          "type": "pr_opened",
-          "title": "[PR] Implement search filtration in contributor table",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/119",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-22"
-        },
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Simulator UI freeze on large recursive circuit runs",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/173",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-22"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Add dark mode support to interactive book docs",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/106",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-22"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Upgrade Next.js framework build dependencies",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/12",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2025-05-22"
-        },
-        {
-          "type": "pr_opened",
-          "title": "[PR] Add dark mode support to interactive book docs",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/140",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-22"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Implement search filtration in contributor table",
-          "url": "https://github.com/CircuitVerse/Interactive-Book/pull/104",
-          "repo": "CircuitVerse/Interactive-Book",
-          "date": "2025-05-22"
-        },
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Full-screen simulator mode overlaps notification panels",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/67",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-22"
-        },
-        {
-          "type": "issue_closed",
-          "title": "[Issue] Interactive book sandbox returns 404 console error",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/98",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-22"
-        }
-      ]
+      "contributions": []
     },
     {
       "username": "coder-alex",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/5197068?v=4",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/0?v=4",
       "profileUrl": "https://github.com/coder-alex",
       "team": "Team Alpha",
-      "prsOpened": 6,
-      "prsMerged": 11,
-      "prsReviewed": 5,
-      "issuesOpened": 4,
-      "issuesClosed": 5,
-      "score": 183,
-      "activityLevel": "High",
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "prsReviewed": 0,
+      "issuesOpened": 0,
+      "issuesClosed": 0,
+      "score": 0,
+      "activityLevel": "Low",
       "dailyActivity": [
         {
           "date": "2025-05-22",
-          "prsOpened": 1,
-          "prsMerged": 2,
-          "prsReviewed": 3,
-          "issuesOpened": 1,
-          "issuesClosed": 3,
-          "score": 48
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
         },
         {
           "date": "2025-05-23",
-          "prsOpened": 2,
-          "prsMerged": 5,
+          "prsOpened": 0,
+          "prsMerged": 0,
           "prsReviewed": 0,
-          "issuesOpened": 1,
+          "issuesOpened": 0,
           "issuesClosed": 0,
-          "score": 62
+          "score": 0
         },
         {
           "date": "2025-05-24",
-          "prsOpened": 1,
-          "prsMerged": 3,
-          "prsReviewed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
           "issuesOpened": 0,
-          "issuesClosed": 1,
-          "score": 42
+          "issuesClosed": 0,
+          "score": 0
         },
         {
           "date": "2025-05-25",
-          "prsOpened": 2,
-          "prsMerged": 1,
-          "prsReviewed": 1,
-          "issuesOpened": 2,
-          "issuesClosed": 1,
-          "score": 31
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
         }
       ],
-      "contributions": [
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Implement search filtration in contributor table",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/58",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "pr_opened",
-          "title": "[PR] Add dark mode support to interactive book docs",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Subcircuit inputs fail to trigger state updates",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/193",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "issue_closed",
-          "title": "[Issue] Touch gate drag and drop snaps misaligned in view",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/97",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Add keyboard map guides in drawer toggle panel",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/232",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "pr_opened",
-          "title": "[PR] Improve test coverage metrics in canvas component",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/96",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Optimize truth table generation gate recursion",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/150",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "issue_closed",
-          "title": "[Issue] Subcircuit inputs fail to trigger state updates",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/208",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Add PDF/PNG export support in simulator layout",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/157",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_opened",
-          "title": "[PR] Fix memory threshold limits in gate drag listeners",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/177",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Upgrade Next.js framework build dependencies",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/90",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Add custom clock timing constraints in settings",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/147",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Fix simulator canvas rendering in high-DPI screens",
-          "url": "https://github.com/CircuitVerse/Interactive-Book/pull/157",
-          "repo": "CircuitVerse/Interactive-Book",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Full-screen simulator mode overlaps notification panels",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/31",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Add custom clock timing constraints in settings",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/70",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "pr_opened",
-          "title": "[PR] Upgrade Next.js framework build dependencies",
-          "url": "https://github.com/CircuitVerse/Interactive-Book/pull/137",
-          "repo": "CircuitVerse/Interactive-Book",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Add dark mode support to interactive book docs",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/213",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Improve test coverage metrics in canvas component",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/272",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "pr_opened",
-          "title": "[PR] Optimize truth table generation gate recursion",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/63",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Implement search filtration in contributor table",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/280",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Add custom clock timing constraints in settings",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/8",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Upgrade Next.js framework build dependencies",
-          "url": "https://github.com/CircuitVerse/Interactive-Book/pull/165",
-          "repo": "CircuitVerse/Interactive-Book",
-          "date": "2025-05-22"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Add dark mode support to interactive book docs",
-          "url": "https://github.com/CircuitVerse/Interactive-Book/pull/123",
-          "repo": "CircuitVerse/Interactive-Book",
-          "date": "2025-05-22"
-        },
-        {
-          "type": "issue_closed",
-          "title": "[Issue] Interactive book sandbox returns 404 console error",
-          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/241",
-          "repo": "CircuitVerse/Interactive-Book",
-          "date": "2025-05-22"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Add dark mode support to interactive book docs",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/252",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2025-05-22"
-        },
-        {
-          "type": "pr_opened",
-          "title": "[PR] Add PDF/PNG export support in simulator layout",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/219",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2025-05-22"
-        },
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Simulator UI freeze on large recursive circuit runs",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/167",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-22"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Add internationalization support for Hindi/Spanish",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/35",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-22"
-        },
-        {
-          "type": "issue_closed",
-          "title": "[Issue] API endpoints timeout when reading deep historical feeds",
-          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/150",
-          "repo": "CircuitVerse/Interactive-Book",
-          "date": "2025-05-22"
-        },
-        {
-          "type": "issue_closed",
-          "title": "[Issue] API endpoints timeout when reading deep historical feeds",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/249",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-22"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Improve test coverage metrics in canvas component",
-          "url": "https://github.com/CircuitVerse/Interactive-Book/pull/20",
-          "repo": "CircuitVerse/Interactive-Book",
-          "date": "2025-05-22"
-        }
-      ]
+      "contributions": []
     },
     {
       "username": "backend-mia",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/4023842?v=4",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/0?v=4",
       "profileUrl": "https://github.com/backend-mia",
       "team": "Team Beta",
-      "prsOpened": 7,
-      "prsMerged": 7,
-      "prsReviewed": 2,
-      "issuesOpened": 7,
-      "issuesClosed": 3,
-      "score": 137,
-      "activityLevel": "High",
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "prsReviewed": 0,
+      "issuesOpened": 0,
+      "issuesClosed": 0,
+      "score": 0,
+      "activityLevel": "Low",
       "dailyActivity": [
         {
           "date": "2025-05-22",
-          "prsOpened": 1,
+          "prsOpened": 0,
           "prsMerged": 0,
           "prsReviewed": 0,
-          "issuesOpened": 2,
-          "issuesClosed": 1,
-          "score": 13
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
         },
         {
           "date": "2025-05-23",
-          "prsOpened": 3,
-          "prsMerged": 3,
-          "prsReviewed": 1,
-          "issuesOpened": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
           "issuesClosed": 0,
-          "score": 50
+          "score": 0
         },
         {
           "date": "2025-05-24",
-          "prsOpened": 3,
-          "prsMerged": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
           "prsReviewed": 0,
-          "issuesOpened": 2,
+          "issuesOpened": 0,
           "issuesClosed": 0,
-          "score": 39
+          "score": 0
         },
         {
           "date": "2025-05-25",
           "prsOpened": 0,
-          "prsMerged": 2,
-          "prsReviewed": 1,
-          "issuesOpened": 2,
-          "issuesClosed": 2,
-          "score": 35
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
         }
       ],
-      "contributions": [
-        {
-          "type": "issue_closed",
-          "title": "[Issue] Touch gate drag and drop snaps misaligned in view",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/101",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Upgrade Next.js framework build dependencies",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/195",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Add keyboard map guides in drawer toggle panel",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/278",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Optimize truth table generation gate recursion",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/50",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Subcircuit inputs fail to trigger state updates",
-          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/138",
-          "repo": "CircuitVerse/Interactive-Book",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Optimize truth table generation gate recursion",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/264",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "issue_closed",
-          "title": "[Issue] Touch gate drag and drop snaps misaligned in view",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/82",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Dark mode style sheets have low contrast margins",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/77",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Upgrade Next.js framework build dependencies",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/212",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_opened",
-          "title": "[PR] Upgrade Next.js framework build dependencies",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/109",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_opened",
-          "title": "[PR] Fix memory threshold limits in gate drag listeners",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/148",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Fix touch viewport alignment bugs on iOS Chrome",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/5",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "issue_opened",
-          "title": "[Issue] API endpoints timeout when reading deep historical feeds",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/19",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_opened",
-          "title": "[PR] Optimize truth table generation gate recursion",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/111",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_opened",
-          "title": "[PR] Improve test coverage metrics in canvas component",
-          "url": "https://github.com/CircuitVerse/Interactive-Book/pull/215",
-          "repo": "CircuitVerse/Interactive-Book",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Implement search filtration in contributor table",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/37",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Add PDF/PNG export support in simulator layout",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/95",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "pr_opened",
-          "title": "[PR] Refactor sequential logic flip-flop simulation",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/217",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "pr_opened",
-          "title": "[PR] Refactor sequential logic flip-flop simulation",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/259",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Improve test coverage metrics in canvas component",
-          "url": "https://github.com/CircuitVerse/Interactive-Book/pull/175",
-          "repo": "CircuitVerse/Interactive-Book",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Subcircuit inputs fail to trigger state updates",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/268",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Add PDF/PNG export support in simulator layout",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/241",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "issue_closed",
-          "title": "[Issue] Full-screen simulator mode overlaps notification panels",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/97",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-22"
-        },
-        {
-          "type": "pr_opened",
-          "title": "[PR] Add PDF/PNG export support in simulator layout",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/174",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2025-05-22"
-        },
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Simulator UI freeze on large recursive circuit runs",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/13",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2025-05-22"
-        },
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Full-screen simulator mode overlaps notification panels",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/22",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-22"
-        }
-      ]
+      "contributions": []
     },
     {
       "username": "docs-guru-chen",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/4411035?v=4",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/0?v=4",
       "profileUrl": "https://github.com/docs-guru-chen",
       "team": "Team Beta",
-      "prsOpened": 4,
-      "prsMerged": 4,
-      "prsReviewed": 3,
-      "issuesOpened": 5,
-      "issuesClosed": 5,
-      "score": 99,
-      "activityLevel": "Medium",
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "prsReviewed": 0,
+      "issuesOpened": 0,
+      "issuesClosed": 0,
+      "score": 0,
+      "activityLevel": "Low",
       "dailyActivity": [
         {
           "date": "2025-05-22",
-          "prsOpened": 2,
-          "prsMerged": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
           "prsReviewed": 0,
-          "issuesOpened": 1,
+          "issuesOpened": 0,
           "issuesClosed": 0,
-          "score": 32
+          "score": 0
         },
         {
           "date": "2025-05-23",
-          "prsOpened": 1,
+          "prsOpened": 0,
           "prsMerged": 0,
           "prsReviewed": 0,
-          "issuesOpened": 1,
-          "issuesClosed": 2,
-          "score": 15
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
         },
         {
           "date": "2025-05-24",
-          "prsOpened": 1,
+          "prsOpened": 0,
           "prsMerged": 0,
-          "prsReviewed": 2,
-          "issuesOpened": 1,
-          "issuesClosed": 2,
-          "score": 21
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
         },
         {
           "date": "2025-05-25",
           "prsOpened": 0,
-          "prsMerged": 2,
-          "prsReviewed": 1,
-          "issuesOpened": 2,
-          "issuesClosed": 1,
-          "score": 31
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
         }
       ],
-      "contributions": [
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Interactive book sandbox returns 404 console error",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/173",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Optimize truth table generation gate recursion",
-          "url": "https://github.com/CircuitVerse/Interactive-Book/pull/88",
-          "repo": "CircuitVerse/Interactive-Book",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Fix touch viewport alignment bugs on iOS Chrome",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/21",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Dark mode style sheets have low contrast margins",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/167",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Fix simulator canvas rendering in high-DPI screens",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/106",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "issue_closed",
-          "title": "[Issue] Touch gate drag and drop snaps misaligned in view",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/72",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-25"
-        },
-        {
-          "type": "issue_closed",
-          "title": "[Issue] Interactive book sandbox returns 404 console error",
-          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/257",
-          "repo": "CircuitVerse/Interactive-Book",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Touch gate drag and drop snaps misaligned in view",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/92",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Add dark mode support to interactive book docs",
-          "url": "https://github.com/CircuitVerse/Interactive-Book/pull/200",
-          "repo": "CircuitVerse/Interactive-Book",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_opened",
-          "title": "[PR] Fix touch viewport alignment bugs on iOS Chrome",
-          "url": "https://github.com/CircuitVerse/Interactive-Book/pull/105",
-          "repo": "CircuitVerse/Interactive-Book",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "[PR] Improve test coverage metrics in canvas component",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/141",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "issue_closed",
-          "title": "[Issue] Touch gate drag and drop snaps misaligned in view",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/71",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-24"
-        },
-        {
-          "type": "pr_opened",
-          "title": "[PR] Fix simulator canvas rendering in high-DPI screens",
-          "url": "https://github.com/CircuitVerse/Interactive-Book/pull/135",
-          "repo": "CircuitVerse/Interactive-Book",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Touch gate drag and drop snaps misaligned in view",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/25",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "issue_closed",
-          "title": "[Issue] Interactive book sandbox returns 404 console error",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/140",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "issue_closed",
-          "title": "[Issue] Touch gate drag and drop snaps misaligned in view",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/237",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-23"
-        },
-        {
-          "type": "issue_opened",
-          "title": "[Issue] Subcircuit inputs fail to trigger state updates",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/45",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-22"
-        },
-        {
-          "type": "pr_opened",
-          "title": "[PR] Fix touch viewport alignment bugs on iOS Chrome",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/28",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2025-05-22"
-        },
-        {
-          "type": "pr_opened",
-          "title": "[PR] Add PDF/PNG export support in simulator layout",
-          "url": "https://github.com/CircuitVerse/Interactive-Book/pull/41",
-          "repo": "CircuitVerse/Interactive-Book",
-          "date": "2025-05-22"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Fix memory threshold limits in gate drag listeners",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/221",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-22"
-        },
-        {
-          "type": "pr_merged",
-          "title": "[PR] Improve test coverage metrics in canvas component",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/30",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2025-05-22"
-        }
-      ]
+      "contributions": []
     }
   ],
   "dailyTotals": [
     {
       "date": "2025-05-22",
-      "prsOpened": 6,
-      "prsMerged": 6,
-      "prsReviewed": 6,
-      "issuesOpened": 6,
-      "issuesClosed": 5,
-      "score": 140
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "prsReviewed": 0,
+      "issuesOpened": 0,
+      "issuesClosed": 0,
+      "score": 0
     },
     {
       "date": "2025-05-23",
-      "prsOpened": 7,
-      "prsMerged": 11,
-      "prsReviewed": 7,
-      "issuesOpened": 5,
-      "issuesClosed": 3,
-      "score": 188
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "prsReviewed": 0,
+      "issuesOpened": 0,
+      "issuesClosed": 0,
+      "score": 0
     },
     {
       "date": "2025-05-24",
-      "prsOpened": 9,
-      "prsMerged": 8,
-      "prsReviewed": 7,
-      "issuesOpened": 5,
-      "issuesClosed": 4,
-      "score": 172
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "prsReviewed": 0,
+      "issuesOpened": 0,
+      "issuesClosed": 0,
+      "score": 0
     },
     {
       "date": "2025-05-25",
-      "prsOpened": 3,
-      "prsMerged": 7,
-      "prsReviewed": 6,
-      "issuesOpened": 11,
-      "issuesClosed": 4,
-      "score": 141
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "prsReviewed": 0,
+      "issuesOpened": 0,
+      "issuesClosed": 0,
+      "score": 0
     }
   ]
 }
