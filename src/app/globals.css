@@ -915,3 +915,226 @@ body {
   background: var(--bg-card);
   display: block;
 }
+
+
+/* ── Hamburger button (hidden on desktop) ─────────────────── */
+.hamburger-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-sm, 6px);
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.hamburger-btn span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: var(--text-primary, #f1f5f9);
+  border-radius: 2px;
+  transition: transform 0.22s ease, opacity 0.22s ease, width 0.22s ease;
+  transform-origin: center;
+}
+
+/* Animate to × when open */
+.hamburger-btn.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger-btn.open span:nth-child(2) {
+  opacity: 0;
+  width: 0;
+}
+.hamburger-btn.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Mobile dropdown nav ──────────────────────────────────── */
+.mobile-nav-menu {
+  position: fixed;
+  top: 72px; /* sits just below the header capsule */
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 32px);
+  max-width: 480px;
+  background: rgba(10, 10, 14, 0.96);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 8px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.6);
+  animation: menuSlideIn 0.18s ease;
+}
+
+@keyframes menuSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.mobile-nav-link {
+  display: block;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-secondary, #94a3b8);
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+
+.mobile-nav-link:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-primary, #f1f5f9);
+}
+
+.mobile-nav-link.active {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-primary, #f1f5f9);
+  font-weight: 600;
+}
+
+/* ── Tablet / large mobile  (≤ 768px) ────────────────────── */
+@media (max-width: 768px) {
+  /* Header: hide desktop nav, show hamburger */
+  .nav-tabs {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: flex;
+  }
+
+  /* Shrink header padding on mobile */
+  .header-capsule {
+    padding: 10px 14px;
+    gap: 10px;
+  }
+
+  .time-badge {
+    display: none; /* saves space */
+  }
+
+  /* App container full-width with tighter padding */
+  .app-container {
+    padding: 16px;
+    padding-top: 84px; /* account for fixed header */
+  }
+
+  /* Leaderboard: hide secondary columns */
+  .leaderboard-table th:nth-child(4),
+  .leaderboard-table td:nth-child(4),
+  .leaderboard-table th:nth-child(5),
+  .leaderboard-table td:nth-child(5),
+  .leaderboard-table th:nth-child(6),
+  .leaderboard-table td:nth-child(6),
+  .leaderboard-table th:nth-child(7),
+  .leaderboard-table td:nth-child(7) {
+    display: none;
+  }
+
+  /* Search + filter row: stack vertically */
+  .leaderboard-controls,
+  .search-filter-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .leaderboard-controls input,
+  .search-filter-row input {
+    width: 100%;
+  }
+
+  /* Filter buttons: horizontal scroll instead of wrap */
+  .filter-buttons {
+    overflow-x: auto;
+    flex-wrap: nowrap !important;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+  .filter-buttons::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Teams grid: 1 column */
+  .teams-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Cards: reduce padding */
+  .stat-card,
+  .card {
+    padding: 16px;
+  }
+}
+
+/* ── Small mobile (≤ 480px) ───────────────────────────────── */
+@media (max-width: 480px) {
+  /* Also hide Rank column — only avatar+name + score remain */
+  .leaderboard-table th:nth-child(1),
+  .leaderboard-table td:nth-child(1) {
+    display: none;
+  }
+
+  /* Tighten table cell padding */
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 10px 8px;
+    font-size: 13px;
+  }
+
+  /* Smaller rank badge */
+  .rank-badge {
+    width: 28px;
+    height: 28px;
+    font-size: 11px;
+  }
+
+  /* Contributor avatar + name column */
+  .contributor-cell {
+    gap: 8px;
+  }
+
+  .contributor-avatar {
+    width: 28px;
+    height: 28px;
+    font-size: 11px;
+  }
+
+  /* Section headings */
+  h2 {
+    font-size: 20px !important;
+  }
+
+  /* App container: even tighter */
+  .app-container {
+    padding: 12px;
+    padding-top: 80px;
+  }
+
+  .header-capsule {
+    padding: 8px 12px;
+  }
+
+  .logo-text {
+    font-size: 14px;
+  }
+}
