@@ -1,19 +1,22 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { DataProvider } from "../context/DataContext";
 import DashboardLayout from "../components/DashboardLayout";
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const geistSans = Geist({
+  variable: "--font-geist-sans",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
   title: "CircuitVerse Mergathon Dashboard",
-  description:
-    "Analytics and participation leaderboard tracking for the CircuitVerse Mergathon event.",
+  description: "Analytics and participation leaderboard tracking for the CircuitVerse Mergathon event.",
 };
 
 export default function RootLayout({
@@ -22,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={outfit.variable}>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
         <DataProvider>
           <DashboardLayout>{children}</DashboardLayout>
@@ -31,3 +34,4 @@ export default function RootLayout({
     </html>
   );
 }
+

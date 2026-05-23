@@ -9,28 +9,21 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
   if (loading) {
     return (
-      <div
-        style={{
-          height: "100vh",
-          width: "100vw",
-          display: "flex",
+      <div 
+        style={{ 
+          height: "100vh", 
+          width: "100vw", 
+          display: "flex", 
           flexDirection: "column",
-          alignItems: "center",
+          alignItems: "center", 
           justifyContent: "center",
           gap: "16px",
           backgroundColor: "#000000",
-          color: "#f1f5f9",
+          color: "#f1f5f9"
         }}
       >
         <Loader2 className="animate-spin" size={48} style={{ color: "var(--accent-emerald)" }} />
-        <span
-          style={{
-            fontSize: "16px",
-            fontWeight: 600,
-            letterSpacing: "0.5px",
-            color: "var(--text-secondary)",
-          }}
-        >
+        <span style={{ fontSize: "16px", fontWeight: 600, letterSpacing: "0.5px", color: "var(--text-secondary)" }}>
           Loading CircuitVerse Mergathon...
         </span>
       </div>
@@ -39,19 +32,19 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
   if (error || !data) {
     return (
-      <div
-        style={{
-          height: "100vh",
-          width: "100vw",
-          display: "flex",
+      <div 
+        style={{ 
+          height: "100vh", 
+          width: "100vw", 
+          display: "flex", 
           flexDirection: "column",
-          alignItems: "center",
+          alignItems: "center", 
           justifyContent: "center",
           gap: "16px",
           backgroundColor: "#000000",
           color: "#f1f5f9",
           padding: "24px",
-          textAlign: "center",
+          textAlign: "center"
         }}
       >
         <AlertCircle size={64} style={{ color: "var(--accent-rose)" }} />
@@ -69,7 +62,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             color: "#000000",
             border: "none",
             fontWeight: 700,
-            cursor: "pointer",
+            cursor: "pointer"
           }}
         >
           Retry Connection
@@ -82,9 +75,12 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     <div>
       {/* Centered Premium Floating Header Capsule */}
       <Header />
-
+      
       {/* Centered Main content container */}
-      <main className="app-container">{children}</main>
+      <main className="app-container">
+        {children}
+      </main>
     </div>
   );
 }
+
