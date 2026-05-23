@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import { useData } from "../../context/DataContext";
 import { Users, ShieldAlert, Check, RefreshCw, Copy, Sliders, AlertCircle, AlertTriangle, CheckCircle, X } from "lucide-react";
 
-// ── NEW: Toast types ──────────────────────────────────────────────────────────
+// Toast notification types
 type ToastKind = "success" | "error" | "warning" | "info";
 
 interface Toast {
@@ -13,7 +13,6 @@ interface Toast {
   title: string;
   message: string;
 }
-// ─────────────────────────────────────────────────────────────────────────────
 
 interface DraftMember {
   username: string;
@@ -29,7 +28,7 @@ interface DraftTeam {
   members: string[]; // usernames
 }
 
-// ── NEW: Toast config ─────────────────────────────────────────────────────────
+// Toast color & icon config
 const TOAST_COLORS: Record<ToastKind, string> = {
   success: "#10b981",
   error:   "#ef4444",
@@ -44,7 +43,7 @@ const TOAST_ICONS: Record<ToastKind, React.ReactNode> = {
   info:    <AlertCircle size={16} />,
 };
 
-// ── NEW: validateDraft — runs live on every state change ──────────────────────
+// Draft validation — checks for duplicate assignments and unassigned contributors
 function validateDraft(teams: DraftTeam[], allContributors: DraftMember[]) {
   const errors: string[] = [];
   const warnings: string[] = [];
@@ -71,9 +70,8 @@ function validateDraft(teams: DraftTeam[], allContributors: DraftMember[]) {
 
   return { valid: errors.length === 0, errors, warnings };
 }
-// ─────────────────────────────────────────────────────────────────────────────
 
-// ── NEW: ToastContainer component ─────────────────────────────────────────────
+// Toast container — displays real-time feedback notifications
 let _toastId = 0;
 
 function ToastContainer({
@@ -135,9 +133,8 @@ function ToastContainer({
     </div>
   );
 }
-// ─────────────────────────────────────────────────────────────────────────────
 
-// ── NEW: ValidationPanel component ───────────────────────────────────────────
+// Validation panel — shows live errors and warnings above the builder grid
 function ValidationPanel({ validation }: { validation: ReturnType<typeof validateDraft> }) {
   const hasIssues = validation.errors.length > 0 || validation.warnings.length > 0;
   if (!hasIssues) {
@@ -208,19 +205,16 @@ function ValidationPanel({ validation }: { validation: ReturnType<typeof validat
     </div>
   );
 }
-// ─────────────────────────────────────────────────────────────────────────────
 
 export default function AdminPage() {
   const { data } = useData();
   const [draftTeams, setDraftTeams] = useState<DraftTeam[]>([]);
   const [contributorsList, setContributorsList] = useState<DraftMember[]>([]);
   const [copied, setCopied] = useState(false);
-  // ── NEW state ──────────────────────────────────────────────────────────────
   const [toasts, setToasts] = useState<Toast[]>([]);
   const [dropdownErrors, setDropdownErrors] = useState<Record<string, string>>({});
-  // ──────────────────────────────────────────────────────────────────────────
 
-  // ── NEW: Toast helpers — placed before early return (Rules of Hooks) ───────
+  // Toast helpers — must be before early return to follow React Rules of Hooks
   const addToast = useCallback(
     (kind: ToastKind, title: string, message: string, duration = 4000) => {
       const id = ++_toastId;
@@ -233,7 +227,6 @@ export default function AdminPage() {
   const dismissToast = useCallback((id: number) => {
     setToasts((prev) => prev.filter((t) => t.id !== id));
   }, []);
-  // ──────────────────────────────────────────────────────────────────────────
 
   // Initialize draft states from context data
   useEffect(() => {
@@ -300,13 +293,11 @@ export default function AdminPage() {
     }
   };
 
-  // ── NEW: validation runs before handlers so all of them can reference it ──
+  // Live validation runs on every render to reflect current draft state
   const validation = validateDraft(draftTeams, contributorsList);
-  // ──────────────────────────────────────────────────────────────────────────
 
   // 2. Draft action handlers
   const handleAssignMember = (username: string, targetTeamName: string | null) => {
-    // ── NEW: check for duplicate assignment before applying ────────────────
     if (targetTeamName) {
       const target = draftTeams.find((t) => t.name === targetTeamName);
       if (target?.members.map((m) => m.toLowerCase()).includes(username.toLowerCase())) {
@@ -324,7 +315,6 @@ export default function AdminPage() {
     const prevTeam = draftTeams.find((t) =>
       t.members.map((m) => m.toLowerCase()).includes(username.toLowerCase())
     );
-    // ──────────────────────────────────────────────────────────────────────
 
     setDraftTeams((prevTeams) =>
       prevTeams.map((t) => {
@@ -339,7 +329,6 @@ export default function AdminPage() {
       })
     );
 
-    // ── NEW: real-time feedback toast ──────────────────────────────────────
     if (targetTeamName) {
       addToast(
         "success",
@@ -352,7 +341,6 @@ export default function AdminPage() {
     } else {
       addToast("info", "Moved to Bench", `${username} removed from ${prevTeam?.name ?? "team"} and benched.`, 3000);
     }
-    // ──────────────────────────────────────────────────────────────────────
   };
 
   // 3. Snake Draft Auto-Balancer Algorithm
@@ -389,9 +377,7 @@ export default function AdminPage() {
       }))
     );
 
-    // ── NEW: success toast ─────────────────────────────────────────────────
     addToast("success", "Teams Auto-Balanced ⚡", `${sorted.length} contributors distributed across ${draftTeams.length} teams using snake draft.`, 4000);
-    // ──────────────────────────────────────────────────────────────────────
   };
 
   // Reset Draft
@@ -403,8 +389,8 @@ export default function AdminPage() {
         members: [...t.members],
       }))
     );
-    setDropdownErrors({}); // ── NEW: clear inline errors on reset
-    addToast("info", "Draft Reset", "All team assignments reverted to saved config.", 3500); // ── NEW
+    setDropdownErrors({});
+    addToast("info", "Draft Reset", "All team assignments reverted to saved config.", 3500);
   };
 
   // 4. YAML config code generation
@@ -423,7 +409,7 @@ export default function AdminPage() {
     navigator.clipboard.writeText(generateYamlCode());
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
-    addToast("success", "YAML Copied!", "Config is ready to paste into config.yaml.", 3000); // ── NEW
+    addToast("success", "YAML Copied!", "Config is ready to paste into config.yaml.", 3000);
   };
 
   const unassigned = getUnassigned();
@@ -431,10 +417,8 @@ export default function AdminPage() {
 
   return (
     <div>
-      {/* ── NEW: keyframe + ToastContainer ────────────────────────────────── */}
       <style>{`@keyframes slideInToast { from { opacity:0; transform:translateX(24px); } to { opacity:1; transform:translateX(0); } }`}</style>
       <ToastContainer toasts={toasts} onDismiss={dismissToast} />
-      {/* ──────────────────────────────────────────────────────────────────── */}
 
       {/* Page Header */}
       <section className="hero-header" style={{ alignItems: "flex-start", textAlign: "left", marginBottom: "32px" }}>
@@ -517,7 +501,7 @@ export default function AdminPage() {
         </div>
       </div>
 
-      {/* ── NEW: Live Validation Panel ─────────────────────────────────────── */}
+      {/* Live Validation */}
       <div style={{ marginBottom: "28px" }}>
         <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
           <AlertCircle size={14} style={{ color: "var(--text-tertiary)" }} />
@@ -537,7 +521,6 @@ export default function AdminPage() {
         </div>
         <ValidationPanel validation={validation} />
       </div>
-      {/* ──────────────────────────────────────────────────────────────────── */}
 
       {/* Main Builder Grid */}
       <div className="balancer-grid" style={{ marginBottom: "32px" }}>
@@ -557,7 +540,7 @@ export default function AdminPage() {
               const currentTeam = draftTeams.find((t) =>
                 t.members.map((m) => m.toLowerCase()).includes(contrib.username.toLowerCase())
               );
-              const inlineError = dropdownErrors[contrib.username]; // ── NEW
+              const inlineError = dropdownErrors[contrib.username];
               
               return (
                 <div key={contrib.username} className="balancer-user-tag" style={{ flexDirection: "column", alignItems: "stretch", gap: "8px" }}>
@@ -590,7 +573,7 @@ export default function AdminPage() {
                       padding: "6px 10px",
                       borderRadius: "6px",
                       background: "rgba(0, 0, 0, 0.3)",
-                      border: `1px solid ${inlineError ? "rgba(239,68,68,0.6)" : "var(--border-primary)"}`, // ── NEW: red border on error
+                      border: `1px solid ${inlineError ? "rgba(239,68,68,0.6)" : "var(--border-primary)"}`,
                       color: "var(--text-secondary)",
                       fontSize: "12px",
                       fontWeight: 600,
@@ -606,14 +589,13 @@ export default function AdminPage() {
                     ))}
                   </select>
 
-                  {/* ── NEW: inline validation message below dropdown ─────── */}
+                  {/* Inline validation message */}
                   {inlineError && (
                     <div style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "11px", color: "#ef4444", fontWeight: 600, padding: "5px 8px", background: "rgba(239,68,68,0.08)", border: "1px solid rgba(239,68,68,0.15)", borderRadius: "5px", animation: "slideInToast 0.2s ease" }}>
                       <AlertCircle size={11} />
                       {inlineError}
                     </div>
                   )}
-                  {/* ────────────────────────────────────────────────────── */}
                 </div>
               );
             })}
