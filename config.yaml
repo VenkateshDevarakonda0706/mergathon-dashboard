@@ -31,5 +31,10 @@ teams:
   - name: "Team Alpha"
     color: "#3b82f6"
     members:
-      - "SouparnaChatterjee"
-      - "Radhikaa-chauhan"
+      - "dev-sarah"
+      - "coder-alex"
+  - name: "Team Beta"
+    color: "#8b5cf6"
+    members:
+      - "backend-mia"
+      - "docs-guru-chen"
