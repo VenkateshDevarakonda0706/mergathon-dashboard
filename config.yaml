@@ -5,15 +5,17 @@
 event:
   name: "CircuitVerse Mergathon 2025"
   organization: "CircuitVerse"
-  startDate: "2025-05-22"
-  endDate: "2025-05-25"
+  startDate: "2026-05-22"
+  endDate: "2026-05-31"
   timeZone: "UTC"
 
 repositories:
   - "CircuitVerse/CircuitVerse"
-  - "CircuitVerse/mobile-app"
+  - "CircuitVerse/CircuitVerseDocs"
   - "CircuitVerse/Interactive-Book"
   - "CircuitVerse/cv-frontend-vue"
+  - "CircuitVerse/Blog"
+  - "CircuitVerse/mobile-app"
 
 scoring:
   weights:
@@ -28,13 +30,47 @@ thresholds:
   mediumActivity: 50
 
 teams:
-  - name: "Team Alpha"
+  - name: "NasaVerse"
     color: "#3b82f6"
     members:
-      - "dev-sarah"
-      - "coder-alex"
-  - name: "Team Beta"
+      - "ShinichiShi"
+      - "naman79820"
+      - "Asrani-Aman"
+      # aryan kumar - GitHub username unknown, add when confirmed
+
+  - name: "LGTM"
     color: "#8b5cf6"
     members:
-      - "backend-mia"
-      - "docs-guru-chen"
+      - "nihal4777"
+      - "Me-Priyank"
+      - "Radhikaa-chauhan"
+      - "SouparnaChatterjee"
+
+  - name: "The Debug Divas"
+    color: "#10b981"
+    members:
+      - "Yana-do-code"
+      - "Teesta-Mukherjee"
+      - "Aakansha-Chavan"
+      - "yashikajotwani12"
+
+  - name: "X1"
+    color: "#f59e0b"
+    members:
+      - "haaasini01"
+      # Pranjali Goyal - GitHub username unknown, add when confirmed
+      # maintainer - unknown, add when confirmed
+
+  - name: "Dart Vaders"
+    color: "#f43f5e"
+    members:
+      - "SantamRC"
+      - "JatsuAkaYashvant"
+      - "hardik17771"
+      # shahbaz898khan - GitHub username unknown, add when confirmed
+
+  - name: "Team 6"
+    color: "#06b6d4"
+    members:
+      - "092vk"
+      # anirudhnarang0 - GitHub username unknown, add when confirmed
