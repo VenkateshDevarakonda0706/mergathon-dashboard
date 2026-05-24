@@ -34,9 +34,10 @@ function parseConfigYaml(content: string): YamlConfig {
   let eventEndDate = "2026-05-31";
   const repos: string[] = [];
   const scoringLabels: Record<string, number> = {
-    "meragathon:closed-outdated": 1,
-    "meragathon:merged": 3,
-    "meragathon:closed-taken-over": 5,
+    "mergathon:closed-invalid": 1,
+    "mergathon:closed-outdated": 1,
+    "mergathon:merged": 3,
+    "mergathon:closed-taken-over": 5,
   };
   const thresholds = { highActivity: 10, mediumActivity: 3 };
   const teams: { name: string; color: string; members: string[] }[] = [];
@@ -98,13 +99,17 @@ function getDefaultConfig(): YamlConfig {
     eventName: "CircuitVerse Mergathon 2025", organization: "CircuitVerse",
     eventStartDate: "2026-05-22", eventEndDate: "2026-05-31",
     repos: ["CircuitVerse/CircuitVerse", "CircuitVerse/mobile-app", "CircuitVerse/Interactive-Book", "CircuitVerse/cv-frontend-vue"],
-    scoringLabels: { "meragathon:closed-outdated": 1, "meragathon:merged": 3, "meragathon:closed-taken-over": 5 },
+    scoringLabels: { "mergathon:closed-invalid": 1, "mergathon:closed-outdated": 1, "mergathon:merged": 3, "mergathon:closed-taken-over": 5 },
     thresholds: { highActivity: 10, mediumActivity: 3 },
     teams: [
       { name: "Team Alpha", color: "#3b82f6", members: ["dev-sarah", "coder-alex"] },
       { name: "Team Beta", color: "#8b5cf6", members: ["backend-mia", "docs-guru-chen"] },
     ],
   };
+}
+
+function isBot(user: { login: string; type?: string }): boolean {
+  return user.login.endsWith("[bot]") || user.type === "Bot";
 }
 
 function scoreFromLabels(labels: { name: string }[], scoringLabels: Record<string, number>): number {
@@ -219,7 +224,7 @@ async function fetchGithub<T>(url: string, pool: TokenPool): Promise<T> {
 
 // --------------- fetchUserProfile ---------------
 
-interface GitHubUserProfile { login: string; avatar_url: string; html_url: string; name: string | null; bio: string | null; }
+interface GitHubUserProfile { login: string; avatar_url: string; html_url: string; name: string | null; bio: string | null; type: string; }
 
 async function fetchUserProfile(username: string, pool: TokenPool): Promise<GitHubUserProfile | null> {
   try { return await fetchGithub<GitHubUserProfile>(`https://api.github.com/users/${encodeURIComponent(username)}`, pool); }
@@ -231,7 +236,6 @@ async function fetchUserProfile(username: string, pool: TokenPool): Promise<GitH
 async function fetchLiveContributors(config: YamlConfig, pool: TokenPool): Promise<Contributor[]> {
   console.log(`🌐 Connecting to GitHub API to track ${config.organization}...`);
 
-  // Build a username -> team lookup from config.yaml
   const memberTeamMap = new Map<string, string>();
   for (const team of config.teams) {
     for (const member of team.members) {
@@ -242,7 +246,6 @@ async function fetchLiveContributors(config: YamlConfig, pool: TokenPool): Promi
   const reposSet = new Set(config.repos.map((r) => r.toLowerCase()));
   const userMap = new Map<string, Contributor>();
 
-  // NOTE: No pre-registered roster filter — anyone who contributes gets tracked
   const getOrCreateContributor = (username: string, avatarUrl = ""): Contributor => {
     const key = username.toLowerCase();
     if (!userMap.has(key)) {
@@ -268,7 +271,7 @@ async function fetchLiveContributors(config: YamlConfig, pool: TokenPool): Promi
   const processedIssuesClosed = new Set<string>();
   const processedReviews = new Set<string>();
 
-  // 1. PRs Merged — credit the PR author, scored by label
+  // 1. PRs Merged
   console.log("🔍 Fetching PRs merged...");
   let page = 1;
   while (true) {
@@ -280,11 +283,11 @@ async function fetchLiveContributors(config: YamlConfig, pool: TokenPool): Promi
       const repo = getRepoFromUrl(item.html_url);
       if (!reposSet.has(repo.toLowerCase())) continue;
       if (processedPrsMerged.has(item.html_url)) continue;
+      if (isBot(item.user)) continue;
       const pts = scoreFromLabels(item.labels || [], scoringLabels);
       if (pts === 0) continue;
       processedPrsMerged.add(item.html_url);
-      const author = item.user.login;
-      const contributor = getOrCreateContributor(author, item.user.avatar_url);
+      const contributor = getOrCreateContributor(item.user.login, item.user.avatar_url);
       const dateStr = (item.closed_at || item.updated_at).split("T")[0];
       contributor.prsMerged++;
       contributor.score += pts;
@@ -296,7 +299,7 @@ async function fetchLiveContributors(config: YamlConfig, pool: TokenPool): Promi
     page++;
   }
 
-  // 2. Issues Closed — fetch individual issue to get closed_by, scored by label
+  // 2. Issues Closed — fetch individual issue to get closed_by
   console.log("🔍 Fetching Issues closed...");
   page = 1;
   while (true) {
@@ -312,21 +315,24 @@ async function fetchLiveContributors(config: YamlConfig, pool: TokenPool): Promi
       if (pts === 0) continue;
       processedIssuesClosed.add(item.html_url);
 
-      // Fetch full issue to get closed_by (not available in search results)
       let closer = item.user?.login;
       let closerAvatar = item.user?.avatar_url ?? "";
+      let closerType = item.user?.type ?? "User";
       try {
         const issueNumber = item.html_url.replace("https://github.com/", "").split("/")[3];
         const fullIssue: any = await fetchGithub(`https://api.github.com/repos/${repo}/issues/${issueNumber}`, pool);
         if (fullIssue.closed_by?.login) {
           closer = fullIssue.closed_by.login;
           closerAvatar = fullIssue.closed_by.avatar_url ?? closerAvatar;
+          closerType = fullIssue.closed_by.type ?? "User";
         }
       } catch (err: any) {
         console.warn(`   ⚠️  Could not fetch full issue for ${item.html_url}: ${err.message}`);
       }
 
       if (!closer) continue;
+      if (isBot({ login: closer, type: closerType })) continue;
+
       const contributor = getOrCreateContributor(closer, closerAvatar);
       const dateStr = (item.closed_at || item.updated_at).split("T")[0];
       contributor.issuesClosed++;
@@ -339,7 +345,7 @@ async function fetchLiveContributors(config: YamlConfig, pool: TokenPool): Promi
     page++;
   }
 
-  // 3. PR Reviews — credit the reviewer
+  // 3. PR Reviews — skip bots
   console.log("🔍 Fetching PR reviews...");
   const activePRs = Array.from(processedPrsMerged);
   for (const prUrl of activePRs) {
@@ -349,13 +355,14 @@ async function fetchLiveContributors(config: YamlConfig, pool: TokenPool): Promi
       const reviews: any[] = await fetchGithub(`https://api.github.com/repos/${repo}/pulls/${prNumber}/reviews`, pool);
       for (const review of reviews) {
         if (!review.user) continue;
+        if (isBot(review.user)) continue;
         const reviewer = review.user.login;
         const submittedDateStr = review.submitted_at ? review.submitted_at.split("T")[0] : null;
         if (!submittedDateStr || !isWithinEventWindow(submittedDateStr, startDate, endDate)) continue;
         const reviewKey = `${prUrl}-${reviewer}-${review.id}`;
         if (processedReviews.has(reviewKey)) continue;
         processedReviews.add(reviewKey);
-        const pts = scoringLabels["meragathon:merged"] ?? 3;
+        const pts = scoringLabels["mergathon:merged"] ?? 3;
         const contributor = getOrCreateContributor(reviewer, review.user.avatar_url);
         contributor.prsReviewed++;
         contributor.score += pts;
@@ -368,11 +375,12 @@ async function fetchLiveContributors(config: YamlConfig, pool: TokenPool): Promi
     }
   }
 
-  // 4. Fetch live profiles for all discovered contributors
+  // 4. Fetch live profiles — skip bots
   console.log("👤 Fetching GitHub user profiles...");
   for (const [, contributor] of userMap.entries()) {
     const profile = await fetchUserProfile(contributor.username, pool);
     if (profile) {
+      if (isBot(profile)) { userMap.delete(contributor.username.toLowerCase()); continue; }
       contributor.avatarUrl = profile.avatar_url;
       contributor.profileUrl = profile.html_url;
       (contributor as any).displayName = profile.name ?? contributor.username;
@@ -511,7 +519,6 @@ async function main(): Promise<void> {
     }
   }
 
-  // Build teams — registered members get their team, everyone else is "Independent"
   const teams: Team[] = config.teams.map((t) => {
     const members = contributors.filter((c) => t.members.map((m) => m.toLowerCase()).includes(c.username.toLowerCase()));
     return { name: t.name, color: t.color, members: t.members,
@@ -524,7 +531,6 @@ async function main(): Promise<void> {
     };
   });
 
-  // Add an "Independent" team for unregistered contributors who still scored
   const independents = contributors.filter((c) => c.team === "Independent" && c.score > 0);
   if (independents.length > 0) {
     teams.push({
