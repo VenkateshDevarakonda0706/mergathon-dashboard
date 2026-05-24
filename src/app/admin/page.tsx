@@ -1,8 +1,18 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useData } from "../../context/DataContext";
-import { Users, ShieldAlert, Check, RefreshCw, Copy, Sliders } from "lucide-react";
+import { Users, ShieldAlert, Check, RefreshCw, Copy, Sliders, AlertCircle, AlertTriangle, CheckCircle, X } from "lucide-react";
+
+// Toast notification types
+type ToastKind = "success" | "error" | "warning" | "info";
+
+interface Toast {
+  id: number;
+  kind: ToastKind;
+  title: string;
+  message: string;
+}
 
 interface DraftMember {
   username: string;
@@ -18,11 +28,205 @@ interface DraftTeam {
   members: string[]; // usernames
 }
 
+// Toast color & icon config
+const TOAST_COLORS: Record<ToastKind, string> = {
+  success: "#10b981",
+  error:   "#ef4444",
+  warning: "#f59e0b",
+  info:    "#3b82f6",
+};
+
+const TOAST_ICONS: Record<ToastKind, React.ReactNode> = {
+  success: <CheckCircle size={16} />,
+  error:   <AlertCircle size={16} />,
+  warning: <AlertTriangle size={16} />,
+  info:    <AlertCircle size={16} />,
+};
+
+// Draft validation — checks for duplicate assignments and unassigned contributors
+function validateDraft(teams: DraftTeam[], allContributors: DraftMember[]) {
+  const errors: string[] = [];
+  const warnings: string[] = [];
+
+  teams.forEach((t) => {
+    if (t.members.length === 0)
+      warnings.push(`"${t.name}" has no members assigned yet.`);
+  });
+
+  const allAssigned = teams.flatMap((t) => t.members.map((m) => m.toLowerCase()));
+  const seen = new Set<string>();
+  allAssigned.forEach((m) => {
+    if (seen.has(m)) errors.push(`"${m}" is assigned to multiple teams.`);
+    seen.add(m);
+  });
+
+  const unassigned = allContributors.filter(
+    (c) => !allAssigned.includes(c.username.toLowerCase())
+  );
+  if (unassigned.length > 0)
+    warnings.push(
+      `${unassigned.length} contributor${unassigned.length > 1 ? "s are" : " is"} still unassigned.`
+    );
+
+  return { valid: errors.length === 0, errors, warnings };
+}
+
+// Toast container — displays real-time feedback notifications
+let _toastId = 0;
+
+function ToastContainer({
+  toasts,
+  onDismiss,
+}: {
+  toasts: Toast[];
+  onDismiss: (id: number) => void;
+}) {
+  return (
+    <div
+      style={{
+        position: "fixed",
+        bottom: "24px",
+        right: "24px",
+        zIndex: 9999,
+        display: "flex",
+        flexDirection: "column",
+        gap: "10px",
+        maxWidth: "340px",
+        width: "100%",
+      }}
+    >
+      {toasts.map((t) => (
+        <div
+          key={t.id}
+          style={{
+            display: "flex",
+            alignItems: "flex-start",
+            gap: "12px",
+            background: "rgba(15, 15, 20, 0.95)",
+            border: `1px solid ${TOAST_COLORS[t.kind]}40`,
+            borderLeft: `4px solid ${TOAST_COLORS[t.kind]}`,
+            borderRadius: "10px",
+            padding: "14px 16px",
+            boxShadow: "0 8px 32px rgba(0,0,0,0.5)",
+            animation: "slideInToast 0.25s ease",
+          }}
+        >
+          <span style={{ color: TOAST_COLORS[t.kind], flexShrink: 0, marginTop: "1px" }}>
+            {TOAST_ICONS[t.kind]}
+          </span>
+          <div style={{ flex: 1, minWidth: 0 }}>
+            <div style={{ fontSize: "13px", fontWeight: 700, color: "#ffffff", marginBottom: "2px" }}>
+              {t.title}
+            </div>
+            <div style={{ fontSize: "12px", color: "rgba(255,255,255,0.6)", lineHeight: 1.4 }}>
+              {t.message}
+            </div>
+          </div>
+          <button
+            onClick={() => onDismiss(t.id)}
+            style={{ background: "none", border: "none", color: "rgba(255,255,255,0.4)", cursor: "pointer", padding: 0, display: "flex", alignItems: "center" }}
+          >
+            <X size={14} />
+          </button>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+// Validation panel — shows live errors and warnings above the builder grid
+function ValidationPanel({ validation }: { validation: ReturnType<typeof validateDraft> }) {
+  const hasIssues = validation.errors.length > 0 || validation.warnings.length > 0;
+  if (!hasIssues) {
+    return (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "8px",
+          padding: "10px 14px",
+          background: "rgba(16, 185, 129, 0.08)",
+          border: "1px solid rgba(16, 185, 129, 0.2)",
+          borderRadius: "8px",
+          fontSize: "12px",
+          color: "#10b981",
+          fontWeight: 600,
+        }}
+      >
+        <CheckCircle size={14} />
+        Draft looks valid — no issues detected.
+      </div>
+    );
+  }
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
+      {validation.errors.map((e, i) => (
+        <div
+          key={`err-${i}`}
+          style={{
+            display: "flex",
+            alignItems: "flex-start",
+            gap: "8px",
+            padding: "10px 14px",
+            background: "rgba(239, 68, 68, 0.08)",
+            border: "1px solid rgba(239, 68, 68, 0.2)",
+            borderRadius: "8px",
+            fontSize: "12px",
+            color: "#ef4444",
+            fontWeight: 600,
+            lineHeight: 1.4,
+          }}
+        >
+          <AlertCircle size={14} style={{ flexShrink: 0, marginTop: "1px" }} />
+          {e}
+        </div>
+      ))}
+      {validation.warnings.map((w, i) => (
+        <div
+          key={`warn-${i}`}
+          style={{
+            display: "flex",
+            alignItems: "flex-start",
+            gap: "8px",
+            padding: "10px 14px",
+            background: "rgba(245, 158, 11, 0.08)",
+            border: "1px solid rgba(245, 158, 11, 0.2)",
+            borderRadius: "8px",
+            fontSize: "12px",
+            color: "#f59e0b",
+            fontWeight: 600,
+            lineHeight: 1.4,
+          }}
+        >
+          <AlertTriangle size={14} style={{ flexShrink: 0, marginTop: "1px" }} />
+          {w}
+        </div>
+      ))}
+    </div>
+  );
+}
+
 export default function AdminPage() {
   const { data } = useData();
   const [draftTeams, setDraftTeams] = useState<DraftTeam[]>([]);
   const [contributorsList, setContributorsList] = useState<DraftMember[]>([]);
   const [copied, setCopied] = useState(false);
+  const [toasts, setToasts] = useState<Toast[]>([]);
+  const [dropdownErrors, setDropdownErrors] = useState<Record<string, string>>({});
+
+  // Toast helpers — must be before early return to follow React Rules of Hooks
+  const addToast = useCallback(
+    (kind: ToastKind, title: string, message: string, duration = 4000) => {
+      const id = ++_toastId;
+      setToasts((prev) => [...prev.slice(-4), { id, kind, title, message }]);
+      setTimeout(() => setToasts((prev) => prev.filter((t) => t.id !== id)), duration);
+    },
+    []
+  );
+
+  const dismissToast = useCallback((id: number) => {
+    setToasts((prev) => prev.filter((t) => t.id !== id));
+  }, []);
 
   // Initialize draft states from context data
   useEffect(() => {
@@ -89,8 +293,29 @@ export default function AdminPage() {
     }
   };
 
+  // Live validation runs on every render to reflect current draft state
+  const validation = validateDraft(draftTeams, contributorsList);
+
   // 2. Draft action handlers
   const handleAssignMember = (username: string, targetTeamName: string | null) => {
+    if (targetTeamName) {
+      const target = draftTeams.find((t) => t.name === targetTeamName);
+      if (target?.members.map((m) => m.toLowerCase()).includes(username.toLowerCase())) {
+        setDropdownErrors((prev) => ({ ...prev, [username]: `${username} is already on ${targetTeamName}.` }));
+        addToast("error", "Assignment Blocked", `${username} is already on ${targetTeamName}.`, 4000);
+        setTimeout(
+          () => setDropdownErrors((prev) => { const n = { ...prev }; delete n[username]; return n; }),
+          3000
+        );
+        return;
+      }
+    }
+    setDropdownErrors((prev) => { const n = { ...prev }; delete n[username]; return n; });
+
+    const prevTeam = draftTeams.find((t) =>
+      t.members.map((m) => m.toLowerCase()).includes(username.toLowerCase())
+    );
+
     setDraftTeams((prevTeams) =>
       prevTeams.map((t) => {
         // Remove from current team
@@ -103,6 +328,19 @@ export default function AdminPage() {
         return { ...t, members: cleanedMembers };
       })
     );
+
+    if (targetTeamName) {
+      addToast(
+        "success",
+        "Member Assigned",
+        prevTeam
+          ? `${username} moved from ${prevTeam.name} → ${targetTeamName}.`
+          : `${username} added to ${targetTeamName}.`,
+        3000
+      );
+    } else {
+      addToast("info", "Moved to Bench", `${username} removed from ${prevTeam?.name ?? "team"} and benched.`, 3000);
+    }
   };
 
   // 3. Snake Draft Auto-Balancer Algorithm
@@ -138,6 +376,8 @@ export default function AdminPage() {
         members: newTeamSlots[idx],
       }))
     );
+
+    addToast("success", "Teams Auto-Balanced ⚡", `${sorted.length} contributors distributed across ${draftTeams.length} teams using snake draft.`, 4000);
   };
 
   // Reset Draft
@@ -149,6 +389,8 @@ export default function AdminPage() {
         members: [...t.members],
       }))
     );
+    setDropdownErrors({});
+    addToast("info", "Draft Reset", "All team assignments reverted to saved config.", 3500);
   };
 
   // 4. YAML config code generation
@@ -167,6 +409,7 @@ export default function AdminPage() {
     navigator.clipboard.writeText(generateYamlCode());
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
+    addToast("success", "YAML Copied!", "Config is ready to paste into config.yaml.", 3000);
   };
 
   const unassigned = getUnassigned();
@@ -174,6 +417,9 @@ export default function AdminPage() {
 
   return (
     <div>
+      <style>{`@keyframes slideInToast { from { opacity:0; transform:translateX(24px); } to { opacity:1; transform:translateX(0); } }`}</style>
+      <ToastContainer toasts={toasts} onDismiss={dismissToast} />
+
       {/* Page Header */}
       <section className="hero-header" style={{ alignItems: "flex-start", textAlign: "left", marginBottom: "32px" }}>
         <div className="event-badge-outline" style={{ marginBottom: "20px" }}>
@@ -255,6 +501,27 @@ export default function AdminPage() {
         </div>
       </div>
 
+      {/* Live Validation */}
+      <div style={{ marginBottom: "28px" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
+          <AlertCircle size={14} style={{ color: "var(--text-tertiary)" }} />
+          <span style={{ fontSize: "11px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "var(--text-tertiary)" }}>
+            Live Validation
+          </span>
+          {!validation.valid && (
+            <span style={{ fontSize: "11px", fontWeight: 700, color: "#ef4444", background: "rgba(239,68,68,0.12)", padding: "2px 8px", borderRadius: "99px" }}>
+              {validation.errors.length} error{validation.errors.length > 1 ? "s" : ""}
+            </span>
+          )}
+          {validation.warnings.length > 0 && (
+            <span style={{ fontSize: "11px", fontWeight: 700, color: "#f59e0b", background: "rgba(245,158,11,0.12)", padding: "2px 8px", borderRadius: "99px" }}>
+              {validation.warnings.length} warning{validation.warnings.length > 1 ? "s" : ""}
+            </span>
+          )}
+        </div>
+        <ValidationPanel validation={validation} />
+      </div>
+
       {/* Main Builder Grid */}
       <div className="balancer-grid" style={{ marginBottom: "32px" }}>
         {/* Left Side: Unassigned / Participant Roster shelf */}
@@ -273,6 +540,7 @@ export default function AdminPage() {
               const currentTeam = draftTeams.find((t) =>
                 t.members.map((m) => m.toLowerCase()).includes(contrib.username.toLowerCase())
               );
+              const inlineError = dropdownErrors[contrib.username];
               
               return (
                 <div key={contrib.username} className="balancer-user-tag" style={{ flexDirection: "column", alignItems: "stretch", gap: "8px" }}>
@@ -305,7 +573,7 @@ export default function AdminPage() {
                       padding: "6px 10px",
                       borderRadius: "6px",
                       background: "rgba(0, 0, 0, 0.3)",
-                      border: "1px solid var(--border-primary)",
+                      border: `1px solid ${inlineError ? "rgba(239,68,68,0.6)" : "var(--border-primary)"}`,
                       color: "var(--text-secondary)",
                       fontSize: "12px",
                       fontWeight: 600,
@@ -320,6 +588,14 @@ export default function AdminPage() {
                       </option>
                     ))}
                   </select>
+
+                  {/* Inline validation message */}
+                  {inlineError && (
+                    <div style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "11px", color: "#ef4444", fontWeight: 600, padding: "5px 8px", background: "rgba(239,68,68,0.08)", border: "1px solid rgba(239,68,68,0.15)", borderRadius: "5px", animation: "slideInToast 0.2s ease" }}>
+                      <AlertCircle size={11} />
+                      {inlineError}
+                    </div>
+                  )}
                 </div>
               );
             })}

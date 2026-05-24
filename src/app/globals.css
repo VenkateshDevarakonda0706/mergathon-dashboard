@@ -892,8 +892,11 @@ body {
 
 .avatar-stack a {
   margin-left: -8px;
-  transition: transform 0.2s ease, z-index 0.2s;
+  transition: all 0.3s ease;
   position: relative;
+}
+.avatar-stack:hover a {
+  margin-left: 2px;
 }
 
 .avatar-stack a:first-child {
@@ -901,7 +904,7 @@ body {
 }
 
 .avatar-stack a:hover {
-  transform: translateY(-4px) scale(1.1);
+  transform: translateY(-6px) scale(1.12) rotate(4deg);
   z-index: 10;
 }
 

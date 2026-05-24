@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-23T13:44:25.027Z",
+  "lastUpdated": "2026-05-24T04:01:04.065Z",
   "eventStartDate": "2025-05-22",
   "eventEndDate": "2025-05-25",
   "stats": {
@@ -45,8 +45,8 @@
   "contributors": [
     {
       "username": "dev-sarah",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/0?v=4",
-      "profileUrl": "https://github.com/dev-sarah",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16549079?v=4",
+      "profileUrl": "https://github.com/Dev-Sarah",
       "team": "Team Alpha",
       "prsOpened": 0,
       "prsMerged": 0,
@@ -93,11 +93,13 @@
           "score": 0
         }
       ],
-      "contributions": []
+      "contributions": [],
+      "displayName": "dev-sarah",
+      "bio": ""
     },
     {
       "username": "coder-alex",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/0?v=4",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/52761103?v=4",
       "profileUrl": "https://github.com/coder-alex",
       "team": "Team Alpha",
       "prsOpened": 0,
@@ -145,11 +147,13 @@
           "score": 0
         }
       ],
-      "contributions": []
+      "contributions": [],
+      "displayName": "coder-alex",
+      "bio": ""
     },
     {
       "username": "backend-mia",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/0?v=4",
+      "avatarUrl": "https://avatars.githubusercontent.com/backend-mia",
       "profileUrl": "https://github.com/backend-mia",
       "team": "Team Beta",
       "prsOpened": 0,
@@ -201,7 +205,7 @@
     },
     {
       "username": "docs-guru-chen",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/0?v=4",
+      "avatarUrl": "https://avatars.githubusercontent.com/docs-guru-chen",
       "profileUrl": "https://github.com/docs-guru-chen",
       "team": "Team Beta",
       "prsOpened": 0,
