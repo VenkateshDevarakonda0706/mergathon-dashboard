@@ -19,9 +19,13 @@ repositories:
 
 scoring:
   labels:
-    "meragathon:closed-outdated": 1
-    "meragathon:merged": 3
-    "meragathon:closed-taken-over": 5
+    closed:
+      "mergathon:closed-outdated": 1
+      "mergathon:closed-taken-over": 1
+      "mergathon:closed-invalid": 1
+    merged:
+      "mergathon:merged": 3
+      "mergathon:resolved-merged": 5
 
 thresholds:
   highActivity: 10

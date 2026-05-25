@@ -18,7 +18,8 @@ export default function Home() {
 
   if (!data) return null;
 
-  const { stats, teams, contributors } = data;
+  const { stats, contributors } = data;
+  const teams = [...data.teams].sort((a, b) => b.totalScore - a.totalScore);
 
   const totalScoreCombined = teams.reduce((acc, t) => acc + t.totalScore, 0);
   const totalActivities = stats.totalPrsMerged + stats.totalIssuesClosed + stats.totalPrsReviewed;

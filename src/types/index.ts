@@ -26,6 +26,9 @@ export interface Contributor {
   prsReviewed: number;
   issuesOpened: number;
   issuesClosed: number;
+  issuesPrClosedScore: number;
+  prsMergedScore: number;
+  prsReviewedScore: number;
   score: number;
   activityLevel: 'High' | 'Medium' | 'Low';
   dailyActivity: DailyActivity[];
