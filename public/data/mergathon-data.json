@@ -1,24 +1,57 @@
 {
-  "lastUpdated": "2026-05-24T04:01:04.065Z",
-  "eventStartDate": "2025-05-22",
-  "eventEndDate": "2025-05-25",
+  "lastUpdated": "2026-05-24T19:27:13.284Z",
+  "eventStartDate": "2026-05-22",
+  "eventEndDate": "2026-05-31",
   "stats": {
     "totalContributors": 4,
-    "totalPrsMerged": 0,
-    "totalPrsOpened": 0,
+    "totalPrsMerged": 3,
+    "totalPrsOpened": 3,
     "totalIssuesClosed": 0,
-    "totalIssuesOpened": 0,
-    "totalPrsReviewed": 0,
-    "daysElapsed": 4,
-    "daysRemaining": 0
+    "totalIssuesOpened": 10,
+    "totalPrsReviewed": 4,
+    "daysElapsed": 3,
+    "daysRemaining": 7
   },
   "teams": [
     {
-      "name": "Team Alpha",
+      "name": "NasaVerse",
       "color": "#3b82f6",
       "members": [
-        "dev-sarah",
-        "coder-alex"
+        "ShinichiShi",
+        "naman79820",
+        "Asrani-Aman"
+      ],
+      "totalScore": 60,
+      "totalPrsMerged": 3,
+      "totalPrsOpened": 3,
+      "totalPrsReviewed": 3,
+      "totalIssuesClosed": 0,
+      "totalIssuesOpened": 3
+    },
+    {
+      "name": "LGTM",
+      "color": "#8b5cf6",
+      "members": [
+        "nihal4777",
+        "Me-Priyank",
+        "Radhikaa-chauhan",
+        "SouparnaChatterjee"
+      ],
+      "totalScore": 3,
+      "totalPrsMerged": 0,
+      "totalPrsOpened": 0,
+      "totalPrsReviewed": 1,
+      "totalIssuesClosed": 0,
+      "totalIssuesOpened": 0
+    },
+    {
+      "name": "The Debug Divas",
+      "color": "#10b981",
+      "members": [
+        "Yana-do-code",
+        "Teesta-Mukherjee",
+        "Aakansha-Chavan",
+        "yashikajotwani12"
       ],
       "totalScore": 0,
       "totalPrsMerged": 0,
@@ -28,11 +61,38 @@
       "totalIssuesOpened": 0
     },
     {
-      "name": "Team Beta",
-      "color": "#8b5cf6",
+      "name": "X1",
+      "color": "#f59e0b",
       "members": [
-        "backend-mia",
-        "docs-guru-chen"
+        "haaasini01"
+      ],
+      "totalScore": 0,
+      "totalPrsMerged": 0,
+      "totalPrsOpened": 0,
+      "totalPrsReviewed": 0,
+      "totalIssuesClosed": 0,
+      "totalIssuesOpened": 0
+    },
+    {
+      "name": "Dart Vaders",
+      "color": "#f43f5e",
+      "members": [
+        "SantamRC",
+        "JatsuAkaYashvant",
+        "hardik17771"
+      ],
+      "totalScore": 14,
+      "totalPrsMerged": 0,
+      "totalPrsOpened": 0,
+      "totalPrsReviewed": 0,
+      "totalIssuesClosed": 0,
+      "totalIssuesOpened": 7
+    },
+    {
+      "name": "Team 6",
+      "color": "#06b6d4",
+      "members": [
+        "092vk"
       ],
       "totalScore": 0,
       "totalPrsMerged": 0,
@@ -44,10 +104,586 @@
   ],
   "contributors": [
     {
-      "username": "dev-sarah",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/16549079?v=4",
-      "profileUrl": "https://github.com/Dev-Sarah",
-      "team": "Team Alpha",
+      "username": "naman79820",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/159947791?v=4",
+      "profileUrl": "https://github.com/naman79820",
+      "team": "NasaVerse",
+      "prsOpened": 3,
+      "prsMerged": 3,
+      "prsReviewed": 2,
+      "issuesOpened": 3,
+      "issuesClosed": 0,
+      "score": 57,
+      "activityLevel": "Medium",
+      "dailyActivity": [
+        {
+          "date": "2026-05-22",
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "prsReviewed": 2,
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "score": 13
+        },
+        {
+          "date": "2026-05-23",
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "prsReviewed": 0,
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "score": 17
+        },
+        {
+          "date": "2026-05-24",
+          "prsOpened": 1,
+          "prsMerged": 2,
+          "prsReviewed": 0,
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "score": 27
+        },
+        {
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        }
+      ],
+      "contributions": [
+        {
+          "type": "pr_opened",
+          "title": "fix: update avo and css_parser gems to fix security vulnerabilities",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7399",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-24"
+        },
+        {
+          "type": "pr_merged",
+          "title": "fix: update avo and css_parser gems to fix security vulnerabilities",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7399",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-24"
+        },
+        {
+          "type": "pr_merged",
+          "title": "fix: use user.admin? instead of user.admin in ProjectPolicy (flagged by coderabbit)",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7393",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-24"
+        },
+        {
+          "type": "issue_opened",
+          "title": "🐞 Bug: Security: High & Medium severity vulnerabilities in avo and css_parser gems",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/7398",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-24"
+        },
+        {
+          "type": "pr_opened",
+          "title": "fix: use user.admin? instead of user.admin in ProjectPolicy (flagged by coderabbit)",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7393",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-23"
+        },
+        {
+          "type": "pr_merged",
+          "title": "Help button not opening docs in desktop app",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/911",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-23"
+        },
+        {
+          "type": "issue_opened",
+          "title": "🐞 Bug: Users cannot access app in development after registration due to email confirmation requirement",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/7394",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-23"
+        },
+        {
+          "type": "pr_opened",
+          "title": "feat: add organization_members table migration",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7391",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-22"
+        },
+        {
+          "type": "issue_opened",
+          "title": "Feature: Introduce core organization_members database table ",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/7390",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-22"
+        },
+        {
+          "type": "pr_reviewed",
+          "title": "Reviewed Pull Request #7391",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7391",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-22"
+        },
+        {
+          "type": "pr_reviewed",
+          "title": "Reviewed Pull Request #7391",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7391",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-22"
+        }
+      ],
+      "displayName": "Naman Chhabra",
+      "bio": "GSoC'26 @CircuitVerse "
+    },
+    {
+      "username": "SantamRC",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/52635773?v=4",
+      "profileUrl": "https://github.com/SantamRC",
+      "team": "Dart Vaders",
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "prsReviewed": 0,
+      "issuesOpened": 7,
+      "issuesClosed": 0,
+      "score": 14,
+      "activityLevel": "Low",
+      "dailyActivity": [
+        {
+          "date": "2026-05-22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 7,
+          "issuesClosed": 0,
+          "score": 14
+        },
+        {
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        }
+      ],
+      "contributions": [
+        {
+          "type": "issue_opened",
+          "title": "Add Caching Layer",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/604",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-24"
+        },
+        {
+          "type": "issue_opened",
+          "title": "Add Interactive Book V2",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/603",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-24"
+        },
+        {
+          "type": "issue_opened",
+          "title": "Add Deep Linking",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/602",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-24"
+        },
+        {
+          "type": "issue_opened",
+          "title": "Add Push Notification",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/601",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-24"
+        },
+        {
+          "type": "issue_opened",
+          "title": "Add Localization",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/600",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-24"
+        },
+        {
+          "type": "issue_opened",
+          "title": "Implement better Search Functionality",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/599",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-24"
+        },
+        {
+          "type": "issue_opened",
+          "title": "Implement Splash Screen",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/598",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-24"
+        }
+      ],
+      "displayName": "Santam Roy Choudhury",
+      "bio": "Wanna code with coffee one day☕️\r\nTabs over spaces ❤️️ "
+    },
+    {
+      "username": "Asrani-Aman",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/96644946?v=4",
+      "profileUrl": "https://github.com/Asrani-Aman",
+      "team": "NasaVerse",
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "prsReviewed": 1,
+      "issuesOpened": 0,
+      "issuesClosed": 0,
+      "score": 3,
+      "activityLevel": "Low",
+      "dailyActivity": [
+        {
+          "date": "2026-05-22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 1,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 3
+        },
+        {
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        }
+      ],
+      "contributions": [
+        {
+          "type": "pr_reviewed",
+          "title": "Reviewed Pull Request #7393",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7393",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-24"
+        }
+      ],
+      "displayName": "AMAN ASRANI",
+      "bio": "🧠 Building AI-driven systems and agentic workflows .\r\n💻 Love working with Rust, TypeScript, RAG pipelines, and LLM integrations.\r\n⚙️ Exploring scalab"
+    },
+    {
+      "username": "nihal4777",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/65150640?v=4",
+      "profileUrl": "https://github.com/Nihal4777",
+      "team": "LGTM",
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "prsReviewed": 1,
+      "issuesOpened": 0,
+      "issuesClosed": 0,
+      "score": 3,
+      "activityLevel": "Low",
+      "dailyActivity": [
+        {
+          "date": "2026-05-22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 1,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 3
+        },
+        {
+          "date": "2026-05-24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        }
+      ],
+      "contributions": [
+        {
+          "type": "pr_reviewed",
+          "title": "Reviewed Pull Request #911",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/911",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-23"
+        }
+      ],
+      "displayName": "Nihal",
+      "bio": "GSoC'25 @CircuitVerse | Prev. Technical Team Lead @ GDSC LDCE | Top 10 Mentor @ GSSoC'24 | Learner | Open Source"
+    },
+    {
+      "username": "ShinichiShi",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/141218988?v=4",
+      "profileUrl": "https://github.com/ShinichiShi",
+      "team": "NasaVerse",
       "prsOpened": 0,
       "prsMerged": 0,
       "prsReviewed": 0,
@@ -57,7 +693,7 @@
       "activityLevel": "Low",
       "dailyActivity": [
         {
-          "date": "2025-05-22",
+          "date": "2026-05-22",
           "prsOpened": 0,
           "prsMerged": 0,
           "prsReviewed": 0,
@@ -66,7 +702,7 @@
           "score": 0
         },
         {
-          "date": "2025-05-23",
+          "date": "2026-05-23",
           "prsOpened": 0,
           "prsMerged": 0,
           "prsReviewed": 0,
@@ -75,7 +711,7 @@
           "score": 0
         },
         {
-          "date": "2025-05-24",
+          "date": "2026-05-24",
           "prsOpened": 0,
           "prsMerged": 0,
           "prsReviewed": 0,
@@ -84,7 +720,61 @@
           "score": 0
         },
         {
-          "date": "2025-05-25",
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-31",
           "prsOpened": 0,
           "prsMerged": 0,
           "prsReviewed": 0,
@@ -94,14 +784,14 @@
         }
       ],
       "contributions": [],
-      "displayName": "dev-sarah",
-      "bio": ""
+      "displayName": "Supreeth C",
+      "bio": "GSoC '26 @CircuitVerse | Winner SIH2025 | LiFT 2025 | Summer Intern @ VISA |\r\nMember @pointblank-club "
     },
     {
-      "username": "coder-alex",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/52761103?v=4",
-      "profileUrl": "https://github.com/coder-alex",
-      "team": "Team Alpha",
+      "username": "Me-Priyank",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/143987856?v=4",
+      "profileUrl": "https://github.com/Me-Priyank",
+      "team": "LGTM",
       "prsOpened": 0,
       "prsMerged": 0,
       "prsReviewed": 0,
@@ -111,7 +801,7 @@
       "activityLevel": "Low",
       "dailyActivity": [
         {
-          "date": "2025-05-22",
+          "date": "2026-05-22",
           "prsOpened": 0,
           "prsMerged": 0,
           "prsReviewed": 0,
@@ -120,7 +810,7 @@
           "score": 0
         },
         {
-          "date": "2025-05-23",
+          "date": "2026-05-23",
           "prsOpened": 0,
           "prsMerged": 0,
           "prsReviewed": 0,
@@ -129,7 +819,7 @@
           "score": 0
         },
         {
-          "date": "2025-05-24",
+          "date": "2026-05-24",
           "prsOpened": 0,
           "prsMerged": 0,
           "prsReviewed": 0,
@@ -138,7 +828,61 @@
           "score": 0
         },
         {
-          "date": "2025-05-25",
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-31",
           "prsOpened": 0,
           "prsMerged": 0,
           "prsReviewed": 0,
@@ -148,14 +892,770 @@
         }
       ],
       "contributions": [],
-      "displayName": "coder-alex",
+      "displayName": "Priyank Verma",
+      "bio": "GSoC'26 @CircuitVerse "
+    },
+    {
+      "username": "Radhikaa-chauhan",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/148184013?v=4",
+      "profileUrl": "https://github.com/Radhikaa-chauhan",
+      "team": "LGTM",
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "prsReviewed": 0,
+      "issuesOpened": 0,
+      "issuesClosed": 0,
+      "score": 0,
+      "activityLevel": "Low",
+      "dailyActivity": [
+        {
+          "date": "2026-05-22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        }
+      ],
+      "contributions": [],
+      "displayName": "Radhika Chauhan",
+      "bio": "Undergrad student @ABES Engineering College,Ghaziabad"
+    },
+    {
+      "username": "SouparnaChatterjee",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115988950?v=4",
+      "profileUrl": "https://github.com/SouparnaChatterjee",
+      "team": "LGTM",
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "prsReviewed": 0,
+      "issuesOpened": 0,
+      "issuesClosed": 0,
+      "score": 0,
+      "activityLevel": "Low",
+      "dailyActivity": [
+        {
+          "date": "2026-05-22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        }
+      ],
+      "contributions": [],
+      "displayName": "Souparna_COCO",
+      "bio": "C, C++, Python, Django, MERN, Tensorflow, MySQL. Learning Rust, \r\nLLMs and Neural Networks.\r\nEnthusiastic about open Source and competitive Programming"
+    },
+    {
+      "username": "Yana-do-code",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/173885830?v=4",
+      "profileUrl": "https://github.com/Yana-do-code",
+      "team": "The Debug Divas",
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "prsReviewed": 0,
+      "issuesOpened": 0,
+      "issuesClosed": 0,
+      "score": 0,
+      "activityLevel": "Low",
+      "dailyActivity": [
+        {
+          "date": "2026-05-22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        }
+      ],
+      "contributions": [],
+      "displayName": "Yana pandey",
+      "bio": "Turning ideas into interfaces"
+    },
+    {
+      "username": "Teesta-Mukherjee",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/168867474?v=4",
+      "profileUrl": "https://github.com/Teesta-Mukherjee",
+      "team": "The Debug Divas",
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "prsReviewed": 0,
+      "issuesOpened": 0,
+      "issuesClosed": 0,
+      "score": 0,
+      "activityLevel": "Low",
+      "dailyActivity": [
+        {
+          "date": "2026-05-22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        }
+      ],
+      "contributions": [],
+      "displayName": "Teesta Mukherjee",
+      "bio": "Full-stack developer | Open-source contributor (CircuitVerse)\r\nBuilding scalable web apps with Node.js, MongoDB & React\r\nBTech ECE @ HIT Kolkata | Class of 2028"
+    },
+    {
+      "username": "Aakansha-Chavan",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/181594189?v=4",
+      "profileUrl": "https://github.com/Aakansha-Chavan",
+      "team": "The Debug Divas",
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "prsReviewed": 0,
+      "issuesOpened": 0,
+      "issuesClosed": 0,
+      "score": 0,
+      "activityLevel": "Low",
+      "dailyActivity": [
+        {
+          "date": "2026-05-22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        }
+      ],
+      "contributions": [],
+      "displayName": "Aakansha Chavan",
+      "bio": "MERN stack developer"
+    },
+    {
+      "username": "yashikajotwani12",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/77020164?v=4",
+      "profileUrl": "https://github.com/yashikajotwani12",
+      "team": "The Debug Divas",
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "prsReviewed": 0,
+      "issuesOpened": 0,
+      "issuesClosed": 0,
+      "score": 0,
+      "activityLevel": "Low",
+      "dailyActivity": [
+        {
+          "date": "2026-05-22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        }
+      ],
+      "contributions": [],
+      "displayName": "Yashika Jotwani",
+      "bio": "SDE2 @interviewstreet  | GSoC'22 @openwisp | @MLH-Fellowship Summer'22  @solana-developers  |  GitHub Extern'22 @suborbital  | OpenSource 👩‍💻"
+    },
+    {
+      "username": "haaasini01",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/180000253?v=4",
+      "profileUrl": "https://github.com/haaasini01",
+      "team": "X1",
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "prsReviewed": 0,
+      "issuesOpened": 0,
+      "issuesClosed": 0,
+      "score": 0,
+      "activityLevel": "Low",
+      "dailyActivity": [
+        {
+          "date": "2026-05-22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        }
+      ],
+      "contributions": [],
+      "displayName": "haaasini01",
       "bio": ""
     },
     {
-      "username": "backend-mia",
-      "avatarUrl": "https://avatars.githubusercontent.com/backend-mia",
-      "profileUrl": "https://github.com/backend-mia",
-      "team": "Team Beta",
+      "username": "JatsuAkaYashvant",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/146776812?v=4",
+      "profileUrl": "https://github.com/JatsuAkaYashvant",
+      "team": "Dart Vaders",
       "prsOpened": 0,
       "prsMerged": 0,
       "prsReviewed": 0,
@@ -165,7 +1665,7 @@
       "activityLevel": "Low",
       "dailyActivity": [
         {
-          "date": "2025-05-22",
+          "date": "2026-05-22",
           "prsOpened": 0,
           "prsMerged": 0,
           "prsReviewed": 0,
@@ -174,7 +1674,7 @@
           "score": 0
         },
         {
-          "date": "2025-05-23",
+          "date": "2026-05-23",
           "prsOpened": 0,
           "prsMerged": 0,
           "prsReviewed": 0,
@@ -183,7 +1683,7 @@
           "score": 0
         },
         {
-          "date": "2025-05-24",
+          "date": "2026-05-24",
           "prsOpened": 0,
           "prsMerged": 0,
           "prsReviewed": 0,
@@ -192,7 +1692,61 @@
           "score": 0
         },
         {
-          "date": "2025-05-25",
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-31",
           "prsOpened": 0,
           "prsMerged": 0,
           "prsReviewed": 0,
@@ -201,13 +1755,15 @@
           "score": 0
         }
       ],
-      "contributions": []
+      "contributions": [],
+      "displayName": "Yashvant Singh",
+      "bio": "I'm Yashvant Singh, a passionate student developer with a love for coding and a hunger for learning. Currently pursuing B-Tech at NIT Hamirpur."
     },
     {
-      "username": "docs-guru-chen",
-      "avatarUrl": "https://avatars.githubusercontent.com/docs-guru-chen",
-      "profileUrl": "https://github.com/docs-guru-chen",
-      "team": "Team Beta",
+      "username": "hardik17771",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/85028179?v=4",
+      "profileUrl": "https://github.com/hardik17771",
+      "team": "Dart Vaders",
       "prsOpened": 0,
       "prsMerged": 0,
       "prsReviewed": 0,
@@ -217,7 +1773,7 @@
       "activityLevel": "Low",
       "dailyActivity": [
         {
-          "date": "2025-05-22",
+          "date": "2026-05-22",
           "prsOpened": 0,
           "prsMerged": 0,
           "prsReviewed": 0,
@@ -226,7 +1782,7 @@
           "score": 0
         },
         {
-          "date": "2025-05-23",
+          "date": "2026-05-23",
           "prsOpened": 0,
           "prsMerged": 0,
           "prsReviewed": 0,
@@ -235,7 +1791,7 @@
           "score": 0
         },
         {
-          "date": "2025-05-24",
+          "date": "2026-05-24",
           "prsOpened": 0,
           "prsMerged": 0,
           "prsReviewed": 0,
@@ -244,7 +1800,61 @@
           "score": 0
         },
         {
-          "date": "2025-05-25",
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-31",
           "prsOpened": 0,
           "prsMerged": 0,
           "prsReviewed": 0,
@@ -253,12 +1863,149 @@
           "score": 0
         }
       ],
-      "contributions": []
+      "contributions": [],
+      "displayName": "Hardik Sachdeva",
+      "bio": "Programmed Human Entity."
+    },
+    {
+      "username": "092vk",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/123629919?v=4",
+      "profileUrl": "https://github.com/092vk",
+      "team": "Team 6",
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "prsReviewed": 0,
+      "issuesOpened": 0,
+      "issuesClosed": 0,
+      "score": 0,
+      "activityLevel": "Low",
+      "dailyActivity": [
+        {
+          "date": "2026-05-22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        }
+      ],
+      "contributions": [],
+      "displayName": "Vivek Ray",
+      "bio": "Code and Circuits"
     }
   ],
   "dailyTotals": [
     {
-      "date": "2025-05-22",
+      "date": "2026-05-22",
+      "prsOpened": 1,
+      "prsMerged": 0,
+      "prsReviewed": 2,
+      "issuesOpened": 1,
+      "issuesClosed": 0,
+      "score": 13
+    },
+    {
+      "date": "2026-05-23",
+      "prsOpened": 1,
+      "prsMerged": 1,
+      "prsReviewed": 1,
+      "issuesOpened": 1,
+      "issuesClosed": 0,
+      "score": 20
+    },
+    {
+      "date": "2026-05-24",
+      "prsOpened": 1,
+      "prsMerged": 2,
+      "prsReviewed": 1,
+      "issuesOpened": 8,
+      "issuesClosed": 0,
+      "score": 44
+    },
+    {
+      "date": "2026-05-25",
       "prsOpened": 0,
       "prsMerged": 0,
       "prsReviewed": 0,
@@ -267,7 +2014,7 @@
       "score": 0
     },
     {
-      "date": "2025-05-23",
+      "date": "2026-05-26",
       "prsOpened": 0,
       "prsMerged": 0,
       "prsReviewed": 0,
@@ -276,7 +2023,7 @@
       "score": 0
     },
     {
-      "date": "2025-05-24",
+      "date": "2026-05-27",
       "prsOpened": 0,
       "prsMerged": 0,
       "prsReviewed": 0,
@@ -285,7 +2032,34 @@
       "score": 0
     },
     {
-      "date": "2025-05-25",
+      "date": "2026-05-28",
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "prsReviewed": 0,
+      "issuesOpened": 0,
+      "issuesClosed": 0,
+      "score": 0
+    },
+    {
+      "date": "2026-05-29",
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "prsReviewed": 0,
+      "issuesOpened": 0,
+      "issuesClosed": 0,
+      "score": 0
+    },
+    {
+      "date": "2026-05-30",
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "prsReviewed": 0,
+      "issuesOpened": 0,
+      "issuesClosed": 0,
+      "score": 0
+    },
+    {
+      "date": "2026-05-31",
       "prsOpened": 0,
       "prsMerged": 0,
       "prsReviewed": 0,
