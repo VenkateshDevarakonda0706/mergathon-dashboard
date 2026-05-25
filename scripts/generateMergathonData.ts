@@ -370,7 +370,7 @@ async function fetchLiveContributors(config: YamlConfig, pool: TokenPool): Promi
     page++;
   }
 
-  // 2b. PRs Closed (not merged) — score using closedLabels
+  // 2b. PRs Closed (not merged) — score using closedLabels; fetch individual issue to get closed_by
   console.log("🔍 Fetching PRs closed (not merged)...");
   page = 1;
   while (true) {
@@ -382,12 +382,31 @@ async function fetchLiveContributors(config: YamlConfig, pool: TokenPool): Promi
       const repo = getRepoFromUrl(item.html_url);
       if (!reposSet.has(repo.toLowerCase())) continue;
       if (processedClosedPRs.has(item.html_url)) continue;
-      if (isBot(item.user)) continue;
       const pts = scoreFromLabels(item.labels || [], closedLabels);
       if (pts === 0) continue;
       processedClosedPRs.add(item.html_url);
-      const contributor = getOrCreateContributor(item.user.login, item.user.avatar_url);
+
+      let closer = item.user?.login;
+      let closerAvatar = item.user?.avatar_url ?? "";
+      let closerType = item.user?.type ?? "User";
+      try {
+        const prNumber = item.html_url.replace("https://github.com/", "").split("/")[3];
+        const fullPr: any = await fetchGithub(`https://api.github.com/repos/${repo}/issues/${prNumber}`, pool);
+        if (fullPr.closed_by?.login) {
+          closer = fullPr.closed_by.login;
+          closerAvatar = fullPr.closed_by.avatar_url ?? closerAvatar;
+          closerType = fullPr.closed_by.type ?? "User";
+        }
+      } catch (err: any) {
+        console.warn(`   ⚠️  Could not fetch full PR for ${item.html_url}: ${err.message}`);
+      }
+
+      if (!closer) continue;
+      if (isBot({ login: closer, type: closerType })) continue;
+
+      const contributor = getOrCreateContributor(closer, closerAvatar);
       const dateStr = (item.closed_at || item.updated_at).split("T")[0];
+      contributor.issuesClosed++;
       contributor.issuesPrClosedScore += pts;
       contributor.score += pts;
       contributor.contributions.push({ type: "issue_closed", title: item.title, url: item.html_url, repo, date: dateStr });
