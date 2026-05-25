@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-25T04:12:33.444Z",
+  "lastUpdated": "2026-05-25T10:21:50.861Z",
   "eventStartDate": "2026-05-22",
   "eventEndDate": "2026-05-31",
   "stats": {
-    "totalContributors": 8,
+    "totalContributors": 9,
     "totalPrsMerged": 4,
     "totalPrsOpened": 0,
-    "totalIssuesClosed": 7,
+    "totalIssuesClosed": 15,
     "totalIssuesOpened": 0,
     "totalPrsReviewed": 21,
     "daysElapsed": 4,
@@ -22,8 +22,8 @@
         "Asrani-Aman",
         "aryan7071"
       ],
-      "totalScore": 13,
-      "totalPrsMerged": 2,
+      "totalScore": 16,
+      "totalPrsMerged": 3,
       "totalPrsOpened": 0,
       "totalPrsReviewed": 1,
       "totalIssuesClosed": 4,
@@ -38,11 +38,11 @@
         "Radhikaa-chauhan",
         "SouparnaChatterjee"
       ],
-      "totalScore": 40,
+      "totalScore": 47,
       "totalPrsMerged": 0,
       "totalPrsOpened": 0,
       "totalPrsReviewed": 13,
-      "totalIssuesClosed": 1,
+      "totalIssuesClosed": 8,
       "totalIssuesOpened": 0
     },
     {
@@ -102,24 +102,219 @@
       "totalPrsReviewed": 0,
       "totalIssuesClosed": 0,
       "totalIssuesOpened": 0
-    },
-    {
-      "name": "Independent",
-      "color": "#6b7280",
-      "members": [
-        "aryan7071",
-        "star-warrior",
-        "magic-peach"
-      ],
-      "totalScore": 27,
-      "totalPrsMerged": 2,
-      "totalPrsOpened": 0,
-      "totalPrsReviewed": 7,
-      "totalIssuesClosed": 0,
-      "totalIssuesOpened": 0
     }
   ],
   "contributors": [
+    {
+      "username": "Me-Priyank",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/143987856?v=4",
+      "profileUrl": "https://github.com/Me-Priyank",
+      "team": "LGTM",
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "prsReviewed": 6,
+      "issuesOpened": 0,
+      "issuesClosed": 8,
+      "issuesPrClosedScore": 8,
+      "prsMergedScore": 0,
+      "prsReviewedScore": 18,
+      "score": 26,
+      "activityLevel": "High",
+      "dailyActivity": [
+        {
+          "date": "2026-05-22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 5,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 15
+        },
+        {
+          "date": "2026-05-23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 1,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 3
+        },
+        {
+          "date": "2026-05-24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 8,
+          "score": 8
+        },
+        {
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        }
+      ],
+      "contributions": [
+        {
+          "type": "issue_closed",
+          "title": "Moving Canvas Objects to Pinia - GSoC'22",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/24",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-24"
+        },
+        {
+          "type": "issue_closed",
+          "title": "refactor: jquery removal from utils.js",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/69",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-24"
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix: jquery removal from circuit.js",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/67",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-24"
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix: exit preview button error",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/64",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-24"
+        },
+        {
+          "type": "issue_closed",
+          "title": "add: default value instead of placeholder",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/57",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-24"
+        },
+        {
+          "type": "issue_closed",
+          "title": "refactor: removed JQuery dependency from listeners.js file",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/45",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-24"
+        },
+        {
+          "type": "issue_closed",
+          "title": "refactor: removed JQuery dependency from plotArea.js file",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/40",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-24"
+        },
+        {
+          "type": "issue_closed",
+          "title": "feat: move canvas objects to pinia store",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/25",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-24"
+        },
+        {
+          "type": "pr_reviewed",
+          "title": "Reviewed PR #1057",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1057",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-23"
+        },
+        {
+          "type": "pr_reviewed",
+          "title": "Reviewed PR #1057",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1057",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-22"
+        },
+        {
+          "type": "pr_reviewed",
+          "title": "Reviewed PR #1057",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1057",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-22"
+        },
+        {
+          "type": "pr_reviewed",
+          "title": "Reviewed PR #1057",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1057",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-22"
+        },
+        {
+          "type": "pr_reviewed",
+          "title": "Reviewed PR #1057",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1057",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-22"
+        },
+        {
+          "type": "pr_reviewed",
+          "title": "Reviewed PR #1057",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1057",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-22"
+        }
+      ],
+      "displayName": "Priyank Verma",
+      "bio": "GSoC'26 @CircuitVerse "
+    },
     {
       "username": "Nihal4777",
       "avatarUrl": "https://avatars.githubusercontent.com/u/65150640?v=4",
@@ -130,6 +325,9 @@
       "prsReviewed": 7,
       "issuesOpened": 0,
       "issuesClosed": 0,
+      "issuesPrClosedScore": 0,
+      "prsMergedScore": 0,
+      "prsReviewedScore": 21,
       "score": 21,
       "activityLevel": "High",
       "dailyActivity": [
@@ -279,308 +477,6 @@
       "bio": "GSoC'25 @CircuitVerse | Prev. Technical Team Lead @ GDSC LDCE | Top 10 Mentor @ GSSoC'24 | Learner | Open Source"
     },
     {
-      "username": "Me-Priyank",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/143987856?v=4",
-      "profileUrl": "https://github.com/Me-Priyank",
-      "team": "LGTM",
-      "prsOpened": 0,
-      "prsMerged": 0,
-      "prsReviewed": 6,
-      "issuesOpened": 0,
-      "issuesClosed": 1,
-      "score": 19,
-      "activityLevel": "High",
-      "dailyActivity": [
-        {
-          "date": "2026-05-22",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 5,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 15
-        },
-        {
-          "date": "2026-05-23",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 1,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 3
-        },
-        {
-          "date": "2026-05-24",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 1,
-          "score": 1
-        },
-        {
-          "date": "2026-05-25",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-26",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-27",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-28",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-29",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-30",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-31",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        }
-      ],
-      "contributions": [
-        {
-          "type": "issue_closed",
-          "title": "Moving Canvas Objects to Pinia - GSoC'22",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/24",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-24"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "Reviewed PR #1057",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1057",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-23"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "Reviewed PR #1057",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1057",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-22"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "Reviewed PR #1057",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1057",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-22"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "Reviewed PR #1057",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1057",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-22"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "Reviewed PR #1057",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1057",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-22"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "Reviewed PR #1057",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1057",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-22"
-        }
-      ],
-      "displayName": "Priyank Verma",
-      "bio": "GSoC'26 @CircuitVerse "
-    },
-    {
-      "username": "star-warrior",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/69752445?v=4",
-      "profileUrl": "https://github.com/star-warrior",
-      "team": "Independent",
-      "prsOpened": 0,
-      "prsMerged": 1,
-      "prsReviewed": 4,
-      "issuesOpened": 0,
-      "issuesClosed": 0,
-      "score": 15,
-      "activityLevel": "High",
-      "dailyActivity": [
-        {
-          "date": "2026-05-22",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 1,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 3
-        },
-        {
-          "date": "2026-05-23",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 3,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 9
-        },
-        {
-          "date": "2026-05-24",
-          "prsOpened": 0,
-          "prsMerged": 1,
-          "prsReviewed": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 3
-        },
-        {
-          "date": "2026-05-25",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-26",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-27",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-28",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-29",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-30",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-31",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        }
-      ],
-      "contributions": [
-        {
-          "type": "pr_merged",
-          "title": "fix: resolve sass deprecation and vue html warning issues",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1057",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-24"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "Reviewed PR #1057",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1057",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-23"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "Reviewed PR #1057",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1057",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-23"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "Reviewed PR #1057",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1057",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-23"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "Reviewed PR #1057",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1057",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-22"
-        }
-      ],
-      "displayName": "Jay Mehta",
-      "bio": ""
-    },
-    {
       "username": "naman79820",
       "avatarUrl": "https://avatars.githubusercontent.com/u/159947791?v=4",
       "profileUrl": "https://github.com/naman79820",
@@ -590,6 +486,9 @@
       "prsReviewed": 0,
       "issuesOpened": 0,
       "issuesClosed": 4,
+      "issuesPrClosedScore": 4,
+      "prsMergedScore": 6,
+      "prsReviewedScore": 0,
       "score": 10,
       "activityLevel": "High",
       "dailyActivity": [
@@ -732,145 +631,18 @@
       "bio": "GSoC'26 @CircuitVerse "
     },
     {
-      "username": "magic-peach",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/146705736?v=4",
-      "profileUrl": "https://github.com/magic-peach",
-      "team": "Independent",
-      "prsOpened": 0,
-      "prsMerged": 0,
-      "prsReviewed": 3,
-      "issuesOpened": 0,
-      "issuesClosed": 0,
-      "score": 9,
-      "activityLevel": "Medium",
-      "dailyActivity": [
-        {
-          "date": "2026-05-22",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-23",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-24",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 3,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 9
-        },
-        {
-          "date": "2026-05-25",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-26",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-27",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-28",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-29",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-30",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-31",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "prsReviewed": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        }
-      ],
-      "contributions": [
-        {
-          "type": "pr_reviewed",
-          "title": "Reviewed PR #7397",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7397",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2026-05-24"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "Reviewed PR #7393",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7393",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2026-05-24"
-        },
-        {
-          "type": "pr_reviewed",
-          "title": "Reviewed PR #7393",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7393",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2026-05-24"
-        }
-      ],
-      "displayName": "Akanksha Trehun",
-      "bio": ""
-    },
-    {
       "username": "aryan7071",
       "avatarUrl": "https://avatars.githubusercontent.com/u/175052103?v=4",
       "profileUrl": "https://github.com/aryan7071",
-      "team": "Independent",
+      "team": "NasaVerse",
       "prsOpened": 0,
       "prsMerged": 1,
       "prsReviewed": 0,
       "issuesOpened": 0,
       "issuesClosed": 0,
+      "issuesPrClosedScore": 0,
+      "prsMergedScore": 3,
+      "prsReviewedScore": 0,
       "score": 3,
       "activityLevel": "Medium",
       "dailyActivity": [
@@ -947,18 +719,22 @@
           "score": 0
         },
         {
-          "type": "issue_closed",
-          "title": "Fixed version conflicts: Upgraded compileSdk to 36, AGP to 8.9.1, Kotlin to 2.1.0, and Gradle to 8.11.1.",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/518",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-24"
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
         },
         {
-          "type": "issue_closed",
-          "title": "Android build failure: Dependencies require AGP 8.9.1+, compileSdk 36, minSdk 24, and Kotlin 2.1.0+",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/484",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-24"
+          "date": "2026-05-31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
         }
       ],
       "contributions": [
@@ -983,6 +759,9 @@
       "prsReviewed": 1,
       "issuesOpened": 0,
       "issuesClosed": 0,
+      "issuesPrClosedScore": 0,
+      "prsMergedScore": 0,
+      "prsReviewedScore": 3,
       "score": 3,
       "activityLevel": "Medium",
       "dailyActivity": [
@@ -1099,6 +878,9 @@
       "prsReviewed": 0,
       "issuesOpened": 0,
       "issuesClosed": 2,
+      "issuesPrClosedScore": 2,
+      "prsMergedScore": 0,
+      "prsReviewedScore": 0,
       "score": 2,
       "activityLevel": "Low",
       "dailyActivity": [
@@ -1184,11 +966,13 @@
           "score": 0
         },
         {
-          "type": "issue_closed",
-          "title": "feat: add Brazilian Portuguese (pt-BR) i18n and simulator language switcher",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7337",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2026-05-24"
+          "date": "2026-05-31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
         }
       ],
       "contributions": [
@@ -1209,6 +993,125 @@
       ],
       "displayName": "Santam Roy Choudhury",
       "bio": "Wanna code with coffee one day☕️\r\nTabs over spaces ❤️️ "
+    },
+    {
+      "username": "Yana-do-code",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/173885830?v=4",
+      "profileUrl": "https://github.com/Yana-do-code",
+      "team": "The Debug Divas",
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "prsReviewed": 0,
+      "issuesOpened": 0,
+      "issuesClosed": 1,
+      "issuesPrClosedScore": 1,
+      "prsMergedScore": 0,
+      "prsReviewedScore": 0,
+      "score": 1,
+      "activityLevel": "Low",
+      "dailyActivity": [
+        {
+          "date": "2026-05-22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 1,
+          "score": 1
+        },
+        {
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "prsReviewed": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        }
+      ],
+      "contributions": [
+        {
+          "type": "issue_closed",
+          "title": "feat: add Brazilian Portuguese (pt-BR) i18n and simulator language switcher",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7337",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-24"
+        }
+      ],
+      "displayName": "Yana pandey",
+      "bio": "Turning ideas into interfaces"
     }
   ],
   "dailyTotals": [
@@ -1236,8 +1139,8 @@
       "prsMerged": 4,
       "prsReviewed": 6,
       "issuesOpened": 0,
-      "issuesClosed": 5,
-      "score": 35
+      "issuesClosed": 13,
+      "score": 43
     },
     {
       "date": "2026-05-25",
