@@ -516,10 +516,8 @@ function generateMockData(config: YamlConfig): Contributor[] {
         const dateStr = eventDate.toISOString().split("T")[0];
         const daySlot = dailyActivity.find((d) => d.date === dateStr);
         if (daySlot) {
-          if (type === "pr_opened") daySlot.prsOpened++;
-          else if (type === "pr_merged") daySlot.prsMerged++;
+          if (type === "pr_merged") daySlot.prsMerged++;
           else if (type === "pr_reviewed") daySlot.prsReviewed++;
-          else if (type === "issue_opened") daySlot.issuesOpened++;
           else if (type === "issue_closed") daySlot.issuesClosed++;
           daySlot.score += pts;
         }
