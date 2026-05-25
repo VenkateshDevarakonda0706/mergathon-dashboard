@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useData } from "../context/DataContext";
 import TeamCard from "../components/TeamCard";
 import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
-import { Users, GitPullRequest, CheckCircle2, MessageSquare, AlertCircle, ArrowRight } from "lucide-react";
+import { Users, GitPullRequest, CheckCircle2, MessageSquare, AlertCircle } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -18,46 +18,24 @@ export default function Home() {
 
   if (!data) return null;
 
-  const { stats, teams, contributors } = data;
+  const { stats, contributors } = data;
+  const teams = [...data.teams].sort((a, b) => b.totalScore - a.totalScore);
 
-  // Calculate combined score of all teams
   const totalScoreCombined = teams.reduce((acc, t) => acc + t.totalScore, 0);
-
-  // Sort contributors to find top 8 for circles
-  const topContributors = contributors
-    .slice()
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 8);
-
-  // Total activities for distribution
   const totalActivities = stats.totalPrsMerged + stats.totalIssuesClosed + stats.totalPrsReviewed;
 
-  // Pie chart data
   const pieData = [
     { name: "PR Merged", value: stats.totalPrsMerged || 0, color: "#10b981" },
     { name: "Issue Closed", value: stats.totalIssuesClosed || 0, color: "#3b82f6" },
     { name: "Reviews", value: stats.totalPrsReviewed || 0, color: "#8b5cf6" },
   ];
 
-  // Colors mapping for contributors grid
-  const circleColors = [
-    "#10b981", // 1 - Emerald
-    "#3b82f6", // 2 - Blue
-    "#f59e0b", // 3 - Amber
-    "#8b5cf6", // 4 - Purple
-    "#eab308", // 5 - Yellow
-    "#ec4899", // 6 - Pink
-    "#06b6d4", // 7 - Cyan
-    "#84cc16", // 8 - Lime
-  ];
-
-  // Collect all contribution items from all contributors for timeline
   const allContributions = contributors
-    .flatMap(c => 
-      c.contributions.map(item => ({ 
-        ...item, 
-        username: c.username, 
-        avatarUrl: c.avatarUrl 
+    .flatMap(c =>
+      c.contributions.map(item => ({
+        ...item,
+        username: c.username,
+        avatarUrl: c.avatarUrl
       }))
     )
     .sort((a, b) => b.date.localeCompare(a.date))
@@ -65,36 +43,24 @@ export default function Home() {
 
   return (
     <div>
-      {/* 1. Header Hero section */}
+      {/* Hero */}
       <section className="hero-header">
         <div className="event-badge-outline">
           <span className="logo-dot" />
           <span>CircuitVerse Mergathon</span>
         </div>
-        
+
         <h1 className="big-brand-title">CircuitVerse</h1>
-        
+
         <p className="hero-subtitle-text">
-          Track contributor activity, merged pull requests, closed issues, and team rankings for the CircuitVerse mergathon.
+          Track merged pull requests, closed issues, and team rankings for the CircuitVerse mergathon.
         </p>
 
-        {/* 2. Stateful Capsule Selector Switcher */}
         <div className="capsule-toggle">
-          <button 
-            className={`toggle-option ${view === "overview" ? "active" : ""}`}
-            onClick={() => setView("overview")}
-          >
-            Overview
-          </button>
-          <button 
-            className={`toggle-option ${view === "teams" ? "active" : ""}`}
-            onClick={() => setView("teams")}
-          >
-            Teams
-          </button>
+          <button className={`toggle-option ${view === "overview" ? "active" : ""}`} onClick={() => setView("overview")}>Overview</button>
+          <button className={`toggle-option ${view === "teams" ? "active" : ""}`} onClick={() => setView("teams")}>Teams</button>
         </div>
 
-        {/* 3. Outlined Badge row below switcher */}
         <div className="badge-row">
           <span className="outlined-badge">CircuitVerse/CircuitVerse</span>
           <span className="outlined-badge" style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}>
@@ -104,11 +70,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. Stateful Subviews */}
       {view === "overview" ? (
         <div>
-          {/* Overview Stat KPI Cards */}
           <section style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "24px", marginBottom: "40px" }}>
+
             {/* Card 1: TOTAL ACTIVITIES */}
             <div className="grid-card">
               <div className="card-title-row">
@@ -118,12 +83,8 @@ export default function Home() {
                 </span>
                 <span className="card-meta">...</span>
               </div>
-              <div className="card-value">
-                {stats.totalPrsMerged + stats.totalIssuesClosed}
-              </div>
+              <div className="card-value">{stats.totalPrsMerged + stats.totalIssuesClosed}</div>
               <div className="card-description">New activity tracking started</div>
-              
-              {/* Custom elegant sparkline curve */}
               <svg viewBox="0 0 300 60" style={{ width: "100%", height: "60px", marginTop: "16px", overflow: "visible" }}>
                 <defs>
                   <linearGradient id="sparkline-grad" x1="0" y1="0" x2="0" y2="1">
@@ -141,85 +102,29 @@ export default function Home() {
               </svg>
             </div>
 
-            {/* Card 2: CONTRIBUTORS */}
+            {/* Card 2: TEAMS (replaced individual contributors) */}
             <div className="grid-card">
               <div className="card-title-row">
-                <span className="card-title">CONTRIBUTORS</span>
-                <span className="card-meta">USERS</span>
+                <span className="card-title">TEAMS</span>
+                <span className="card-meta">STANDINGS</span>
               </div>
-              <div className="card-value">
-                {stats.totalContributors}
-              </div>
-              <div className="card-description">Active in this mergathon</div>
-              
-              {/* Numbers grid (1-8 circular tags) */}
-              <div className="circle-grid">
-                {Array.from({ length: 8 }).map((_, idx) => {
-                  const contrib = topContributors[idx];
-                  const hasUser = !!contrib;
-                  const borderCol = hasUser ? circleColors[idx % circleColors.length] : "rgba(255, 255, 255, 0.1)";
-                  const bgCol = hasUser ? `${circleColors[idx % circleColors.length]}15` : "rgba(255, 255, 255, 0.02)";
-                  
-                  return (
-                    <Link 
-                      key={idx} 
-                      href={hasUser ? `/contributors/${contrib.username}` : "#"} 
-                      className="numbered-badge-circle"
-                      style={{ 
-                        borderColor: borderCol,
-                        backgroundColor: bgCol,
-                        color: hasUser ? circleColors[idx % circleColors.length] : "var(--text-tertiary)",
-                        position: "relative",
-                        overflow: "visible"
-                      }}
-                      title={hasUser ? `${contrib.username} - Score: ${contrib.score}` : "Empty roster slot"}
-                    >
-                      {hasUser ? (
-                        <div style={{ position: "relative", width: "100%", height: "100%" }}>
-                          <img 
-                            src={contrib.avatarUrl} 
-                            alt={contrib.username} 
-                            style={{ 
-                              width: "100%", 
-                              height: "100%", 
-                              objectFit: "cover",
-                              borderRadius: "50%",
-                              display: "block"
-                            }} 
-                            onError={(e) => {
-                              (e.target as HTMLImageElement).src = `https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&auto=format&fit=crop&q=80`;
-                            }}
-                          />
-                          {/* Rank indicator overlay */}
-                          <span 
-                            style={{ 
-                              position: "absolute",
-                              bottom: "-4px",
-                              right: "-4px",
-                              width: "15px",
-                              height: "15px",
-                              borderRadius: "50%",
-                              background: borderCol,
-                              color: "#000000",
-                              fontSize: "9px",
-                              fontWeight: 900,
-                              display: "flex",
-                              alignItems: "center",
-                              justifyContent: "center",
-                              border: "1px solid var(--bg-card)",
-                              boxShadow: "0 2px 4px rgba(0, 0, 0, 0.5)",
-                              zIndex: 2
-                            }}
-                          >
-                            {idx + 1}
-                          </span>
-                        </div>
-                      ) : (
-                        idx + 1
-                      )}
-                    </Link>
-                  );
-                })}
+              <div className="card-value">{teams.length}</div>
+              <div className="card-description">Competing in this mergathon</div>
+
+              <div style={{ display: "flex", flexDirection: "column", gap: "8px", marginTop: "16px" }}>
+                {teams.slice(0, 4).map((team, idx) => (
+                  <div key={team.name} style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                      <span style={{ fontSize: "11px", fontWeight: 700, color: "var(--text-tertiary)", width: "16px" }}>#{idx + 1}</span>
+                      <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: team.color, flexShrink: 0 }} />
+                      <span style={{ fontSize: "13px", fontWeight: 700, color: "var(--text-primary)" }}>{team.name}</span>
+                    </div>
+                    <span style={{ fontSize: "13px", fontWeight: 800, color: team.color }}>{team.totalScore} pts</span>
+                  </div>
+                ))}
+                {teams.length > 4 && (
+                  <span style={{ fontSize: "11px", color: "var(--text-tertiary)", marginTop: "4px" }}>+{teams.length - 4} more teams</span>
+                )}
               </div>
             </div>
 
@@ -230,21 +135,11 @@ export default function Home() {
                   <span className="card-title">DISTRIBUTION</span>
                   <span className="card-meta">MIX</span>
                 </div>
-                
-                {/* Recharts donut chart with central text */}
                 <div style={{ position: "relative", width: "100%", height: "130px", marginTop: "8px" }}>
                   {isMounted ? (
                     <ResponsiveContainer width="100%" height="100%">
                       <PieChart>
-                        <Pie
-                          data={pieData}
-                          cx="50%"
-                          cy="50%"
-                          innerRadius={36}
-                          outerRadius={52}
-                          paddingAngle={3}
-                          dataKey="value"
-                        >
+                        <Pie data={pieData} cx="50%" cy="50%" innerRadius={36} outerRadius={52} paddingAngle={3} dataKey="value">
                           {pieData.map((entry, index) => (
                             <Cell key={`cell-${index}`} fill={entry.color} />
                           ))}
@@ -252,107 +147,51 @@ export default function Home() {
                       </PieChart>
                     </ResponsiveContainer>
                   ) : null}
-                  
-                  {/* Central Text inside Pie */}
-                  <div 
-                    style={{ 
-                      position: "absolute", 
-                      top: "50%", 
-                      left: "50%", 
-                      transform: "translate(-50%, -50%)", 
-                      textAlign: "center",
-                      pointerEvents: "none"
-                    }}
-                  >
+                  <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", textAlign: "center", pointerEvents: "none" }}>
                     <div style={{ fontSize: "11px", color: "#ffffff", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.5px" }}>Total</div>
                     <div style={{ fontSize: "10px", color: "var(--text-secondary)", fontWeight: 600 }}>Activities</div>
                   </div>
                 </div>
               </div>
-
-              {/* Legends below */}
               <div className="dist-grid" style={{ marginTop: "12px" }}>
                 <div className="dist-item">
-                  <div className="dist-label">
-                    <span className="dist-dot" style={{ background: "#10b981" }} />
-                    <span>PR merged</span>
-                  </div>
-                  <span className="dist-val">
-                    {totalActivities > 0 ? Math.round((stats.totalPrsMerged / totalActivities) * 100) : 0}%
-                  </span>
+                  <div className="dist-label"><span className="dist-dot" style={{ background: "#10b981" }} /><span>PR merged</span></div>
+                  <span className="dist-val">{totalActivities > 0 ? Math.round((stats.totalPrsMerged / totalActivities) * 100) : 0}%</span>
                 </div>
-
                 <div className="dist-item">
-                  <div className="dist-label">
-                    <span className="dist-dot" style={{ background: "#3b82f6" }} />
-                    <span>Issue closed</span>
-                  </div>
-                  <span className="dist-val">
-                    {totalActivities > 0 ? Math.round((stats.totalIssuesClosed / totalActivities) * 100) : 0}%
-                  </span>
+                  <div className="dist-label"><span className="dist-dot" style={{ background: "#3b82f6" }} /><span>Issue closed</span></div>
+                  <span className="dist-val">{totalActivities > 0 ? Math.round((stats.totalIssuesClosed / totalActivities) * 100) : 0}%</span>
                 </div>
-
                 <div className="dist-item">
-                  <div className="dist-label">
-                    <span className="dist-dot" style={{ background: "#f59e0b" }} />
-                    <span>Teams</span>
-                  </div>
+                  <div className="dist-label"><span className="dist-dot" style={{ background: "#f59e0b" }} /><span>Teams</span></div>
                   <span className="dist-val">{teams.length}</span>
                 </div>
-
                 <div className="dist-item">
-                  <div className="dist-label">
-                    <span className="dist-dot" style={{ background: "#8b5cf6" }} />
-                    <span>Score</span>
-                  </div>
+                  <div className="dist-label"><span className="dist-dot" style={{ background: "#8b5cf6" }} /><span>Score</span></div>
                   <span className="dist-val">{totalScoreCombined}</span>
                 </div>
               </div>
             </div>
           </section>
 
-          {/* Under Cards Footer Row - Two Columns */}
+          {/* Bottom two columns */}
           <div style={{ display: "grid", gridTemplateColumns: "1.3fr 1fr", gap: "32px" }} className="dashboard-columns">
-            {/* Left Column: Team Rankings Leaderboard */}
+
+            {/* Team Rankings */}
             <section>
-              <span style={{ fontSize: "11px", fontWeight: 800, color: "var(--text-tertiary)", letterSpacing: "1px", textTransform: "uppercase" }}>
-                Leaderboard
-              </span>
-              
+              <span style={{ fontSize: "11px", fontWeight: 800, color: "var(--text-tertiary)", letterSpacing: "1px", textTransform: "uppercase" }}>Leaderboard</span>
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "16px", marginTop: "4px" }}>
                 <h3 style={{ fontSize: "28px", fontWeight: 900, color: "#ffffff", letterSpacing: "-0.5px" }}>Team Rankings</h3>
                 <span className="event-badge-outline" style={{ margin: 0, padding: "4px 12px", fontSize: "10px" }}>
-                  PR 10 pts - Issue 5 pts
+                  Housekeeping 1pt · Merge 3pts · Heavy 5pts
                 </span>
               </div>
 
               <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
                 {teams.map((team) => (
-                  <div 
-                    key={team.name} 
-                    style={{ 
-                      background: "rgba(255, 255, 255, 0.01)", 
-                      border: "1px solid var(--border-primary)", 
-                      borderRadius: "var(--radius-lg)", 
-                      padding: "16px 20px", 
-                      display: "flex", 
-                      justifyContent: "space-between", 
-                      alignItems: "center" 
-                    }}
-                  >
+                  <div key={team.name} style={{ background: "rgba(255, 255, 255, 0.01)", border: "1px solid var(--border-primary)", borderRadius: "var(--radius-lg)", padding: "16px 20px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                     <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                      <div 
-                        style={{ 
-                          width: "48px", 
-                          height: "48px", 
-                          borderRadius: "var(--radius-md)", 
-                          background: `linear-gradient(135deg, ${team.color}15, ${team.color}35)`, 
-                          border: `1px solid ${team.color}30`, 
-                          display: "flex", 
-                          alignItems: "center", 
-                          justifyContent: "center" 
-                        }}
-                      >
+                      <div style={{ width: "48px", height: "48px", borderRadius: "var(--radius-md)", background: `linear-gradient(135deg, ${team.color}15, ${team.color}35)`, border: `1px solid ${team.color}30`, display: "flex", alignItems: "center", justifyContent: "center" }}>
                         <Users size={20} style={{ color: team.color }} />
                       </div>
                       <div>
@@ -360,7 +199,6 @@ export default function Home() {
                         <span style={{ fontSize: "12px", color: "var(--text-secondary)" }}>{team.members.length} contributors</span>
                       </div>
                     </div>
-                    
                     <div style={{ display: "flex", gap: "12px" }}>
                       <div style={{ background: "rgba(255, 255, 255, 0.02)", border: "1px solid rgba(255, 255, 255, 0.04)", padding: "8px 16px", borderRadius: "var(--radius-md)", textAlign: "center", minWidth: "80px" }}>
                         <div style={{ fontSize: "16px", fontWeight: 900, color: team.color }}>{team.totalScore}</div>
@@ -380,60 +218,32 @@ export default function Home() {
               </div>
             </section>
 
-            {/* Right Column: Recent Activities Timeline */}
+            {/* Recent Activities */}
             <section>
-              <span style={{ fontSize: "11px", fontWeight: 800, color: "var(--text-tertiary)", letterSpacing: "1px", textTransform: "uppercase" }}>
-                Releases
-              </span>
-              <h3 style={{ fontSize: "28px", fontWeight: 900, color: "#ffffff", letterSpacing: "-0.5px", marginBottom: "16px", marginTop: "4px" }}>
-                Recent Activities
-              </h3>
-
+              <span style={{ fontSize: "11px", fontWeight: 800, color: "var(--text-tertiary)", letterSpacing: "1px", textTransform: "uppercase" }}>Releases</span>
+              <h3 style={{ fontSize: "28px", fontWeight: 900, color: "#ffffff", letterSpacing: "-0.5px", marginBottom: "16px", marginTop: "4px" }}>Recent Activities</h3>
               <div className="grid-card timeline-card" style={{ padding: "20px 24px" }}>
                 {allContributions.length > 0 ? (
                   <div style={{ display: "flex", flexDirection: "column" }}>
                     {allContributions.map((c, idx) => {
-                      const isPr = c.type.startsWith("pr_");
                       const isMerged = c.type === "pr_merged";
                       const isClosed = c.type === "issue_closed";
-                      
                       let badgeColor = "var(--accent-blue)";
                       let badgeIcon = <GitPullRequest size={14} />;
-                      
-                      if (isMerged) {
-                        badgeColor = "var(--accent-emerald)";
-                      } else if (isClosed) {
-                        badgeColor = "var(--accent-emerald)";
-                        badgeIcon = <CheckCircle2 size={14} />;
-                      } else if (c.type === "pr_reviewed") {
-                        badgeColor = "var(--accent-violet)";
-                        badgeIcon = <MessageSquare size={14} />;
-                      }
-
+                      if (isMerged) { badgeColor = "var(--accent-emerald)"; }
+                      else if (isClosed) { badgeColor = "var(--accent-emerald)"; badgeIcon = <CheckCircle2 size={14} />; }
+                      else if (c.type === "pr_reviewed") { badgeColor = "var(--accent-violet)"; badgeIcon = <MessageSquare size={14} />; }
                       return (
                         <div key={idx} className="timeline-item">
-                          <div 
-                            className="timeline-icon-box" 
-                            style={{ 
-                              background: `${badgeColor}15`, 
-                              border: `1px solid ${badgeColor}30`,
-                              color: badgeColor
-                            }}
-                          >
-                            {badgeIcon}
-                          </div>
-                          
+                          <div className="timeline-icon-box" style={{ background: `${badgeColor}15`, border: `1px solid ${badgeColor}30`, color: badgeColor }}>{badgeIcon}</div>
                           <div className="timeline-content">
                             <div className="timeline-title">
                               <span style={{ fontWeight: 800, color: "var(--text-primary)" }}>{c.username}</span>
                               {" "}{c.type.replace("_", " ")}{" "}
                               <span style={{ color: "var(--text-secondary)" }}>"{c.title}"</span>
                             </div>
-                            
                             <div className="timeline-meta">
-                              <span>{c.repo}</span>
-                              <span>•</span>
-                              <span>{c.date}</span>
+                              <span>{c.repo}</span><span>•</span><span>{c.date}</span>
                             </div>
                           </div>
                         </div>
@@ -451,7 +261,6 @@ export default function Home() {
           </div>
         </div>
       ) : (
-        /* Team Standings View Mode */
         <section style={{ marginBottom: "32px" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "20px" }}>
             <h3 style={{ fontSize: "24px", fontWeight: 800 }}>Team Standings</h3>
@@ -459,30 +268,19 @@ export default function Home() {
               Detailed Team Analytics →
             </Link>
           </div>
-          
           <div className="teams-grid">
             {teams.map((team) => (
-              <TeamCard 
-                key={team.name} 
-                team={team} 
-                allContributors={contributors} 
-                totalScoreCombined={totalScoreCombined} 
-              />
+              <TeamCard key={team.name} team={team} allContributors={contributors} totalScoreCombined={totalScoreCombined} />
             ))}
           </div>
         </section>
       )}
 
-      {/* Responsive layout media query rules */}
       <style jsx global>{`
         @media (max-width: 1100px) {
-          .dashboard-columns {
-            grid-template-columns: 1fr !important;
-            gap: 40px !important;
-          }
+          .dashboard-columns { grid-template-columns: 1fr !important; gap: 40px !important; }
         }
       `}</style>
     </div>
   );
 }
-

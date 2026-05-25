@@ -25,7 +25,7 @@ export function DataProvider({ children }: { children: React.ReactNode }) {
       try {
         setLoading(true);
         // Fetch static JSON file located in public directory
-        const response = await fetch("/data/mergathon-data.json");
+        const response = await fetch("/data/mergathon-data.json", { cache: "no-store" });
         if (!response.ok) {
           throw new Error(`Failed to load data: ${response.statusText}`);
         }

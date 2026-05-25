@@ -20,10 +20,8 @@ export default function TeamCard({ team, allContributors, totalScoreCombined }: 
     ? Math.round((team.totalScore / totalScoreCombined) * 100) 
     : 0;
 
-  // Get contributor details for team members to display their avatars
-  const memberContributors = allContributors.filter(c => 
-    team.members.includes(c.username)
-  );
+  // Build a lookup map so zero-contribution members still get an avatar
+  const contributorMap = new Map(allContributors.map(c => [c.username, c]));
 
   return (
     <div className={`card team-card ${teamClass}`}>
@@ -74,18 +72,22 @@ export default function TeamCard({ team, allContributors, totalScoreCombined }: 
           Members ({team.members.length})
         </span>
         <div className="avatar-stack">
-          {memberContributors.map((c) => (
-            <Link key={c.username} href={`/contributors/${c.username}`} title={c.username}>
-              <img 
-                src={c.avatarUrl} 
-                alt={c.username} 
-                className="avatar"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src = `https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&auto=format&fit=crop&q=80`;
-                }}
-              />
-            </Link>
-          ))}
+          {team.members.map((username) => {
+            const contributor = contributorMap.get(username);
+            const avatarUrl = contributor?.avatarUrl ?? `https://avatars.githubusercontent.com/${username}`;
+            return (
+              <Link key={username} href={`/contributors/${username}`} title={username}>
+                <img
+                  src={avatarUrl}
+                  alt={username}
+                  className="avatar"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = `https://avatars.githubusercontent.com/${username}`;
+                  }}
+                />
+              </Link>
+            );
+          })}
         </div>
       </div>
     </div>

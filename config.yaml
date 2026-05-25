@@ -5,36 +5,71 @@
 event:
   name: "CircuitVerse Mergathon 2025"
   organization: "CircuitVerse"
-  startDate: "2025-05-22"
-  endDate: "2025-05-25"
+  startDate: "2026-05-22"
+  endDate: "2026-05-31"
   timeZone: "UTC"
 
 repositories:
   - "CircuitVerse/CircuitVerse"
-  - "CircuitVerse/mobile-app"
+  - "CircuitVerse/CircuitVerseDocs"
   - "CircuitVerse/Interactive-Book"
   - "CircuitVerse/cv-frontend-vue"
+  - "CircuitVerse/Blog"
+  - "CircuitVerse/mobile-app"
 
 scoring:
-  weights:
-    prMerged: 10
-    prOpened: 5
-    prReviewed: 3
-    issueClosed: 4
-    issueOpened: 2
+  labels:
+    closed:
+      "mergathon:closed-outdated": 1
+      "mergathon:closed-taken-over": 1
+      "mergathon:closed-invalid": 1
+    merged:
+      "mergathon:merged": 3
+      "mergathon:resolved-merged": 5
 
 thresholds:
-  highActivity: 100
-  mediumActivity: 50
+  highActivity: 10
+  mediumActivity: 3
 
 teams:
-  - name: "Team Alpha"
+  - name: "NasaVerse"
     color: "#3b82f6"
     members:
-      - "dev-sarah"
-      - "coder-alex"
-  - name: "Team Beta"
+      - "ShinichiShi"
+      - "naman79820"
+      - "Asrani-Aman"
+      - "aryan7071"
+
+  - name: "LGTM"
     color: "#8b5cf6"
     members:
-      - "backend-mia"
-      - "docs-guru-chen"
+      - "nihal4777"
+      - "Me-Priyank"
+      - "Radhikaa-chauhan"
+      - "SouparnaChatterjee"
+
+  - name: "The Debug Divas"
+    color: "#10b981"
+    members:
+      - "Yana-do-code"
+      - "Teesta-Mukherjee"
+      - "Aakansha-Chavan"
+      - "yashikajotwani12"
+
+  - name: "Team 5"
+    color: "#f59e0b"
+    members:
+      - "haaasini01"
+
+  - name: "Dart Vaders"
+    color: "#f43f5e"
+    members:
+      - "SantamRC"
+      - "JatsuAkaYashvant"
+      - "hardik17771"
+
+  - name: "Team 6"
+    color: "#06b6d4"
+    members:
+      - "092vk"
+      - "blazethunderstorm"
