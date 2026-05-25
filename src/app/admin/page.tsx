@@ -23,6 +23,8 @@ export default function AdminPage() {
   const [draftTeams, setDraftTeams] = useState<DraftTeam[]>([]);
   const [contributorsList, setContributorsList] = useState<DraftMember[]>([]);
   const [copied, setCopied] = useState(false);
+  const [newTeamName, setNewTeamName] = useState("");
+  const [newTeamColor, setNewTeamColor] = useState("#3b82f6");
 
   // Initialize draft states from context data
   useEffect(() => {
@@ -150,6 +152,23 @@ export default function AdminPage() {
       }))
     );
   };
+  
+  //Create Team
+  const handleCreateTeam = () => {
+  if (!newTeamName.trim()) return;
+
+  setDraftTeams((prev) => [
+    ...prev,
+    {
+      name: newTeamName,
+      color: newTeamColor,
+      members: [],
+    },
+  ]);
+
+  setNewTeamName("");
+  setNewTeamColor("#3b82f6");
+};
 
   // 4. YAML config code generation
   const generateYamlCode = () => {
@@ -314,10 +333,10 @@ export default function AdminPage() {
                     }}
                   >
                     <option value="Unassigned">Unassigned (bench)</option>
-                    {draftTeams.map((t) => (
-                      <option key={t.name} value={t.name}>
-                        {t.name}
-                      </option>
+                   {draftTeams.map((t, index) => (
+                    <option key={`${t.name}-${index}`} value={t.name}>
+                     {t.name}
+                    </option>
                     ))}
                   </select>
                 </div>
@@ -328,6 +347,52 @@ export default function AdminPage() {
 
         {/* Right Side: Active Board Columns */}
         <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
+        <div
+  className="grid-card"
+  style={{
+    display: "flex",
+    gap: "12px",
+    alignItems: "center",
+    flexWrap: "wrap",
+  }}
+>
+  <input
+    type="text"
+    placeholder="Team name"
+    value={newTeamName}
+    onChange={(e) => setNewTeamName(e.target.value)}
+    style={{
+      padding: "10px 12px",
+      borderRadius: "8px",
+      border: "1px solid var(--border-primary)",
+      background: "rgba(0,0,0,0.3)",
+      color: "#ffffff",
+      fontSize: "13px",
+      outline: "none",
+      minWidth: "180px",
+    }}
+  />
+
+  <input
+    type="color"
+    value={newTeamColor}
+    onChange={(e) => setNewTeamColor(e.target.value)}
+    style={{
+      width: "44px",
+      height: "44px",
+      border: "none",
+      background: "transparent",
+      cursor: "pointer",
+    }}
+  />
+
+  <button
+    className="balancer-btn primary"
+    onClick={handleCreateTeam}
+  >
+    + Create Team
+  </button>
+</div>
           <div className="balancer-boards">
             {draftTeams.map((team) => {
               const stats = getTeamStats(team.name);
