@@ -11,7 +11,7 @@ interface LeaderboardTableProps {
   limit?: number;
 }
 
-type SortField = "rank" | "username" | "prsMerged" | "prsReviewed" | "issuesClosed" | "score";
+type SortField = "rank" | "username" | "prsMerged" | "issuesClosed" | "score";
 type SortOrder = "asc" | "desc";
 
 export default function LeaderboardTable({
@@ -184,11 +184,6 @@ export default function LeaderboardTable({
                   Merged PRs {getSortIcon("prsMerged")}
                 </span>
               </th>
-              <th onClick={() => handleSort("prsReviewed")} style={{ cursor: "pointer", width: "90px", textAlign: "center", padding: "16px 12px" }}>
-                <span style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "6px" }}>
-                  Reviews {getSortIcon("prsReviewed")}
-                </span>
-              </th>
               <th onClick={() => handleSort("issuesClosed")} style={{ cursor: "pointer", width: "110px", textAlign: "center", padding: "16px 12px" }}>
                 <span style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "6px" }}>
                   Issues Fixed {getSortIcon("issuesClosed")}
@@ -239,7 +234,6 @@ export default function LeaderboardTable({
                     </Link>
                   </td>
                   <td style={{ textAlign: "center", fontWeight: 500, padding: "12px" }}>{c.prsMerged}</td>
-                  <td style={{ textAlign: "center", fontWeight: 500, padding: "12px" }}>{c.prsReviewed}</td>
                   <td style={{ textAlign: "center", fontWeight: 500, padding: "12px" }}>{c.issuesClosed}</td>
                   <td style={{ textAlign: "right", fontWeight: 700, color: "var(--accent-blue)", padding: "12px" }}>
                     {c.score}
@@ -253,7 +247,7 @@ export default function LeaderboardTable({
               ))
             ) : (
               <tr>
-                <td colSpan={7} style={{ textAlign: "center", padding: "32px", color: "var(--text-tertiary)" }}>
+                <td colSpan={6} style={{ textAlign: "center", padding: "32px", color: "var(--text-tertiary)" }}>
                   No contributors found matching the filters.
                 </td>
               </tr>

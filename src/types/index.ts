@@ -2,18 +2,19 @@ export interface DailyActivity {
   date: string;
   prsOpened: number;
   prsMerged: number;
-  prsReviewed: number;
   issuesOpened: number;
   issuesClosed: number;
   score: number;
 }
 
 export interface ContributionItem {
-  type: 'pr_opened' | 'pr_merged' | 'pr_reviewed' | 'issue_opened' | 'issue_closed';
+  type: 'pr_opened' | 'pr_merged' | 'issue_opened' | 'issue_closed';
   title: string;
   url: string;
   repo: string;
   date: string;
+  /** The point value this individual contribution earned (e.g., 1, 3, or 5) */
+  points: number;
 }
 
 export interface Contributor {
@@ -23,12 +24,10 @@ export interface Contributor {
   team: string;
   prsOpened: number;
   prsMerged: number;
-  prsReviewed: number;
   issuesOpened: number;
   issuesClosed: number;
   issuesPrClosedScore: number;
   prsMergedScore: number;
-  prsReviewedScore: number;
   score: number;
   activityLevel: 'High' | 'Medium' | 'Low';
   dailyActivity: DailyActivity[];
@@ -42,7 +41,6 @@ export interface Team {
   totalScore: number;
   totalPrsMerged: number;
   totalPrsOpened: number;
-  totalPrsReviewed: number;
   totalIssuesClosed: number;
   totalIssuesOpened: number;
 }
@@ -53,7 +51,6 @@ export interface EventStats {
   totalPrsOpened: number;
   totalIssuesClosed: number;
   totalIssuesOpened: number;
-  totalPrsReviewed: number;
   daysElapsed: number;
   daysRemaining: number;
 }
