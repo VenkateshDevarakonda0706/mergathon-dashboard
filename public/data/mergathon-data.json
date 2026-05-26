@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-26T02:50:45.161Z",
+  "lastUpdated": "2026-05-26T14:02:53.629Z",
   "eventStartDate": "2026-05-22",
   "eventEndDate": "2026-05-31",
   "stats": {
-    "totalContributors": 20,
-    "totalPrsMerged": 34,
+    "totalContributors": 23,
+    "totalPrsMerged": 40,
     "totalPrsOpened": 0,
-    "totalIssuesClosed": 262,
+    "totalIssuesClosed": 317,
     "totalIssuesOpened": 0,
     "daysElapsed": 5,
     "daysRemaining": 5
@@ -21,10 +21,25 @@
         "Asrani-Aman",
         "aryan7071"
       ],
-      "totalScore": 202,
-      "totalPrsMerged": 9,
+      "totalScore": 205,
+      "totalPrsMerged": 10,
       "totalPrsOpened": 0,
       "totalIssuesClosed": 175,
+      "totalIssuesOpened": 0
+    },
+    {
+      "name": "CtrlAltDlt",
+      "color": "#fb8b24",
+      "members": [
+        "magic-peach",
+        "Saniya-r-Shaikh",
+        "aryanndwi123",
+        "Harkeerat24"
+      ],
+      "totalScore": 12,
+      "totalPrsMerged": 2,
+      "totalPrsOpened": 0,
+      "totalIssuesClosed": 6,
       "totalIssuesOpened": 0
     },
     {
@@ -36,10 +51,10 @@
         "Radhikaa-chauhan",
         "SouparnaChatterjee"
       ],
-      "totalScore": 54,
-      "totalPrsMerged": 11,
+      "totalScore": 99,
+      "totalPrsMerged": 12,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 21,
+      "totalIssuesClosed": 63,
       "totalIssuesOpened": 0
     },
     {
@@ -51,10 +66,10 @@
         "Aakansha-Chavan",
         "yashikajotwani12"
       ],
-      "totalScore": 23,
+      "totalScore": 33,
       "totalPrsMerged": 0,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 23,
+      "totalIssuesClosed": 33,
       "totalIssuesOpened": 0
     },
     {
@@ -1423,17 +1438,17 @@
       "bio": "GSoC'26 @CircuitVerse "
     },
     {
-      "username": "Nihal4777",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/65150640?v=4",
-      "profileUrl": "https://github.com/Nihal4777",
+      "username": "Me-Priyank",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/143987856?v=4",
+      "profileUrl": "https://github.com/Me-Priyank",
       "team": "LGTM",
       "prsOpened": 0,
-      "prsMerged": 10,
+      "prsMerged": 1,
       "issuesOpened": 0,
-      "issuesClosed": 4,
-      "issuesPrClosedScore": 4,
-      "prsMergedScore": 30,
-      "score": 34,
+      "issuesClosed": 58,
+      "issuesPrClosedScore": 58,
+      "prsMergedScore": 3,
+      "score": 61,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -1447,34 +1462,34 @@
         {
           "date": "2026-05-23",
           "prsOpened": 0,
-          "prsMerged": 1,
+          "prsMerged": 0,
           "issuesOpened": 0,
-          "issuesClosed": 1,
-          "score": 4
+          "issuesClosed": 0,
+          "score": 0
         },
         {
           "date": "2026-05-24",
           "prsOpened": 0,
-          "prsMerged": 1,
+          "prsMerged": 0,
           "issuesOpened": 0,
-          "issuesClosed": 1,
-          "score": 4
+          "issuesClosed": 8,
+          "score": 8
         },
         {
           "date": "2026-05-25",
           "prsOpened": 0,
-          "prsMerged": 8,
+          "prsMerged": 1,
           "issuesOpened": 0,
-          "issuesClosed": 2,
-          "score": 26
+          "issuesClosed": 9,
+          "score": 12
         },
         {
           "date": "2026-05-26",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
+          "issuesClosed": 41,
+          "score": 41
         },
         {
           "date": "2026-05-27",
@@ -1518,6 +1533,594 @@
         }
       ],
       "contributions": [
+        {
+          "type": "issue_closed",
+          "title": "Remove outdated CircuitVerse Firefox Extension download link from documentation",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/505",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Feature Request: Enable justified text for docs content",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/482",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Enhancement: Boolean expressions for logic gates in Chapter 4",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/476",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "🐞 Bug \"CircuitVerse\" logo on Learn & Explore Tutorials pages does not redirect to Home",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/741",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Add the missing content",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/407",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Typographical and Grammatical Errors in Key Features Section of CircuitVerse Documentation",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/388",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "\"Zoom Functionality Missing on Specific Image\"",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/382",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Alignment of the Documentation page.",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/698",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "BUG: Empty White Space in Documentation",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/374",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Lite mode missing in the description of Properties Panel ",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/4756",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Invalid link",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/682",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Irregularity in design in table",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/366",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Guidelines for pop quizzes with example in README.md",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/616",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Link to testbench is broken",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/285",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Remove Firefox extension download link from Educators docs",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/507",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Remove outdated CircuitVerse Firefox extension link",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/506",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix:  add white background to improve image visibility in dark mode ",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/484",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "justify text alignment in documentation",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/483",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Enhancement: Add Boolean expressions to all logic gates in Chapter 4",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/477",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Fix logo redirect to main CircuitVerse homepage on Learn web page",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/pull/742",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Improved introduction paragraph in Chapter 1 documentation",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/447",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Fix: Resolved issue #407",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/408",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Fixes the zoom part under the chapter 2 login section image part ",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/399",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Fix iframe blank document issue and remove unnecessary div",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/398",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Refined Key Features Section for Better Readability and Professionalism",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/396",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "388:Typographical and Grammatical Errors fixed",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/395",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "updated Readme.md",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/pull/705",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Correct description of \"En\" output for Priority Encoder",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/378",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "feature: Added the lite mode in the documentation ",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/373",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix #366: put a gap between table heading and table content",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/368",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": " Add the respective content image",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/365",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Update README.md",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/337",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Documentation updated",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/320",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Added links in circuit elements tab which Fixes #312",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/313",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Localize cv docs",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/307",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "added issue templates",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/306",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Added Gif to getting_started.md",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/288",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Grammatical errors and unnecessary caps removed",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/286",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Update testbench.md (fix broken links)",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/284",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Update README.md",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/281",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Update getting_started.md",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/278",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "pr_merged",
+          "title": "build(deps): modernize frontend build toolchain (Vite 6, Vue 3.5, Pinia 3)",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1066",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-25",
+          "points": 3
+        },
+        {
+          "type": "issue_closed",
+          "title": "Feature: Add One-Hot Encoding option to FSM Synthesizer",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/1035",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Counter miss-documentation",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/41",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix: replace broken plugin-http with custom Rust HTTP command for all API requests",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/969",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Docs/add new components",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/518",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix: align Verilog circuit labels with node positions",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/831",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Improve readability of text above Figure 4.18 in Chapter 4 docs",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/486",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Authentication System Revamp - Login/Register setup moved to Popups",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/1602",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Add FCM Notifications",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/1598",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Added documentation for counter",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/184",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Moving Canvas Objects to Pinia - GSoC'22",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/24",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-24",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "refactor: jquery removal from utils.js",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/69",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-24",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix: jquery removal from circuit.js",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/67",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-24",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix: exit preview button error",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/64",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-24",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "add: default value instead of placeholder",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/57",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-24",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "refactor: removed JQuery dependency from listeners.js file",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/45",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-24",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "refactor: removed JQuery dependency from plotArea.js file",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/40",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-24",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "feat: move canvas objects to pinia store",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/25",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-24",
+          "points": 1
+        }
+      ],
+      "displayName": "Priyank Verma",
+      "bio": "GSoC'26 @CircuitVerse "
+    },
+    {
+      "username": "Nihal4777",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/65150640?v=4",
+      "profileUrl": "https://github.com/Nihal4777",
+      "team": "LGTM",
+      "prsOpened": 0,
+      "prsMerged": 11,
+      "issuesOpened": 0,
+      "issuesClosed": 5,
+      "issuesPrClosedScore": 5,
+      "prsMergedScore": 33,
+      "score": 38,
+      "activityLevel": "High",
+      "dailyActivity": [
+        {
+          "date": "2026-05-22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-23",
+          "prsOpened": 0,
+          "prsMerged": 1,
+          "issuesOpened": 0,
+          "issuesClosed": 1,
+          "score": 4
+        },
+        {
+          "date": "2026-05-24",
+          "prsOpened": 0,
+          "prsMerged": 1,
+          "issuesOpened": 0,
+          "issuesClosed": 1,
+          "score": 4
+        },
+        {
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 8,
+          "issuesOpened": 0,
+          "issuesClosed": 2,
+          "score": 26
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 1,
+          "issuesOpened": 0,
+          "issuesClosed": 1,
+          "score": 4
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        }
+      ],
+      "contributions": [
+        {
+          "type": "pr_merged",
+          "title": "Merged: fix: increase all gate embed sizes for better readability",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/510",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 3
+        },
+        {
+          "type": "issue_closed",
+          "title": "AND gate circuit diagram appears too small to read",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/509",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
         {
           "type": "pr_merged",
           "title": "Merged: Fixed typos in Docs",
@@ -1635,17 +2238,17 @@
       "bio": "GSoC'25 @CircuitVerse | Prev. Technical Team Lead @ GDSC LDCE | Top 10 Mentor @ GSSoC'24 | Learner | Open Source"
     },
     {
-      "username": "ShinichiShi",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/141218988?v=4",
-      "profileUrl": "https://github.com/ShinichiShi",
-      "team": "NasaVerse",
+      "username": "Yana-do-code",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/173885830?v=4",
+      "profileUrl": "https://github.com/Yana-do-code",
+      "team": "The Debug Divas",
       "prsOpened": 0,
       "prsMerged": 0,
       "issuesOpened": 0,
-      "issuesClosed": 24,
-      "issuesPrClosedScore": 24,
+      "issuesClosed": 30,
+      "issuesPrClosedScore": 30,
       "prsMergedScore": 0,
-      "score": 24,
+      "score": 30,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -1669,24 +2272,24 @@
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
+          "issuesClosed": 1,
+          "score": 1
         },
         {
           "date": "2026-05-25",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
-          "issuesClosed": 24,
-          "score": 24
+          "issuesClosed": 22,
+          "score": 22
         },
         {
           "date": "2026-05-26",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
+          "issuesClosed": 7,
+          "score": 7
         },
         {
           "date": "2026-05-27",
@@ -1730,6 +2333,354 @@
         }
       ],
       "contributions": [
+        {
+          "type": "issue_closed",
+          "title": "Admin functionality for Contests to host contest with custom name and also edit existing name.",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/6010",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Admin should have option to DELETE closed contests",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/5997",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Add backend support for subgroups within groups",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7139",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "admin-contest-delete-feature",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/6004",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "feat: Send assignment submission report to mentors",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/2878",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Fix description of Priority Encoder Enable to 'Valid' output.",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/276",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Fixed redundant links issue 206",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/211",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Fix scroll bar",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/142",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Change colour of mobile navbar menu",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/141",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Absence of 3 input AND gate",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/69",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Documentation for Combinational Analysis Feature",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/67",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Documentation for Embeding circuits ",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/66",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix(#4599)-fixed back button working ",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/4684",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Add option for publishing grades#2245",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/2884",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Do not allow admins to add themeselves as a member in the group",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/2113",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Fixed slider overlapping by GitHub SVG in Mobile View.",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/208",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Added information for Groups Page",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/197",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Added open with gitpod option.",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/172",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "repaired broken image links",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/136",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Added documentation for RGB LED Matrix",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/130",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Added Controlled Inverter",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/129",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Added documentation for collaborations",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/115",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Added documentation for forking projects",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/114",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Update Sequential.md for RAM, ROM, EEPROM",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/110",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Added Documentation for Combinational Circuits and Memory Elements in Sidebar",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/100",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Added Memory Elements and documented the use of FlipFlops in Sidebar",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/78",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Added docs on how to use combinational analysis feature",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/75",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "creates flip-flop-uses.md",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/61",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Added  documentation on Combinational Analysis",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/45",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "feat: add Brazilian Portuguese (pt-BR) i18n and simulator language switcher",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7337",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-24",
+          "points": 1
+        }
+      ],
+      "displayName": "Yana pandey",
+      "bio": "Turning ideas into interfaces"
+    },
+    {
+      "username": "ShinichiShi",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/141218988?v=4",
+      "profileUrl": "https://github.com/ShinichiShi",
+      "team": "NasaVerse",
+      "prsOpened": 0,
+      "prsMerged": 1,
+      "issuesOpened": 0,
+      "issuesClosed": 24,
+      "issuesPrClosedScore": 24,
+      "prsMergedScore": 3,
+      "score": 27,
+      "activityLevel": "High",
+      "dailyActivity": [
+        {
+          "date": "2026-05-22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 24,
+          "score": 24
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 1,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 3
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        }
+      ],
+      "contributions": [
+        {
+          "type": "pr_merged",
+          "title": "Feat: Add misc resources - announcements, issue-circuit and task runs to Avo",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7316",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-26",
+          "points": 3
+        },
         {
           "type": "issue_closed",
           "title": "Feature: Live Theme Editor with Real-time Customization",
@@ -1927,534 +2878,6 @@
       "bio": "GSoC '26 @CircuitVerse | Winner SIH2025 | LiFT 2025 | Summer Intern @ VISA |\r\nMember @pointblank-club "
     },
     {
-      "username": "Yana-do-code",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/173885830?v=4",
-      "profileUrl": "https://github.com/Yana-do-code",
-      "team": "The Debug Divas",
-      "prsOpened": 0,
-      "prsMerged": 0,
-      "issuesOpened": 0,
-      "issuesClosed": 23,
-      "issuesPrClosedScore": 23,
-      "prsMergedScore": 0,
-      "score": 23,
-      "activityLevel": "High",
-      "dailyActivity": [
-        {
-          "date": "2026-05-22",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-23",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-24",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 1,
-          "score": 1
-        },
-        {
-          "date": "2026-05-25",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 22,
-          "score": 22
-        },
-        {
-          "date": "2026-05-26",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-27",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-28",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-29",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-30",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-31",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        }
-      ],
-      "contributions": [
-        {
-          "type": "issue_closed",
-          "title": "Fix scroll bar",
-          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/142",
-          "repo": "CircuitVerse/CircuitVerseDocs",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Change colour of mobile navbar menu",
-          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/141",
-          "repo": "CircuitVerse/CircuitVerseDocs",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Absence of 3 input AND gate",
-          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/69",
-          "repo": "CircuitVerse/CircuitVerseDocs",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Documentation for Combinational Analysis Feature",
-          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/67",
-          "repo": "CircuitVerse/CircuitVerseDocs",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Documentation for Embeding circuits ",
-          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/66",
-          "repo": "CircuitVerse/CircuitVerseDocs",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "fix(#4599)-fixed back button working ",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/4684",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Add option for publishing grades#2245",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/2884",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Do not allow admins to add themeselves as a member in the group",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/2113",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Fixed slider overlapping by GitHub SVG in Mobile View.",
-          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/208",
-          "repo": "CircuitVerse/CircuitVerseDocs",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Added information for Groups Page",
-          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/197",
-          "repo": "CircuitVerse/CircuitVerseDocs",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Added open with gitpod option.",
-          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/172",
-          "repo": "CircuitVerse/CircuitVerseDocs",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "repaired broken image links",
-          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/136",
-          "repo": "CircuitVerse/CircuitVerseDocs",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Added documentation for RGB LED Matrix",
-          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/130",
-          "repo": "CircuitVerse/CircuitVerseDocs",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Added Controlled Inverter",
-          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/129",
-          "repo": "CircuitVerse/CircuitVerseDocs",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Added documentation for collaborations",
-          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/115",
-          "repo": "CircuitVerse/CircuitVerseDocs",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Added documentation for forking projects",
-          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/114",
-          "repo": "CircuitVerse/CircuitVerseDocs",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Update Sequential.md for RAM, ROM, EEPROM",
-          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/110",
-          "repo": "CircuitVerse/CircuitVerseDocs",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Added Documentation for Combinational Circuits and Memory Elements in Sidebar",
-          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/100",
-          "repo": "CircuitVerse/CircuitVerseDocs",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Added Memory Elements and documented the use of FlipFlops in Sidebar",
-          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/78",
-          "repo": "CircuitVerse/CircuitVerseDocs",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Added docs on how to use combinational analysis feature",
-          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/75",
-          "repo": "CircuitVerse/CircuitVerseDocs",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "creates flip-flop-uses.md",
-          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/61",
-          "repo": "CircuitVerse/CircuitVerseDocs",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Added  documentation on Combinational Analysis",
-          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/45",
-          "repo": "CircuitVerse/CircuitVerseDocs",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "feat: add Brazilian Portuguese (pt-BR) i18n and simulator language switcher",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7337",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2026-05-24",
-          "points": 1
-        }
-      ],
-      "displayName": "Yana pandey",
-      "bio": "Turning ideas into interfaces"
-    },
-    {
-      "username": "Me-Priyank",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/143987856?v=4",
-      "profileUrl": "https://github.com/Me-Priyank",
-      "team": "LGTM",
-      "prsOpened": 0,
-      "prsMerged": 1,
-      "issuesOpened": 0,
-      "issuesClosed": 17,
-      "issuesPrClosedScore": 17,
-      "prsMergedScore": 3,
-      "score": 20,
-      "activityLevel": "High",
-      "dailyActivity": [
-        {
-          "date": "2026-05-22",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-23",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-24",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 8,
-          "score": 8
-        },
-        {
-          "date": "2026-05-25",
-          "prsOpened": 0,
-          "prsMerged": 1,
-          "issuesOpened": 0,
-          "issuesClosed": 9,
-          "score": 12
-        },
-        {
-          "date": "2026-05-26",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-27",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-28",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-29",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-30",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-31",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        }
-      ],
-      "contributions": [
-        {
-          "type": "pr_merged",
-          "title": "build(deps): modernize frontend build toolchain (Vite 6, Vue 3.5, Pinia 3)",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1066",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-25",
-          "points": 3
-        },
-        {
-          "type": "issue_closed",
-          "title": "Feature: Add One-Hot Encoding option to FSM Synthesizer",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/1035",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Counter miss-documentation",
-          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/41",
-          "repo": "CircuitVerse/CircuitVerseDocs",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "fix: replace broken plugin-http with custom Rust HTTP command for all API requests",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/969",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Docs/add new components",
-          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/518",
-          "repo": "CircuitVerse/CircuitVerseDocs",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "fix: align Verilog circuit labels with node positions",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/831",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Improve readability of text above Figure 4.18 in Chapter 4 docs",
-          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/486",
-          "repo": "CircuitVerse/CircuitVerseDocs",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Authentication System Revamp - Login/Register setup moved to Popups",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/1602",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Add FCM Notifications",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/1598",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Added documentation for counter",
-          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/184",
-          "repo": "CircuitVerse/CircuitVerseDocs",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Moving Canvas Objects to Pinia - GSoC'22",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/24",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-24",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "refactor: jquery removal from utils.js",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/69",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-24",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "fix: jquery removal from circuit.js",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/67",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-24",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "fix: exit preview button error",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/64",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-24",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "add: default value instead of placeholder",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/57",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-24",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "refactor: removed JQuery dependency from listeners.js file",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/45",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-24",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "refactor: removed JQuery dependency from plotArea.js file",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/40",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-24",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "feat: move canvas objects to pinia store",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/25",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-24",
-          "points": 1
-        }
-      ],
-      "displayName": "Priyank Verma",
-      "bio": "GSoC'26 @CircuitVerse "
-    },
-    {
       "username": "Asrani-Aman",
       "avatarUrl": "https://avatars.githubusercontent.com/u/96644946?v=4",
       "profileUrl": "https://github.com/Asrani-Aman",
@@ -2498,7 +2921,7 @@
           "prsMerged": 2,
           "issuesOpened": 0,
           "issuesClosed": 2,
-          "score": 2
+          "score": 8
         },
         {
           "date": "2026-05-26",
@@ -2601,6 +3024,170 @@
       ],
       "displayName": "AMAN ASRANI",
       "bio": "🧠 Building AI-driven systems and agentic workflows .\r\n💻 Love working with Rust, TypeScript, RAG pipelines, and LLM integrations.\r\n⚙️ Exploring scalab"
+    },
+    {
+      "username": "magic-peach",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/146705736?v=4",
+      "profileUrl": "https://github.com/magic-peach",
+      "team": "CtrlAltDlt",
+      "prsOpened": 0,
+      "prsMerged": 2,
+      "issuesOpened": 0,
+      "issuesClosed": 6,
+      "issuesPrClosedScore": 6,
+      "prsMergedScore": 6,
+      "score": 12,
+      "activityLevel": "High",
+      "dailyActivity": [
+        {
+          "date": "2026-05-22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 3,
+          "score": 3
+        },
+        {
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 2,
+          "issuesOpened": 0,
+          "issuesClosed": 3,
+          "score": 9
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        }
+      ],
+      "contributions": [
+        {
+          "type": "pr_merged",
+          "title": "docs: fix information wording in lms integration guide",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/524",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-25",
+          "points": 3
+        },
+        {
+          "type": "pr_merged",
+          "title": "docs: fix keyboard shortcut spelling in chapter docs",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/520",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-25",
+          "points": 3
+        },
+        {
+          "type": "issue_closed",
+          "title": "ActiveRecord::NotNullViolation: PG::NotNullViolation: ERROR:  null value in column \"deadline\" of relation \"assignments\" violates not-null constraint (ActiveRecord::NotNullViolation)",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/7409",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "feat: Client-side Verilog synthesis via Yosys WASM for Tauri desktop builds",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/1021",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Update copyright year from 2025 to 2026 on About page",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/754",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "🐞 Bug LTI specs are failing in master with ruby 4.0",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/7395",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-24",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "ActionView::Template::Error: no implicit conversion of Symbol into Integer (ActionView::Template::Error)",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/7392",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-24",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Degraded UI Performance",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/7386",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-24",
+          "points": 1
+        }
+      ],
+      "displayName": "Akanksha Trehun",
+      "bio": ""
     },
     {
       "username": "SantamRC",
@@ -2997,8 +3584,8 @@
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
-          "issuesClosed": 3,
-          "score": 3
+          "issuesClosed": 0,
+          "score": 0
         },
         {
           "date": "2026-05-26",
@@ -3061,6 +3648,130 @@
       ],
       "displayName": "Aryan kumar",
       "bio": ""
+    },
+    {
+      "username": "Aakansha-Chavan",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/181594189?v=4",
+      "profileUrl": "https://github.com/Aakansha-Chavan",
+      "team": "The Debug Divas",
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "issuesOpened": 0,
+      "issuesClosed": 3,
+      "issuesPrClosedScore": 3,
+      "prsMergedScore": 0,
+      "score": 3,
+      "activityLevel": "Medium",
+      "dailyActivity": [
+        {
+          "date": "2026-05-22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 3,
+          "score": 3
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        }
+      ],
+      "contributions": [
+        {
+          "type": "issue_closed",
+          "title": "Feat/contest name management",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/6322",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "feat: Implemented full contest naming functionality (creation and editing)",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/6103",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "feat: Added ability to edit contest name",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/6079",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-26",
+          "points": 1
+        }
+      ],
+      "displayName": "Aakansha Chavan",
+      "bio": "MERN stack developer"
     },
     {
       "username": "blazethunderstorm",
@@ -3207,10 +3918,10 @@
     {
       "date": "2026-05-26",
       "prsOpened": 0,
-      "prsMerged": 0,
+      "prsMerged": 6,
       "issuesOpened": 0,
-      "issuesClosed": 0,
-      "score": 0
+      "issuesClosed": 55,
+      "score": 73
     },
     {
       "date": "2026-05-27",
