@@ -40,6 +40,14 @@ teams:
       - "Asrani-Aman"
       - "aryan7071"
 
+   - name: "CtrlAltDlt"
+    color: "#fb8b24"
+    members:
+      - "magic-peach"
+      - "Saniya-r-Shaikh"
+      - "aryanndwi123"
+
+
   - name: "LGTM"
     color: "#8b5cf6"
     members:
