@@ -40,7 +40,7 @@ teams:
       - "Asrani-Aman"
       - "aryan7071"
 
-   - name: "CtrlAltDlt"
+  - name: "CtrlAltDlt"
     color: "#fb8b24"
     members:
       - "magic-peach"
