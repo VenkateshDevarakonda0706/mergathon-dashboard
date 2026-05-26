@@ -10,10 +10,30 @@ import Link from "next/link";
 export default function Home() {
   const { data } = useData();
   const [view, setView] = useState<"overview" | "teams">("overview");
-  const [isMounted, setIsMounted] = useState(false);
+  const [countdown, setCountdown] = useState<{ days: number; hours: number; minutes: number; seconds: number; ended: boolean } | null>(null);
 
   useEffect(() => {
-    setIsMounted(true);
+    const target = new Date("2026-05-31T23:59:59Z");
+
+    const tick = () => {
+      const diff = target.getTime() - Date.now();
+      if (diff <= 0) {
+        setCountdown({ days: 0, hours: 0, minutes: 0, seconds: 0, ended: true });
+        return;
+      }
+      const totalSeconds = Math.floor(diff / 1000);
+      setCountdown({
+        days: Math.floor(totalSeconds / 86400),
+        hours: Math.floor((totalSeconds % 86400) / 3600),
+        minutes: Math.floor((totalSeconds % 3600) / 60),
+        seconds: totalSeconds % 60,
+        ended: false,
+      });
+    };
+
+    tick();
+    const id = setInterval(tick, 1000);
+    return () => clearInterval(id);
   }, []);
 
   if (!data) return null;
@@ -54,6 +74,49 @@ export default function Home() {
         <p className="hero-subtitle-text">
           Track merged pull requests, closed issues, and team rankings for the CircuitVerse mergathon.
         </p>
+
+        {countdown !== null && (
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: "16px" }}>
+            {countdown.ended ? (
+              <span style={{ fontSize: "13px", fontWeight: 700, color: "var(--text-tertiary)", letterSpacing: "0.5px", textTransform: "uppercase" }}>
+                Event Ended
+              </span>
+            ) : (
+              <>
+                <span style={{ fontSize: "11px", fontWeight: 700, color: "var(--text-tertiary)", letterSpacing: "1px", textTransform: "uppercase", marginBottom: "10px" }}>
+                  Event ends in
+                </span>
+                <div style={{ display: "flex", gap: "8px" }}>
+                  {[
+                    { value: countdown.days, label: "Days" },
+                    { value: countdown.hours, label: "Hours" },
+                    { value: countdown.minutes, label: "Mins" },
+                    { value: countdown.seconds, label: "Secs" },
+                  ].map(({ value, label }) => (
+                    <div
+                      key={label}
+                      style={{
+                        background: "rgba(255,255,255,0.05)",
+                        border: "1px solid rgba(255,255,255,0.1)",
+                        borderRadius: "8px",
+                        minWidth: "56px",
+                        padding: "8px 12px",
+                        textAlign: "center",
+                      }}
+                    >
+                      <div style={{ fontSize: "28px", fontWeight: 800, color: "#ffffff", lineHeight: 1 }}>
+                        {String(value).padStart(2, "0")}
+                      </div>
+                      <div style={{ fontSize: "10px", fontWeight: 700, color: "var(--text-tertiary)", textTransform: "uppercase", letterSpacing: "0.5px", marginTop: "4px" }}>
+                        {label}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+        )}
 
         <div className="capsule-toggle">
           <button className={`toggle-option ${view === "overview" ? "active" : ""}`} onClick={() => setView("overview")}>Overview</button>
@@ -147,7 +210,7 @@ export default function Home() {
                   <span className="card-meta">MIX</span>
                 </div>
                 <div style={{ position: "relative", width: "100%", height: "130px", marginTop: "8px" }}>
-                  {isMounted ? (
+                  {countdown !== null ? (
                     <ResponsiveContainer width="100%" height="100%">
                       <PieChart>
                         <Pie data={pieData} cx="50%" cy="50%" innerRadius={36} outerRadius={52} paddingAngle={3} dataKey="value">
@@ -263,7 +326,7 @@ export default function Home() {
                             <div className="timeline-title">
                               <span style={{ fontWeight: 800, color: "var(--text-primary)" }}>{c.username}</span>
                               {" "}{c.type.replace("_", " ")}{" "}
-                              <span style={{ color: "var(--text-secondary)" }}>"{c.title}"</span>
+                              <span style={{ color: "var(--text-secondary)" }}>&ldquo;{c.title}&rdquo;</span>
                             </div>
                             <div className="timeline-meta">
                               <span>{c.repo}</span><span>•</span><span>{c.date}</span>
