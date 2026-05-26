@@ -12,17 +12,18 @@ import {
 } from "recharts";
 import {
   ArrowLeft,
-  Flame,
+  Users,
   GitPullRequest,
   CheckCircle2,
+
   Award,
   ExternalLink,
   GitCommit,
   GitMerge,
-  HelpCircle
+  HelpCircle,
 } from "lucide-react";
 
-export default function ContributorProfile({ username }: { username: string }) {
+export default function TeamDetail({ teamName }: { teamName: string }) {
   const { data } = useData();
   const [isMounted, setIsMounted] = useState(false);
 
@@ -32,15 +33,15 @@ export default function ContributorProfile({ username }: { username: string }) {
 
   if (!data) return null;
 
-  const { contributors } = data;
+  const { teams, contributors } = data;
 
-  // Find contributor details
-  const contributor = contributors.find(
-    (c) => c.username.toLowerCase() === username.toLowerCase()
+  // Find team details
+  const team = teams.find(
+    (t) => t.name.toLowerCase() === teamName.toLowerCase()
   );
 
-  // If contributor not found, show a beautiful error
-  if (!contributor) {
+  // If team not found, show error
+  if (!team) {
     return (
       <div 
         style={{ 
@@ -53,9 +54,9 @@ export default function ContributorProfile({ username }: { username: string }) {
         }}
       >
         <HelpCircle size={64} style={{ color: "var(--text-tertiary)" }} />
-        <h3 style={{ fontSize: "20px", fontWeight: 800 }}>Contributor Not Found</h3>
+        <h3 style={{ fontSize: "20px", fontWeight: 800 }}>Team Not Found</h3>
         <p style={{ color: "var(--text-secondary)" }}>
-          The GitHub user <strong style={{ color: "var(--text-primary)" }}>{username}</strong> is not registered in this Mergathon.
+          The team <strong style={{ color: "var(--text-primary)" }}>{teamName}</strong> is not registered.
         </p>
         <Link 
           href="/leaderboard"
@@ -75,15 +76,30 @@ export default function ContributorProfile({ username }: { username: string }) {
     );
   }
 
-  // Calculate absolute ranking
-  const sortedContributors = contributors.slice().sort((a, b) => b.score - a.score);
-  const rank = sortedContributors.findIndex((c) => c.username === contributor.username) + 1;
+  // Calculate team ranking based on totalScore
+  const sortedTeams = [...teams].sort((a, b) => b.totalScore - a.totalScore);
+  const rank = sortedTeams.findIndex((t) => t.name === team.name) + 1;
+
+  // Get members of this team and their contributions
+  const teamContributors = contributors.filter(
+    (c) => team.members.map((m) => m.toLowerCase()).includes(c.username.toLowerCase())
+  );
+
+  // Collect all contributions from team members
+  const allTeamContributions = teamContributors
+    .flatMap((c) =>
+      c.contributions.map((item) => ({
+        ...item,
+        username: c.username,
+        avatarUrl: c.avatarUrl,
+      }))
+    )
+    .sort((a, b) => b.date.localeCompare(a.date));
 
   // Pie chart data for Recharts
   const pieData = [
-  { name: "PRs Opened", value: contributor.prsOpened, color: "var(--accent-blue)" },
-  { name: "PRs Merged", value: contributor.prsMerged, color: "var(--accent-emerald)" },
-  { name: "Issues Fixed", value: contributor.issuesClosed, color: "var(--accent-amber)" },
+    { name: "PRs Merged Score", value: team.totalPrsMerged * 3, color: "var(--accent-emerald)" },
+    { name: "Issues Closed Score", value: team.totalIssuesClosed * 3, color: "var(--accent-blue)" },
   ].filter((item) => item.value > 0);
 
   // Helper to color feed items based on type
@@ -127,7 +143,7 @@ export default function ContributorProfile({ username }: { username: string }) {
         </Link>
       </div>
 
-      {/* Contributor Profile Banner */}
+      {/* Team Profile Banner */}
       <section 
         className="card" 
         style={{ 
@@ -136,83 +152,64 @@ export default function ContributorProfile({ username }: { username: string }) {
           alignItems: "center",
           gap: "24px",
           flexWrap: "wrap",
-          background: "linear-gradient(135deg, var(--bg-card) 0%, var(--bg-tertiary) 100%)",
+          background: `linear-gradient(135deg, var(--bg-card) 0%, rgba(255, 255, 255, 0.01) 100%)`,
+          borderLeft: `4px solid ${team.color}`,
           position: "relative"
         }}
       >
-        {/* Avatar */}
-        <img 
-          src={contributor.avatarUrl} 
-          alt={contributor.username}
-          style={{
-            width: "96px",
-            height: "96px",
-            borderRadius: "var(--radius-full)",
-            objectFit: "cover",
-            border: `3px solid ${contributor.team.includes("Alpha") ? "var(--accent-blue)" : "var(--accent-violet)"}`
+        {/* Team Logo / Icon */}
+        <div 
+          style={{ 
+            width: "80px", 
+            height: "80px", 
+            borderRadius: "var(--radius-md)", 
+            background: `linear-gradient(135deg, ${team.color}15, ${team.color}35)`, 
+            border: `1px solid ${team.color}30`, 
+            display: "flex", 
+            alignItems: "center", 
+            justifyContent: "center",
+            flexShrink: 0
           }}
-          onError={(e) => {
-            (e.target as HTMLImageElement).src = `https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=120&auto=format&fit=crop&q=80`;
-          }}
-        />
+        >
+          <Users size={36} style={{ color: team.color }} />
+        </div>
 
         {/* Info */}
         <div style={{ flex: 1, minWidth: "200px" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "6px" }}>
-            <h2 style={{ fontSize: "26px", fontWeight: 800 }}>{contributor.username}</h2>
-            <a 
-              href={contributor.profileUrl} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              style={{ color: "var(--text-tertiary)", transition: "color 0.2s" }}
-              onMouseEnter={(e) => e.currentTarget.style.color = "var(--text-primary)"}
-              onMouseLeave={(e) => e.currentTarget.style.color = "var(--text-tertiary)"}
-              title="GitHub Profile"
-            >
-              <ExternalLink size={18} />
-            </a>
-          </div>
-
-          <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
-            <span 
-              style={{ 
-                padding: "4px 12px", 
-                borderRadius: "var(--radius-full)", 
-                backgroundColor: contributor.team.includes("Alpha") ? "rgba(59, 130, 246, 0.1)" : "rgba(139, 92, 246, 0.1)",
-                color: contributor.team.includes("Alpha") ? "var(--accent-blue)" : "var(--accent-violet)",
-                fontWeight: 700,
-                fontSize: "12px"
-              }}
-            >
-              {contributor.team}
-            </span>
-            <span 
-              className={`activity-badge ${contributor.activityLevel.toLowerCase()}`}
-              style={{ padding: "4px 12px", fontSize: "11px" }}
-            >
-              {contributor.activityLevel} Activity
-            </span>
-          </div>
+          <h2 style={{ fontSize: "28px", fontWeight: 800, marginBottom: "6px" }}>{team.name}</h2>
+          <span 
+            style={{ 
+              padding: "4px 12px", 
+              borderRadius: "var(--radius-full)", 
+              backgroundColor: `${team.color}15`,
+              color: team.color,
+              fontWeight: 700,
+              fontSize: "12px",
+              border: `1px solid ${team.color}30`
+            }}
+          >
+            {team.members.length} Members
+          </span>
         </div>
 
         {/* Dynamic Standings Score Highlight */}
         <div style={{ display: "flex", gap: "24px" }} className="profile-highlights">
           <div style={{ textAlign: "center" }}>
             <div style={{ fontSize: "12px", color: "var(--text-tertiary)", fontWeight: 500, textTransform: "uppercase", letterSpacing: "0.5px" }}>
-              Event Rank
+              Rank
             </div>
             <div 
               style={{ 
                 fontSize: "36px", 
                 fontWeight: 900, 
-                color: rank <= 3 ? "var(--accent-amber)" : "var(--text-primary)",
+                color: rank === 1 ? "var(--accent-amber)" : "var(--text-primary)",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 gap: "6px"
               }}
             >
-              {rank <= 3 && <Award size={28} />}
+              {rank <= 3 && <Award size={28} style={{ color: rank === 1 ? "#f59e0b" : rank === 2 ? "#9ca3af" : "#b45309" }} />}
               <span>#{rank}</span>
             </div>
           </div>
@@ -221,8 +218,8 @@ export default function ContributorProfile({ username }: { username: string }) {
             <div style={{ fontSize: "12px", color: "var(--text-tertiary)", fontWeight: 500, textTransform: "uppercase", letterSpacing: "0.5px" }}>
               Total Points
             </div>
-            <div style={{ fontSize: "36px", fontWeight: 900, color: "var(--accent-blue)" }}>
-              {contributor.score}
+            <div style={{ fontSize: "36px", fontWeight: 900, color: team.color }}>
+              {team.totalScore}
             </div>
           </div>
         </div>
@@ -232,23 +229,23 @@ export default function ContributorProfile({ username }: { username: string }) {
       <div 
         style={{ 
           display: "grid", 
-          gridTemplateColumns: "1fr 2fr", 
+          gridTemplateColumns: "1.2fr 2fr", 
           gap: "24px" 
         }}
         className="profile-columns"
       >
-        {/* Left Column: Stat Breakdown & Pie Chart */}
+        {/* Left Column: Stat Breakdown & Members List */}
         <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
           {/* Detailed numbers */}
           <div className="card" style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <h3 style={{ fontSize: "16px", fontWeight: 800 }}>Contribution Summary</h3>
+            <h3 style={{ fontSize: "16px", fontWeight: 800 }}>Stats Summary</h3>
             <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "8px 12px", background: "var(--bg-tertiary)", borderRadius: "var(--radius-md)" }}>
                 <span style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "13px", color: "var(--text-secondary)", fontWeight: 500 }}>
-                  <GitPullRequest size={16} style={{ color: "var(--accent-emerald)" }} />
+                  <GitMerge size={16} style={{ color: "var(--accent-emerald)" }} />
                   <span>PRs Merged</span>
                 </span>
-                <span style={{ fontWeight: 700 }}>{contributor.prsMerged}</span>
+                <span style={{ fontWeight: 700 }}>{team.totalPrsMerged}</span>
               </div>
 
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "8px 12px", background: "var(--bg-tertiary)", borderRadius: "var(--radius-md)" }}>
@@ -256,82 +253,83 @@ export default function ContributorProfile({ username }: { username: string }) {
                   <GitPullRequest size={16} style={{ color: "var(--accent-blue)" }} />
                   <span>PRs Opened</span>
                 </span>
-                <span style={{ fontWeight: 700 }}>{contributor.prsOpened}</span>
+                <span style={{ fontWeight: 700 }}>{team.totalPrsOpened}</span>
               </div>
-
-
 
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "8px 12px", background: "var(--bg-tertiary)", borderRadius: "var(--radius-md)" }}>
                 <span style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "13px", color: "var(--text-secondary)", fontWeight: 500 }}>
                   <CheckCircle2 size={16} style={{ color: "var(--accent-emerald)" }} />
                   <span>Issues Closed</span>
                 </span>
-                <span style={{ fontWeight: 700 }}>{contributor.issuesClosed}</span>
+                <span style={{ fontWeight: 700 }}>{team.totalIssuesClosed}</span>
               </div>
             </div>
           </div>
 
-          {/* Activity share visualizer (Donut chart) */}
-          <div className="card" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-            <h3 style={{ fontSize: "16px", fontWeight: 800, width: "100%", textAlign: "left", marginBottom: "16px" }}>
-              Activity Breakdown
-            </h3>
-            {isMounted && pieData.length > 0 ? (
-              <div style={{ width: "100%", height: 200 }}>
-                <ResponsiveContainer width="100%" height="100%">
-                  <PieChart>
-                    <Pie
-                      data={pieData}
-                      cx="50%"
-                      cy="50%"
-                      innerRadius={50}
-                      outerRadius={70}
-                      paddingAngle={3}
-                      dataKey="value"
-                    >
-                      {pieData.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={entry.color} />
-                      ))}
-                    </Pie>
-                    <Tooltip
-                      contentStyle={{
-                        backgroundColor: "var(--bg-card)",
-                        borderColor: "var(--border-primary)",
-                        color: "var(--text-primary)",
-                        borderRadius: "var(--radius-md)",
-                        fontSize: "11px"
+          {/* Members List */}
+          <div className="card" style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <h3 style={{ fontSize: "16px", fontWeight: 800 }}>Team Roster ({teamContributors.length})</h3>
+            <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+              {teamContributors.map((member) => (
+                <Link 
+                  key={member.username} 
+                  href={`/contributors/${member.username}`}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    padding: "8px 12px",
+                    background: "rgba(255, 255, 255, 0.01)",
+                    border: "1px solid var(--border-primary)",
+                    borderRadius: "var(--radius-md)",
+                    textDecoration: "none",
+                    transition: "all 0.2s ease"
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.borderColor = team.color;
+                    e.currentTarget.style.background = "rgba(255, 255, 255, 0.03)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.borderColor = "var(--border-primary)";
+                    e.currentTarget.style.background = "rgba(255, 255, 255, 0.01)";
+                  }}
+                >
+                  <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                    <img 
+                      src={member.avatarUrl} 
+                      alt={member.username} 
+                      style={{ width: "32px", height: "32px", borderRadius: "50%", border: "1px solid var(--border-secondary)" }}
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src = `https://avatars.githubusercontent.com/${member.username}`;
                       }}
                     />
-                  </PieChart>
-                </ResponsiveContainer>
-              </div>
-            ) : (
-              <div style={{ height: "200px", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--text-tertiary)", fontSize: "12px" }}>
-                {pieData.length === 0 ? "No active metrics" : "Loading visualizer..."}
-              </div>
-            )}
-            
-            {/* Custom Legend */}
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "8px 12px", justifyContent: "center", marginTop: "12px" }}>
-              {pieData.map((item) => (
-                <span key={item.name} style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "11px" }}>
-                  <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: item.color }} />
-                  <span style={{ color: "var(--text-secondary)", fontWeight: 500 }}>
-                    {item.name}: {item.value}
-                  </span>
-                </span>
+                    <div>
+                      <span style={{ fontSize: "13px", fontWeight: 700, color: "var(--text-primary)" }}>{member.username}</span>
+                      <div style={{ fontSize: "11px", color: "var(--text-tertiary)" }}>
+                        {member.prsMerged} PRs · {member.issuesClosed} Issues
+                      </div>
+                    </div>
+                  </div>
+                  <span style={{ fontSize: "14px", fontWeight: 800, color: team.color }}>{member.score} pts</span>
+                </Link>
               ))}
+
+              {teamContributors.length === 0 && (
+                <div style={{ padding: "20px 0", textAlign: "center", color: "var(--text-tertiary)", fontSize: "13px" }}>
+                  No active contributors registered on this team.
+                </div>
+              )}
             </div>
           </div>
         </div>
 
         {/* Right Column: Contributions Feed */}
         <section className="card" style={{ display: "flex", flexDirection: "column" }}>
-          <h3 style={{ fontSize: "18px", fontWeight: 800, marginBottom: "20px" }}>Contributions Feed</h3>
+          <h3 style={{ fontSize: "18px", fontWeight: 800, marginBottom: "20px" }}>Aggregated Team Contributions</h3>
           
           <div style={{ display: "flex", flexDirection: "column", gap: "16px", flex: 1 }}>
-            {contributor.contributions && contributor.contributions.length > 0 ? (
-              contributor.contributions.map((item, idx) => {
+            {allTeamContributions.length > 0 ? (
+              allTeamContributions.map((item, idx) => {
                 const style = getFeedItemStyle(item.type);
                 const Icon = style.icon;
 
@@ -342,11 +340,11 @@ export default function ContributorProfile({ username }: { username: string }) {
                       display: "flex",
                       gap: "16px",
                       position: "relative",
-                      paddingBottom: idx === contributor.contributions.length - 1 ? 0 : "16px"
+                      paddingBottom: idx === allTeamContributions.length - 1 ? 0 : "16px"
                     }}
                   >
                     {/* Connecting Timeline Line */}
-                    {idx !== contributor.contributions.length - 1 && (
+                    {idx !== allTeamContributions.length - 1 && (
                       <div 
                         style={{
                           position: "absolute",
@@ -379,17 +377,32 @@ export default function ContributorProfile({ username }: { username: string }) {
                     {/* Feed Content */}
                     <div style={{ flex: 1 }}>
                       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: "8px" }}>
-                        <span 
-                          style={{ 
-                            fontSize: "11px", 
-                            fontWeight: 700, 
-                            color: style.color, 
-                            textTransform: "uppercase", 
-                            letterSpacing: "0.5px" 
-                          }}
-                        >
-                          {style.label}
-                        </span>
+                        <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+                          <Link href={`/contributors/${item.username}`} style={{ textDecoration: "none" }}>
+                            <span 
+                              style={{ 
+                                fontSize: "12px", 
+                                fontWeight: 800, 
+                                color: "var(--text-primary)" 
+                              }}
+                              className="clickable-user"
+                            >
+                              {item.username}
+                            </span>
+                          </Link>
+                          <span style={{ fontSize: "11px", color: "var(--text-tertiary)" }}>•</span>
+                          <span 
+                            style={{ 
+                              fontSize: "11px", 
+                              fontWeight: 700, 
+                              color: style.color, 
+                              textTransform: "uppercase", 
+                              letterSpacing: "0.5px" 
+                            }}
+                          >
+                            {style.label}
+                          </span>
+                        </div>
                         <span style={{ fontSize: "11px", color: "var(--text-tertiary)" }}>
                           {item.date}
                         </span>
@@ -400,9 +413,24 @@ export default function ContributorProfile({ username }: { username: string }) {
                       </h4>
 
                       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: "6px" }}>
-                        <span style={{ fontSize: "12px", color: "var(--accent-violet)", fontWeight: 600 }}>
-                          {item.repo}
-                        </span>
+                        <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                          <span style={{ fontSize: "12px", color: team.color, fontWeight: 600 }}>
+                            {item.repo}
+                          </span>
+                          <span 
+                            style={{ 
+                              fontSize: "11px", 
+                              padding: "2px 8px", 
+                              background: `rgba(255, 255, 255, 0.03)`, 
+                              border: "1px solid var(--border-primary)",
+                              borderRadius: "4px", 
+                              fontWeight: 700,
+                              color: "var(--text-secondary)"
+                            }}
+                          >
+                            +{item.points} pts
+                          </span>
+                        </div>
                         <a 
                           href={item.url} 
                           target="_blank" 
@@ -437,7 +465,7 @@ export default function ContributorProfile({ username }: { username: string }) {
                   fontSize: "14px" 
                 }}
               >
-                No logged github events within the event window.
+                No tracked team contributions recorded.
               </div>
             )}
           </div>
@@ -445,6 +473,10 @@ export default function ContributorProfile({ username }: { username: string }) {
       </div>
 
       <style jsx global>{`
+        .clickable-user:hover {
+          color: var(--accent-blue) !important;
+          text-decoration: underline;
+        }
         @media (max-width: 900px) {
           .profile-columns {
             grid-template-columns: 1fr !important;

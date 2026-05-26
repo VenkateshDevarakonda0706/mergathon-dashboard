@@ -66,10 +66,7 @@ export default function ActivityChart({ data, title = "Daily Event Activity" }: 
             <span style={{ width: "10px", height: "10px", borderRadius: "50%", background: "var(--accent-emerald)" }} />
             <span>PRs Merged</span>
           </span>
-          <span style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-            <span style={{ width: "10px", height: "10px", borderRadius: "50%", background: "var(--accent-violet)" }} />
-            <span>PRs Reviewed</span>
-          </span>
+
         </div>
       </div>
 
@@ -88,10 +85,7 @@ export default function ActivityChart({ data, title = "Daily Event Activity" }: 
                 <stop offset="5%" stopColor="var(--accent-emerald)" stopOpacity={0.2} />
                 <stop offset="95%" stopColor="var(--accent-emerald)" stopOpacity={0.01} />
               </linearGradient>
-              <linearGradient id="colorPrsReviewed" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="var(--accent-violet)" stopOpacity={0.2} />
-                <stop offset="95%" stopColor="var(--accent-violet)" stopOpacity={0.01} />
-              </linearGradient>
+
             </defs>
             <CartesianGrid strokeDasharray="3 3" stroke="var(--border-primary)" vertical={false} />
             <XAxis 
@@ -138,15 +132,7 @@ export default function ActivityChart({ data, title = "Daily Event Activity" }: 
               fillOpacity={1}
               fill="url(#colorPrsMerged)"
             />
-            <Area
-              type="monotone"
-              dataKey="prsReviewed"
-              name="PRs Reviewed"
-              stroke="var(--accent-violet)"
-              strokeWidth={2}
-              fillOpacity={1}
-              fill="url(#colorPrsReviewed)"
-            />
+
           </AreaChart>
         </ResponsiveContainer>
       </div>
