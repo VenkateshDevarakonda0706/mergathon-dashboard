@@ -3,7 +3,7 @@
 import { useData } from "../context/DataContext";
 import Header from "./Header";
 import { Loader2, AlertCircle } from "lucide-react";
-
+import Footer from "./Footer"; 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   const { data, loading, error } = useData();
 
@@ -80,6 +80,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
       <main className="app-container">
         {children}
       </main>
+       <Footer />
     </div>
   );
 }

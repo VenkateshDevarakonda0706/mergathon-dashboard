@@ -918,15 +918,5 @@ body {
   background: var(--bg-card);
   display: block;
 }
-
-/* Clickable Team Title hover animations */
-.clickable-team-title {
-  cursor: pointer;
-  transition: color 0.2s ease, text-shadow 0.2s ease;
-}
-
-.clickable-team-title:hover {
-  color: var(--accent-emerald) !important;
-  text-shadow: 0 0 8px rgba(16, 185, 129, 0.3);
-}
-
+/* =========================================
+   Footer
