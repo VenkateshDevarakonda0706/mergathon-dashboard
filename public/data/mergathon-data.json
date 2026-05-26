@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-26T20:14:45.798Z",
+  "lastUpdated": "2026-05-26T22:25:27.974Z",
   "eventStartDate": "2026-05-22",
   "eventEndDate": "2026-05-31",
   "stats": {
     "totalContributors": 26,
     "totalPrsMerged": 54,
     "totalPrsOpened": 0,
-    "totalIssuesClosed": 449,
+    "totalIssuesClosed": 454,
     "totalIssuesOpened": 0,
     "daysElapsed": 5,
     "daysRemaining": 5
@@ -36,10 +36,10 @@
         "aryanndwi123",
         "Harkeerat24"
       ],
-      "totalScore": 86,
+      "totalScore": 91,
       "totalPrsMerged": 4,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 74,
+      "totalIssuesClosed": 79,
       "totalIssuesOpened": 0
     },
     {
@@ -4342,6 +4342,184 @@
       ]
     },
     {
+      "username": "aryanndwi123",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/100300789?v=4",
+      "profileUrl": "https://github.com/aryanndwi123",
+      "team": "CtrlAltDlt",
+      "prsOpened": 0,
+      "prsMerged": 1,
+      "issuesOpened": 0,
+      "issuesClosed": 9,
+      "issuesPrClosedScore": 9,
+      "prsMergedScore": 3,
+      "score": 12,
+      "activityLevel": "High",
+      "dailyActivity": [
+        {
+          "date": "2026-05-22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 1,
+          "issuesOpened": 0,
+          "issuesClosed": 9,
+          "score": 12
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        }
+      ],
+      "contributions": [
+        {
+          "type": "pr_merged",
+          "title": "Merged: fix: prevent cyclic subcircuit dependency in insert dialog",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1046",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-26",
+          "points": 3
+        },
+        {
+          "type": "issue_closed",
+          "title": "(GSoC'26) Week 1: Improve and fix canonical.js and importCanonical.js for all circuitElementList types.",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/1068",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "🐞 Bug: Cyclic subcircuit dependency not prevented in Insert Subcircuit dialog",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/1045",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Feature: Add JSON preview and copy to clipboard in Export as .cv File dialog",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/1005",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "`eslint-plugin-vue` plugin doesn't support typescript",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/107",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Navbar is not responsive in the simulator section. ",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/99",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Add a search functionality to Custom keyboard shortcuts section",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/48",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Fix: search icon keyboard accessibility",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7074",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "[fix#107] new eslint parser to support typescript",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/108",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix: navbar is not responsive in the simulator section",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/103",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-26",
+          "points": 1
+        }
+      ]
+    },
+    {
       "username": "JatsuAkaYashvant",
       "avatarUrl": "https://avatars.githubusercontent.com/u/146776812?u=cc4172c883c25226bcae3cfe615e81f336f8e4cf&v=4",
       "profileUrl": "https://github.com/JatsuAkaYashvant",
@@ -4499,144 +4677,6 @@
           "url": "https://github.com/CircuitVerse/mobile-app/pull/76",
           "repo": "CircuitVerse/mobile-app",
           "date": "2026-05-25",
-          "points": 1
-        }
-      ]
-    },
-    {
-      "username": "aryanndwi123",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/100300789?v=4",
-      "profileUrl": "https://github.com/aryanndwi123",
-      "team": "CtrlAltDlt",
-      "prsOpened": 0,
-      "prsMerged": 1,
-      "issuesOpened": 0,
-      "issuesClosed": 4,
-      "issuesPrClosedScore": 4,
-      "prsMergedScore": 3,
-      "score": 7,
-      "activityLevel": "Medium",
-      "dailyActivity": [
-        {
-          "date": "2026-05-22",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-23",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-24",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-25",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-26",
-          "prsOpened": 0,
-          "prsMerged": 1,
-          "issuesOpened": 0,
-          "issuesClosed": 4,
-          "score": 7
-        },
-        {
-          "date": "2026-05-27",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-28",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-29",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-30",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-31",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        }
-      ],
-      "contributions": [
-        {
-          "type": "pr_merged",
-          "title": "Merged: fix: prevent cyclic subcircuit dependency in insert dialog",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1046",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-26",
-          "points": 3
-        },
-        {
-          "type": "issue_closed",
-          "title": "(GSoC'26) Week 1: Improve and fix canonical.js and importCanonical.js for all circuitElementList types.",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/1068",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-26",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "🐞 Bug: Cyclic subcircuit dependency not prevented in Insert Subcircuit dialog",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/1045",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-26",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Feature: Add JSON preview and copy to clipboard in Export as .cv File dialog",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/1005",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-26",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Fix: search icon keyboard accessibility",
-          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7074",
-          "repo": "CircuitVerse/CircuitVerse",
-          "date": "2026-05-26",
           "points": 1
         }
       ]
@@ -5128,8 +5168,8 @@
       "prsOpened": 0,
       "prsMerged": 14,
       "issuesOpened": 0,
-      "issuesClosed": 179,
-      "score": 221
+      "issuesClosed": 184,
+      "score": 226
     },
     {
       "date": "2026-05-27",
