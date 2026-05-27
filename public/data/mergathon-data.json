@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-05-26T22:25:27.974Z",
+  "lastUpdated": "2026-05-27T00:10:33.729Z",
   "eventStartDate": "2026-05-22",
   "eventEndDate": "2026-05-31",
   "stats": {
     "totalContributors": 26,
     "totalPrsMerged": 54,
     "totalPrsOpened": 0,
-    "totalIssuesClosed": 454,
+    "totalIssuesClosed": 455,
     "totalIssuesOpened": 0,
-    "daysElapsed": 5,
-    "daysRemaining": 5
+    "daysElapsed": 6,
+    "daysRemaining": 4
   },
   "teams": [
     {
@@ -36,10 +36,10 @@
         "aryanndwi123",
         "Harkeerat24"
       ],
-      "totalScore": 91,
+      "totalScore": 92,
       "totalPrsMerged": 4,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 79,
+      "totalIssuesClosed": 80,
       "totalIssuesOpened": 0
     },
     {
@@ -4349,10 +4349,10 @@
       "prsOpened": 0,
       "prsMerged": 1,
       "issuesOpened": 0,
-      "issuesClosed": 9,
-      "issuesPrClosedScore": 9,
+      "issuesClosed": 10,
+      "issuesPrClosedScore": 10,
       "prsMergedScore": 3,
-      "score": 12,
+      "score": 13,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -4392,8 +4392,8 @@
           "prsOpened": 0,
           "prsMerged": 1,
           "issuesOpened": 0,
-          "issuesClosed": 9,
-          "score": 12
+          "issuesClosed": 10,
+          "score": 13
         },
         {
           "date": "2026-05-27",
@@ -4498,6 +4498,14 @@
           "title": "Fix: search icon keyboard accessibility",
           "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7074",
           "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "feat(i18n): add i18n support, add in save image box,layout box,timing diagram,report issue",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/121",
+          "repo": "CircuitVerse/cv-frontend-vue",
           "date": "2026-05-26",
           "points": 1
         },
@@ -5168,8 +5176,8 @@
       "prsOpened": 0,
       "prsMerged": 14,
       "issuesOpened": 0,
-      "issuesClosed": 184,
-      "score": 226
+      "issuesClosed": 185,
+      "score": 227
     },
     {
       "date": "2026-05-27",
