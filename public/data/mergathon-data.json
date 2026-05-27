@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-27T05:21:22.791Z",
+  "lastUpdated": "2026-05-27T09:57:07.637Z",
   "eventStartDate": "2026-05-22",
   "eventEndDate": "2026-05-31",
   "stats": {
     "totalContributors": 26,
-    "totalPrsMerged": 54,
+    "totalPrsMerged": 56,
     "totalPrsOpened": 0,
-    "totalIssuesClosed": 455,
+    "totalIssuesClosed": 477,
     "totalIssuesOpened": 0,
     "daysElapsed": 6,
     "daysRemaining": 4
@@ -21,10 +21,10 @@
         "Asrani-Aman",
         "aryan7071"
       ],
-      "totalScore": 217,
-      "totalPrsMerged": 13,
+      "totalScore": 224,
+      "totalPrsMerged": 15,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 178,
+      "totalIssuesClosed": 179,
       "totalIssuesOpened": 0
     },
     {
@@ -51,10 +51,10 @@
         "Radhikaa-chauhan",
         "SouparnaChatterjee"
       ],
-      "totalScore": 140,
+      "totalScore": 161,
       "totalPrsMerged": 12,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 104,
+      "totalIssuesClosed": 125,
       "totalIssuesOpened": 0
     },
     {
@@ -1447,10 +1447,10 @@
       "prsOpened": 0,
       "prsMerged": 1,
       "issuesOpened": 0,
-      "issuesClosed": 99,
-      "issuesPrClosedScore": 99,
+      "issuesClosed": 120,
+      "issuesPrClosedScore": 120,
       "prsMergedScore": 3,
-      "score": 102,
+      "score": 123,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -1498,8 +1498,8 @@
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
+          "issuesClosed": 21,
+          "score": 21
         },
         {
           "date": "2026-05-28",
@@ -1535,6 +1535,174 @@
         }
       ],
       "contributions": [
+        {
+          "type": "issue_closed",
+          "title": "docs: Copyright year outdated in about.md",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/767",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "🐞 Bug :  On click over the logo icon it does not redirect to Home page",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/6437",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "🐞 Bug",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/5212",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "🐞 Bug: Footer of the website",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/5197",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "[🐞 Bug]Input result suggestion section creates  UI distrubance.",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/385",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Priorty Encoder Enable input is really a Valid output",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/1702",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Allow circuits to follow the cursor when pasting",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/971",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Simulation Enhancements for Debugging",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/615",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Purpose of Lite Mode in simulator unclear",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/569",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Cross Implementation of Circuits",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/520",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Separate Email templates based on the notification type",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/519",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Send assignment submission report to mentors",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/467",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Move current email templates to zurb",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/464",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Authentication Error on Second Click of \"Start Working\"",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/438",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Stuck Selections",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/437",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "docs: update copyright year from 2025 to 2026 in about.md",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/pull/768",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Improved Readability for Pop Quizzes in ROM- Microcontrollers",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/pull/760",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix: logo in navbar now redirects to home page using root_url helper",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/6483",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix: build breaking",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/pull/732",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Fix unordered footer ",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/5284",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "(fix #682):  Links are redirecting to the correct page.",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/pull/686",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-27",
+          "points": 1
+        },
         {
           "type": "issue_closed",
           "title": "Remove outdated CircuitVerse Firefox Extension download link from documentation",
@@ -3895,12 +4063,12 @@
       "profileUrl": "https://github.com/Asrani-Aman",
       "team": "NasaVerse",
       "prsOpened": 0,
-      "prsMerged": 5,
+      "prsMerged": 6,
       "issuesOpened": 0,
-      "issuesClosed": 6,
-      "issuesPrClosedScore": 6,
-      "prsMergedScore": 15,
-      "score": 21,
+      "issuesClosed": 7,
+      "issuesPrClosedScore": 7,
+      "prsMergedScore": 18,
+      "score": 25,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -3946,10 +4114,10 @@
         {
           "date": "2026-05-27",
           "prsOpened": 0,
-          "prsMerged": 0,
+          "prsMerged": 1,
           "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
+          "issuesClosed": 1,
+          "score": 4
         },
         {
           "date": "2026-05-28",
@@ -3985,6 +4153,22 @@
         }
       ],
       "contributions": [
+        {
+          "type": "pr_merged",
+          "title": "Merged: Fix/search no results bugfix",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7430",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 3
+        },
+        {
+          "type": "issue_closed",
+          "title": "Fix/no circuit found",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7429",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
         {
           "type": "pr_merged",
           "title": "Merged: Fix #7197: Show 'No circuits found' message",
@@ -4695,12 +4879,12 @@
       "profileUrl": "https://github.com/aryan7071",
       "team": "NasaVerse",
       "prsOpened": 0,
-      "prsMerged": 2,
+      "prsMerged": 3,
       "issuesOpened": 0,
       "issuesClosed": 0,
       "issuesPrClosedScore": 0,
-      "prsMergedScore": 6,
-      "score": 6,
+      "prsMergedScore": 9,
+      "score": 9,
       "activityLevel": "Medium",
       "dailyActivity": [
         {
@@ -4746,10 +4930,10 @@
         {
           "date": "2026-05-27",
           "prsOpened": 0,
-          "prsMerged": 0,
+          "prsMerged": 1,
           "issuesOpened": 0,
           "issuesClosed": 0,
-          "score": 0
+          "score": 3
         },
         {
           "date": "2026-05-28",
@@ -4785,6 +4969,14 @@
         }
       ],
       "contributions": [
+        {
+          "type": "pr_merged",
+          "title": "Fix/search no results bugfix",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7430",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 3
+        },
         {
           "type": "pr_merged",
           "title": "Fix #7197: Show 'No circuits found' message",
@@ -5182,10 +5374,10 @@
     {
       "date": "2026-05-27",
       "prsOpened": 0,
-      "prsMerged": 0,
+      "prsMerged": 2,
       "issuesOpened": 0,
-      "issuesClosed": 0,
-      "score": 0
+      "issuesClosed": 22,
+      "score": 28
     },
     {
       "date": "2026-05-28",
