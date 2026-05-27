@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-27T09:57:07.637Z",
+  "lastUpdated": "2026-05-27T12:58:05.823Z",
   "eventStartDate": "2026-05-22",
   "eventEndDate": "2026-05-31",
   "stats": {
     "totalContributors": 26,
     "totalPrsMerged": 56,
     "totalPrsOpened": 0,
-    "totalIssuesClosed": 477,
+    "totalIssuesClosed": 502,
     "totalIssuesOpened": 0,
     "daysElapsed": 6,
     "daysRemaining": 4
@@ -21,10 +21,10 @@
         "Asrani-Aman",
         "aryan7071"
       ],
-      "totalScore": 224,
+      "totalScore": 226,
       "totalPrsMerged": 15,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 179,
+      "totalIssuesClosed": 181,
       "totalIssuesOpened": 0
     },
     {
@@ -51,10 +51,10 @@
         "Radhikaa-chauhan",
         "SouparnaChatterjee"
       ],
-      "totalScore": 161,
+      "totalScore": 184,
       "totalPrsMerged": 12,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 125,
+      "totalIssuesClosed": 148,
       "totalIssuesOpened": 0
     },
     {
@@ -125,10 +125,10 @@
       "prsOpened": 0,
       "prsMerged": 5,
       "issuesOpened": 0,
-      "issuesClosed": 148,
-      "issuesPrClosedScore": 148,
+      "issuesClosed": 149,
+      "issuesPrClosedScore": 149,
       "prsMergedScore": 15,
-      "score": 163,
+      "score": 164,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -176,8 +176,8 @@
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
+          "issuesClosed": 1,
+          "score": 1
         },
         {
           "date": "2026-05-28",
@@ -213,6 +213,14 @@
         }
       ],
       "contributions": [
+        {
+          "type": "issue_closed",
+          "title": "🐞 Bug",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/7428",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
         {
           "type": "pr_merged",
           "title": "Fix navbar auth button overflow by collapsing earlier on medium screens (#6037)",
@@ -1447,10 +1455,10 @@
       "prsOpened": 0,
       "prsMerged": 1,
       "issuesOpened": 0,
-      "issuesClosed": 120,
-      "issuesPrClosedScore": 120,
+      "issuesClosed": 143,
+      "issuesPrClosedScore": 143,
       "prsMergedScore": 3,
-      "score": 123,
+      "score": 146,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -1498,8 +1506,8 @@
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
-          "issuesClosed": 21,
-          "score": 21
+          "issuesClosed": 44,
+          "score": 44
         },
         {
           "date": "2026-05-28",
@@ -1545,6 +1553,14 @@
         },
         {
           "type": "issue_closed",
+          "title": "Feature : Real-Time Collaboration in CircuitVerse Simulator",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/7129",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
           "title": "🐞 Bug :  On click over the logo icon it does not redirect to Home page",
           "url": "https://github.com/CircuitVerse/CircuitVerse/issues/6437",
           "repo": "CircuitVerse/CircuitVerse",
@@ -1553,8 +1569,40 @@
         },
         {
           "type": "issue_closed",
+          "title": "Add 'Next Chapter' Navigation Button for Seamless Progression",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/420",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Absence of demonstration of how the CircuitVerse Chrome extension works in Google Slides",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/414",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "🐞 Bug : Tutorial Guide Issue",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/5394",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
           "title": "🐞 Bug",
           "url": "https://github.com/CircuitVerse/CircuitVerse/issues/5212",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": " Proposal: Interactive Step-by-Step Circuit Tutorials for CircuitVerse",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/5202",
           "repo": "CircuitVerse/CircuitVerse",
           "date": "2026-05-27",
           "points": 1
@@ -1577,6 +1625,118 @@
         },
         {
           "type": "issue_closed",
+          "title": "search box is coinciding with the chapter list when we scroll down the chapter list",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/384",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "🐞 Bug: Alignment of boolean logic table",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/4856",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "🐞 Bug Button Functionality overwriting power.",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/4742",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "CV Logo redirecting to main webiste",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/372",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "🐞 Bug : Documentation Section Bug Update",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/370",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Testbentch Contentedit fields overflow",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/4559",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Combination analysis boolean logic expression INVALID expression acceptance",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/4547",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Boolean Logic Table Output expression overflow",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/4526",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "🐞 Bug: Deleting all and undoing the deleted part skips the final change.",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/4446",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Feature in Title/menu bar -> Switch dropdown on hover",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/3657",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Testbench Effects",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/3517",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Making context-menu options dynamic",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/2935",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Better Error Reporting when loading or saving projects.",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/2267",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Insert Subcircuit Dialog : Longer Circuit Names Bug",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/1711",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
           "title": "Priorty Encoder Enable input is really a Valid output",
           "url": "https://github.com/CircuitVerse/CircuitVerse/issues/1702",
           "repo": "CircuitVerse/CircuitVerse",
@@ -1585,8 +1745,32 @@
         },
         {
           "type": "issue_closed",
+          "title": " scroll & zoom(canvas) of project preview (popup) doesn't seem right",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/1003",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
           "title": "Allow circuits to follow the cursor when pasting",
           "url": "https://github.com/CircuitVerse/CircuitVerse/issues/971",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Add an 'Open online' button in the simulator menu",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/808",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Different fonts used across different platforms of CV",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/656",
           "repo": "CircuitVerse/CircuitVerse",
           "date": "2026-05-27",
           "points": 1
@@ -1700,6 +1884,14 @@
           "title": "(fix #682):  Links are redirecting to the correct page.",
           "url": "https://github.com/CircuitVerse/Interactive-Book/pull/686",
           "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Dynamic context menu options",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/2936",
+          "repo": "CircuitVerse/CircuitVerse",
           "date": "2026-05-27",
           "points": 1
         },
@@ -3767,10 +3959,10 @@
       "prsOpened": 0,
       "prsMerged": 1,
       "issuesOpened": 0,
-      "issuesClosed": 24,
-      "issuesPrClosedScore": 24,
+      "issuesClosed": 25,
+      "issuesPrClosedScore": 25,
       "prsMergedScore": 3,
-      "score": 27,
+      "score": 28,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -3818,8 +4010,8 @@
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
+          "issuesClosed": 1,
+          "score": 1
         },
         {
           "date": "2026-05-28",
@@ -3855,6 +4047,14 @@
         }
       ],
       "contributions": [
+        {
+          "type": "issue_closed",
+          "title": "Feat: Bit Extender Component",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/625",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-27",
+          "points": 1
+        },
         {
           "type": "pr_merged",
           "title": "Feat: Add misc resources - announcements, issue-circuit and task runs to Avo",
@@ -5376,8 +5576,8 @@
       "prsOpened": 0,
       "prsMerged": 2,
       "issuesOpened": 0,
-      "issuesClosed": 22,
-      "score": 28
+      "issuesClosed": 47,
+      "score": 53
     },
     {
       "date": "2026-05-28",
