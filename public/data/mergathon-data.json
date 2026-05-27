@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-27T19:31:13.822Z",
+  "lastUpdated": "2026-05-27T22:01:13.537Z",
   "eventStartDate": "2026-05-22",
   "eventEndDate": "2026-05-31",
   "stats": {
     "totalContributors": 27,
     "totalPrsMerged": 62,
     "totalPrsOpened": 0,
-    "totalIssuesClosed": 617,
+    "totalIssuesClosed": 635,
     "totalIssuesOpened": 0,
     "daysElapsed": 6,
     "daysRemaining": 4
@@ -21,10 +21,10 @@
         "Asrani-Aman",
         "aryan7071"
       ],
-      "totalScore": 244,
+      "totalScore": 246,
       "totalPrsMerged": 15,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 199,
+      "totalIssuesClosed": 201,
       "totalIssuesOpened": 0
     },
     {
@@ -96,10 +96,10 @@
         "JatsuAkaYashvant",
         "hardik17771"
       ],
-      "totalScore": 39,
+      "totalScore": 55,
       "totalPrsMerged": 1,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 36,
+      "totalIssuesClosed": 52,
       "totalIssuesOpened": 0
     },
     {
@@ -1887,10 +1887,10 @@
       "prsOpened": 0,
       "prsMerged": 5,
       "issuesOpened": 0,
-      "issuesClosed": 149,
-      "issuesPrClosedScore": 149,
+      "issuesClosed": 151,
+      "issuesPrClosedScore": 151,
       "prsMergedScore": 15,
-      "score": 164,
+      "score": 166,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -1938,8 +1938,8 @@
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
-          "issuesClosed": 1,
-          "score": 1
+          "issuesClosed": 3,
+          "score": 3
         },
         {
           "date": "2026-05-28",
@@ -1979,6 +1979,22 @@
           "type": "issue_closed",
           "title": "🐞 Bug",
           "url": "https://github.com/CircuitVerse/CircuitVerse/issues/7428",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "feat: Add client-side Yosys WASM synthesis for Tauri desktop builds",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1022",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "build(deps): bump thor from 1.2.1 to 1.4.0 in /docs",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/5932",
           "repo": "CircuitVerse/CircuitVerse",
           "date": "2026-05-27",
           "points": 1
@@ -4760,6 +4776,464 @@
       ]
     },
     {
+      "username": "SantamRC",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/52635773?u=d7dbe6b78dfc69999ec477ac55b0063374dbf883&v=4",
+      "profileUrl": "https://github.com/SantamRC",
+      "team": "Dart Vaders",
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "issuesOpened": 0,
+      "issuesClosed": 45,
+      "issuesPrClosedScore": 45,
+      "prsMergedScore": 0,
+      "score": 45,
+      "activityLevel": "High",
+      "dailyActivity": [
+        {
+          "date": "2026-05-22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 2,
+          "score": 2
+        },
+        {
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 9,
+          "score": 9
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 10,
+          "score": 10
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 24,
+          "score": 24
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        }
+      ],
+      "contributions": [
+        {
+          "type": "issue_closed",
+          "title": "[Maintenance] Replace discontinued flutter_markdown package with a maintained alternative",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/568",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Bug: FlutterError Overlay Not Found during Authentication",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/545",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "chore(tests): introduce test suite for LocalStorageService",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/540",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix(auth): fatal UI crashes due to partial authentication state during login failures",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/537",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix(auth): persistent token vulnerability on logout due to unhandled null fields",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/536",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Add Simplified Chinese (zh) localization support to improve accessibility",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/526",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Logout from Navigation Drawer does not navigate to Home screen or update UI immediately",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/520",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "High Priority: Potential memory leak due to undisposed StreamController in IbInteractionBuilder",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/516",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "No Error Message Displayed When Signing Up With an Existing Email",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/508",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Login succeeds but app does not navigate to landing screen",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/504",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "User Automatically Logged In After Signup Without Email Verification",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/503",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "No Error Message Displayed for Incorrect Email or Password",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/502",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Login Allows Direct Access Without Proper Email Verification",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/501",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "GitHub Login Not Functioning",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/500",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Google OAuth Login Fails After Account Selection",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/499",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Forgot Password Sends Instructions for Unregistered Emails & Email Not Received",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/498",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Android build fails due to Gradle, Kotlin, and SDK configuration mismatch",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/493",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "[Feature Request] Deeplink Manager",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/482",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Authorization errors using social login (Google OAuth and Github)",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/368",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Email us feature not Working",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/258",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Depreciated keywords warning after upgrading Flutter version above 3.0.0",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/256",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Update `format` command in github actions",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/255",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "The button to change themes must be a bit lower down on the sidebar",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/244",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Fix Deprecated API warning for `flutter_facebook_auth`.",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/203",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix: correctly parse and route absolute anchor URLs in Interactive Book",
+          "url": "https://github.com/CircuitVerse/mobile-app/pull/557",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "test(auth): add unit testing suite for LocalStorageService",
+          "url": "https://github.com/CircuitVerse/mobile-app/pull/541",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix(auth): prevent partial authentication state on fetch user failure",
+          "url": "https://github.com/CircuitVerse/mobile-app/pull/539",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix(auth): clear token from SharedPreferences on logout",
+          "url": "https://github.com/CircuitVerse/mobile-app/pull/538",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix: change display of subscribed to mails from true/false to yes/no",
+          "url": "https://github.com/CircuitVerse/mobile-app/pull/527",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix: resolve interactive-book rendering issue",
+          "url": "https://github.com/CircuitVerse/mobile-app/pull/519",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix: Interactive book and improvements",
+          "url": "https://github.com/CircuitVerse/mobile-app/pull/517",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix: resolve login state issue preventing navigation (#504)",
+          "url": "https://github.com/CircuitVerse/mobile-app/pull/515",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Fix interactive books page view",
+          "url": "https://github.com/CircuitVerse/mobile-app/pull/457",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "added the language toggle functionality in the drawer section",
+          "url": "https://github.com/CircuitVerse/mobile-app/pull/338",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "[Task] Support Predictive Back Gesture (Android 13+) and Modernize Navigation",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/567",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "[Bug]: Frontend Interactive Book incorrectly parses absolute anchor link URLs",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/556",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Reading position is not preserved in Interactive Books",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/531",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Add Offline Reading Support for Interactive Books",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/528",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Interactive-Book not getting rendered",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/496",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Inconsistent SDK constraints in pubspec.yaml vs shared_preferences ^2.5.4",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/478",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Debugging Interactive Book",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/388",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "[Interactive Book] fix parsing `sup` HTML tag",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/196",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Enhance App to meet Material Design Guidelines",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/100",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-25",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Fixed version conflicts: Upgraded compileSdk to 36, AGP to 8.9.1, Kotlin to 2.1.0, and Gradle to 8.11.1.",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/518",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-24",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Android build failure: Dependencies require AGP 8.9.1+, compileSdk 36, minSdk 24, and Kotlin 2.1.0+",
+          "url": "https://github.com/CircuitVerse/mobile-app/issues/484",
+          "repo": "CircuitVerse/mobile-app",
+          "date": "2026-05-24",
+          "points": 1
+        }
+      ]
+    },
+    {
       "username": "Yana-do-code",
       "avatarUrl": "https://avatars.githubusercontent.com/u/173885830?v=4",
       "profileUrl": "https://github.com/Yana-do-code",
@@ -5108,336 +5582,6 @@
           "title": "feat: add Brazilian Portuguese (pt-BR) i18n and simulator language switcher",
           "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7337",
           "repo": "CircuitVerse/CircuitVerse",
-          "date": "2026-05-24",
-          "points": 1
-        }
-      ]
-    },
-    {
-      "username": "SantamRC",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/52635773?u=d7dbe6b78dfc69999ec477ac55b0063374dbf883&v=4",
-      "profileUrl": "https://github.com/SantamRC",
-      "team": "Dart Vaders",
-      "prsOpened": 0,
-      "prsMerged": 0,
-      "issuesOpened": 0,
-      "issuesClosed": 29,
-      "issuesPrClosedScore": 29,
-      "prsMergedScore": 0,
-      "score": 29,
-      "activityLevel": "High",
-      "dailyActivity": [
-        {
-          "date": "2026-05-22",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-23",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-24",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 2,
-          "score": 2
-        },
-        {
-          "date": "2026-05-25",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 9,
-          "score": 9
-        },
-        {
-          "date": "2026-05-26",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 10,
-          "score": 10
-        },
-        {
-          "date": "2026-05-27",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 8,
-          "score": 8
-        },
-        {
-          "date": "2026-05-28",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-29",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-30",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-31",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        }
-      ],
-      "contributions": [
-        {
-          "type": "issue_closed",
-          "title": "[Maintenance] Replace discontinued flutter_markdown package with a maintained alternative",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/568",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-27",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Bug: FlutterError Overlay Not Found during Authentication",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/545",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-27",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "chore(tests): introduce test suite for LocalStorageService",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/540",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-27",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Email us feature not Working",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/258",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-27",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Depreciated keywords warning after upgrading Flutter version above 3.0.0",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/256",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-27",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Update `format` command in github actions",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/255",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-27",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "The button to change themes must be a bit lower down on the sidebar",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/244",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-27",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Fix Deprecated API warning for `flutter_facebook_auth`.",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/203",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-27",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "fix: correctly parse and route absolute anchor URLs in Interactive Book",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/557",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-26",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "test(auth): add unit testing suite for LocalStorageService",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/541",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-26",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "fix(auth): prevent partial authentication state on fetch user failure",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/539",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-26",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "fix(auth): clear token from SharedPreferences on logout",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/538",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-26",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "fix: change display of subscribed to mails from true/false to yes/no",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/527",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-26",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "fix: resolve interactive-book rendering issue",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/519",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-26",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "fix: Interactive book and improvements",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/517",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-26",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "fix: resolve login state issue preventing navigation (#504)",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/515",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-26",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Fix interactive books page view",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/457",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-26",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "added the language toggle functionality in the drawer section",
-          "url": "https://github.com/CircuitVerse/mobile-app/pull/338",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-26",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "[Task] Support Predictive Back Gesture (Android 13+) and Modernize Navigation",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/567",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "[Bug]: Frontend Interactive Book incorrectly parses absolute anchor link URLs",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/556",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Reading position is not preserved in Interactive Books",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/531",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Add Offline Reading Support for Interactive Books",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/528",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Interactive-Book not getting rendered",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/496",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Inconsistent SDK constraints in pubspec.yaml vs shared_preferences ^2.5.4",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/478",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Debugging Interactive Book",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/388",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "[Interactive Book] fix parsing `sup` HTML tag",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/196",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Enhance App to meet Material Design Guidelines",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/100",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-25",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Fixed version conflicts: Upgraded compileSdk to 36, AGP to 8.9.1, Kotlin to 2.1.0, and Gradle to 8.11.1.",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/518",
-          "repo": "CircuitVerse/mobile-app",
-          "date": "2026-05-24",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Android build failure: Dependencies require AGP 8.9.1+, compileSdk 36, minSdk 24, and Kotlin 2.1.0+",
-          "url": "https://github.com/CircuitVerse/mobile-app/issues/484",
-          "repo": "CircuitVerse/mobile-app",
           "date": "2026-05-24",
           "points": 1
         }
@@ -6528,8 +6672,8 @@
       "prsOpened": 0,
       "prsMerged": 8,
       "issuesOpened": 0,
-      "issuesClosed": 163,
-      "score": 187
+      "issuesClosed": 181,
+      "score": 205
     },
     {
       "date": "2026-05-28",
