@@ -3,6 +3,8 @@ import path from "path";
 import ContributorProfile from "./ContributorProfile";
 import { MergathonData } from "../../../types";
 
+export const dynamicParams = false;
+
 interface PageProps {
   params: Promise<{ username: string }>;
 }

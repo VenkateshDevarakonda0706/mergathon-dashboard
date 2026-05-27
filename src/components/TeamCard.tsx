@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Team, Contributor } from "../types";
-import { GitPullRequest, CheckCircle2, MessageSquare, PlusCircle } from "lucide-react";
+import { GitPullRequest, CheckCircle2 } from "lucide-react";
 
 interface TeamCardProps {
   team: Team;
@@ -26,7 +26,9 @@ export default function TeamCard({ team, allContributors, totalScoreCombined }: 
   return (
     <div className={`card team-card ${teamClass}`}>
       <div className="team-header">
-        <h3 className="team-name">{team.name}</h3>
+        <Link href={`/teams/${encodeURIComponent(team.name)}`} style={{ textDecoration: "none" }}>
+          <h3 className="team-name clickable-team-title" style={{ transition: "color 0.2s" }}>{team.name}</h3>
+        </Link>
         <span className="team-score-badge">{team.totalScore} pts</span>
       </div>
 
@@ -37,13 +39,6 @@ export default function TeamCard({ team, allContributors, totalScoreCombined }: 
             <span>{team.totalPrsMerged}</span>
           </div>
           <div className="team-stat-label">Merged PRs</div>
-        </div>
-        <div className="team-stat">
-          <div className="team-stat-value" style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "4px" }}>
-            <MessageSquare size={16} style={{ color: "var(--accent-cyan)" }} />
-            <span>{team.totalPrsReviewed}</span>
-          </div>
-          <div className="team-stat-label">Reviews</div>
         </div>
         <div className="team-stat">
           <div className="team-stat-value" style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "4px" }}>
@@ -89,6 +84,24 @@ export default function TeamCard({ team, allContributors, totalScoreCombined }: 
             );
           })}
         </div>
+      </div>
+
+      <div style={{ marginTop: "16px", paddingTop: "12px", borderTop: "1px solid var(--border-primary)", display: "flex", justifyContent: "flex-end" }}>
+        <Link 
+          href={`/teams/${encodeURIComponent(team.name)}`} 
+          style={{ 
+            fontSize: "12px", 
+            fontWeight: 700, 
+            color: team.color, 
+            textDecoration: "none", 
+            display: "inline-flex", 
+            alignItems: "center", 
+            gap: "4px" 
+          }}
+        >
+          <span>View Details</span>
+          <span>→</span>
+        </Link>
       </div>
     </div>
   );

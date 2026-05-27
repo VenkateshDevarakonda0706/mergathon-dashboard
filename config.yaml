@@ -40,6 +40,14 @@ teams:
       - "Asrani-Aman"
       - "aryan7071"
 
+  - name: "CtrlAltDlt"
+    color: "#fb8b24"
+    members:
+      - "magic-peach"
+      - "Saniya-r-Shaikh"
+      - "aryanndwi123"
+      - "Harkeerat24"
+
   - name: "LGTM"
     color: "#8b5cf6"
     members:
@@ -60,6 +68,10 @@ teams:
     color: "#f59e0b"
     members:
       - "haaasini01"
+      - "chethanac15"
+      - "pranjaligoyal31"
+      - "Shahbaz898414"
+      - "PRATHAM2002-DS"
 
   - name: "Dart Vaders"
     color: "#f43f5e"

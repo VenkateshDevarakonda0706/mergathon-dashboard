@@ -4,16 +4,36 @@ import { useState, useEffect } from "react";
 import { useData } from "../context/DataContext";
 import TeamCard from "../components/TeamCard";
 import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
-import { Users, GitPullRequest, CheckCircle2, MessageSquare, AlertCircle } from "lucide-react";
+import { Users, GitPullRequest, CheckCircle2, AlertCircle } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
   const { data } = useData();
   const [view, setView] = useState<"overview" | "teams">("overview");
-  const [isMounted, setIsMounted] = useState(false);
+  const [countdown, setCountdown] = useState<{ days: number; hours: number; minutes: number; seconds: number; ended: boolean } | null>(null);
 
   useEffect(() => {
-    setIsMounted(true);
+    const target = new Date("2026-05-31T23:59:59Z");
+
+    const tick = () => {
+      const diff = target.getTime() - Date.now();
+      if (diff <= 0) {
+        setCountdown({ days: 0, hours: 0, minutes: 0, seconds: 0, ended: true });
+        return;
+      }
+      const totalSeconds = Math.floor(diff / 1000);
+      setCountdown({
+        days: Math.floor(totalSeconds / 86400),
+        hours: Math.floor((totalSeconds % 86400) / 3600),
+        minutes: Math.floor((totalSeconds % 3600) / 60),
+        seconds: totalSeconds % 60,
+        ended: false,
+      });
+    };
+
+    tick();
+    const id = setInterval(tick, 1000);
+    return () => clearInterval(id);
   }, []);
 
   if (!data) return null;
@@ -22,12 +42,11 @@ export default function Home() {
   const teams = [...data.teams].sort((a, b) => b.totalScore - a.totalScore);
 
   const totalScoreCombined = teams.reduce((acc, t) => acc + t.totalScore, 0);
-  const totalActivities = stats.totalPrsMerged + stats.totalIssuesClosed + stats.totalPrsReviewed;
+  const totalActivities = stats.totalPrsMerged + stats.totalIssuesClosed;
 
   const pieData = [
     { name: "PR Merged", value: stats.totalPrsMerged || 0, color: "#10b981" },
     { name: "Issue Closed", value: stats.totalIssuesClosed || 0, color: "#3b82f6" },
-    { name: "Reviews", value: stats.totalPrsReviewed || 0, color: "#8b5cf6" },
   ];
 
   const allContributions = contributors
@@ -73,6 +92,7 @@ export default function Home() {
           Track merged pull requests, closed issues, and team rankings for the CircuitVerse mergathon.
         </p>
 
+fix-mobile-responsiveness
         <div
           className="capsule-toggle"
           style={{
@@ -80,6 +100,52 @@ export default function Home() {
             justifyContent: "center",
           }}
         >
+
+        {countdown !== null && (
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: "16px" }}>
+            {countdown.ended ? (
+              <span style={{ fontSize: "13px", fontWeight: 700, color: "var(--text-tertiary)", letterSpacing: "0.5px", textTransform: "uppercase" }}>
+                Event Ended
+              </span>
+            ) : (
+              <>
+                <span style={{ fontSize: "11px", fontWeight: 700, color: "var(--text-tertiary)", letterSpacing: "1px", textTransform: "uppercase", marginBottom: "10px" }}>
+                  Event ends in
+                </span>
+                <div style={{ display: "flex", gap: "8px" }}>
+                  {[
+                    { value: countdown.days, label: "Days" },
+                    { value: countdown.hours, label: "Hours" },
+                    { value: countdown.minutes, label: "Mins" },
+                    { value: countdown.seconds, label: "Secs" },
+                  ].map(({ value, label }) => (
+                    <div
+                      key={label}
+                      style={{
+                        background: "rgba(255,255,255,0.05)",
+                        border: "1px solid rgba(255,255,255,0.1)",
+                        borderRadius: "8px",
+                        minWidth: "56px",
+                        padding: "8px 12px",
+                        textAlign: "center",
+                      }}
+                    >
+                      <div style={{ fontSize: "28px", fontWeight: 800, color: "#ffffff", lineHeight: 1 }}>
+                        {String(value).padStart(2, "0")}
+                      </div>
+                      <div style={{ fontSize: "10px", fontWeight: 700, color: "var(--text-tertiary)", textTransform: "uppercase", letterSpacing: "0.5px", marginTop: "4px" }}>
+                        {label}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+        )}
+
+        <div className="capsule-toggle">
+ main
           <button className={`toggle-option ${view === "overview" ? "active" : ""}`} onClick={() => setView("overview")}>Overview</button>
           <button className={`toggle-option ${view === "teams" ? "active" : ""}`} onClick={() => setView("teams")}>Teams</button>
         </div>
@@ -149,7 +215,19 @@ export default function Home() {
                     <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                       <span style={{ fontSize: "11px", fontWeight: 700, color: "var(--text-tertiary)", width: "16px" }}>#{idx + 1}</span>
                       <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: team.color, flexShrink: 0 }} />
-                      <span style={{ fontSize: "13px", fontWeight: 700, color: "var(--text-primary)" }}>{team.name}</span>
+                      <Link href={`/teams/${encodeURIComponent(team.name)}`} style={{ textDecoration: "none" }}>
+                        <span 
+                          style={{ 
+                            fontSize: "13px", 
+                            fontWeight: 700, 
+                            color: "var(--text-primary)",
+                            transition: "color 0.2s"
+                          }}
+                          className="clickable-team-title"
+                        >
+                          {team.name}
+                        </span>
+                      </Link>
                     </div>
                     <span style={{ fontSize: "13px", fontWeight: 800, color: team.color }}>{team.totalScore} pts</span>
                   </div>
@@ -168,7 +246,7 @@ export default function Home() {
                   <span className="card-meta">MIX</span>
                 </div>
                 <div style={{ position: "relative", width: "100%", height: "130px", marginTop: "8px" }}>
-                  {isMounted ? (
+                  {countdown !== null ? (
                     <ResponsiveContainer width="100%" height="100%">
                       <PieChart>
                         <Pie data={pieData} cx="50%" cy="50%" innerRadius={36} outerRadius={52} paddingAngle={3} dataKey="value">
@@ -215,7 +293,7 @@ export default function Home() {
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "16px", marginTop: "4px" }}>
                 <h3 style={{ fontSize: "clamp(2rem, 6vw, 28px)", fontWeight: 900, color: "#ffffff", letterSpacing: "-0.5px", lineHeight: "1.1", }}>Team Rankings</h3>
                 <span className="event-badge-outline" style={{ margin: 0, padding: "4px 12px", fontSize: "10px" }}>
-                  Housekeeping 1pt · Merge 3pts · Heavy 5pts
+                  PR Merged +3pts · Issue Closed +1pt
                 </span>
               </div>
 
@@ -227,7 +305,19 @@ export default function Home() {
                         <Users size={20} style={{ color: team.color }} />
                       </div>
                       <div>
-                        <h4 style={{ fontSize: "16px", fontWeight: 800, color: "#ffffff" }}>{team.name}</h4>
+                        <Link href={`/teams/${encodeURIComponent(team.name)}`} style={{ textDecoration: "none" }}>
+                          <h4 
+                            style={{ 
+                              fontSize: "16px", 
+                              fontWeight: 800, 
+                              color: "#ffffff",
+                              transition: "color 0.2s"
+                            }}
+                            className="clickable-team-title"
+                          >
+                            {team.name}
+                          </h4>
+                        </Link>
                         <span style={{ fontSize: "12px", color: "var(--text-secondary)" }}>{team.members.length} contributors</span>
                       </div>
                     </div>
@@ -271,7 +361,7 @@ export default function Home() {
                       let badgeIcon = <GitPullRequest size={14} />;
                       if (isMerged) { badgeColor = "var(--accent-emerald)"; }
                       else if (isClosed) { badgeColor = "var(--accent-emerald)"; badgeIcon = <CheckCircle2 size={14} />; }
-                      else if (c.type === "pr_reviewed") { badgeColor = "var(--accent-violet)"; badgeIcon = <MessageSquare size={14} />; }
+
                       return (
                         <div key={idx} className="timeline-item">
                           <div className="timeline-icon-box" style={{ background: `${badgeColor}15`, border: `1px solid ${badgeColor}30`, color: badgeColor }}>{badgeIcon}</div>
@@ -285,7 +375,7 @@ export default function Home() {
                         >
                               <span style={{ fontWeight: 800, color: "var(--text-primary)" }}>{c.username}</span>
                               {" "}{c.type.replace("_", " ")}{" "}
-                              <span style={{ color: "var(--text-secondary)" }}>"{c.title}"</span>
+                              <span style={{ color: "var(--text-secondary)" }}>&ldquo;{c.title}&rdquo;</span>
                             </div>
                             <div className="timeline-meta">
                               <span>{c.repo}</span><span>•</span><span>{c.date}</span>

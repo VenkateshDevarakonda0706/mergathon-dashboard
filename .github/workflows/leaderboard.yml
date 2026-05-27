@@ -3,7 +3,7 @@ name: Update Mergathon Leaderboard
 on:
   schedule:
     # Run every 6 hours
-    - cron: "0 */6 * * *"
+    - cron: "0 * * * *"
   workflow_dispatch: # Allow manual triggers from the Actions tab
 
 permissions:
