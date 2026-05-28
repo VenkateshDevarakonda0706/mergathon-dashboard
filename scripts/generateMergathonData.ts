@@ -41,6 +41,7 @@ function parseConfigYaml(content: string): YamlConfig {
   };
   const mergedLabels: Record<string, number> = {
     "mergathon:merged": 3,
+    "mergathon:resolved-merged": 5,
   };
   const thresholds = { highActivity: 10, mediumActivity: 3 };
   const teams: { name: string; color: string; members: string[] }[] = [];
@@ -111,7 +112,7 @@ function getDefaultConfig(): YamlConfig {
     eventStartDate: "2026-05-22", eventEndDate: "2026-05-31",
     repos: ["CircuitVerse/CircuitVerse", "CircuitVerse/mobile-app", "CircuitVerse/Interactive-Book", "CircuitVerse/cv-frontend-vue"],
     closedLabels: { "mergathon:closed-outdated": 1, "mergathon:closed-taken-over": 1, "mergathon:closed-invalid": 1 },
-    mergedLabels: { "mergathon:merged": 3 },
+    mergedLabels: { "mergathon:merged": 3, "mergathon:resolved-merged": 5 },
     thresholds: { highActivity: 10, mediumActivity: 3 },
     teams: [
       { name: "Team Alpha", color: "#3b82f6", members: ["dev-sarah", "coder-alex"] },
@@ -124,8 +125,13 @@ function isBot(user: { login: string; type?: string }): boolean {
   return user.login.endsWith("[bot]") || user.type === "Bot";
 }
 
-function hasMatchingLabel(labels: { name: string }[], configLabels: Record<string, number>): boolean {
-  return labels.some(label => label.name in configLabels);
+function scoreFromLabels(labels: { name: string }[], scoringLabels: Record<string, number>): number {
+  let best = 0;
+  for (const label of labels) {
+    const pts = scoringLabels[label.name];
+    if (pts !== undefined && pts > best) best = pts;
+  }
+  return best;
 }
 
 function generateEmptyDailyActivity(startStr: string, endStr: string): DailyActivity[] {
@@ -478,8 +484,6 @@ async function fetchLiveContributors(config: YamlConfig, pool: TokenPool): Promi
       if (processedPrsMerged.has(pr.url)) continue;
       if (pr.author.login.endsWith("[bot]")) continue;
       processedPrsMerged.add(pr.url);
-      // Only count merged PRs that have at least one matching merged label
-      if (!hasMatchingLabel(pr.labels.nodes, config.mergedLabels)) continue;
       totalMergedPRs++;
 
       // Award points to PR author
@@ -528,8 +532,6 @@ async function fetchLiveContributors(config: YamlConfig, pool: TokenPool): Promi
       if (!reposSet.has(repo.toLowerCase())) continue;
       if (processedIssuesClosed.has(issue.url)) continue;
       processedIssuesClosed.add(issue.url);
-      // Only count issues with at least one matching closed label
-      if (!hasMatchingLabel(issue.labels.nodes, config.closedLabels)) continue;
 
       // Determine who closed the issue via timeline CLOSED_EVENT
       let closer: GQLActor | null = null;
@@ -577,8 +579,6 @@ async function fetchLiveContributors(config: YamlConfig, pool: TokenPool): Promi
       if (!reposSet.has(repo.toLowerCase())) continue;
       if (processedClosedPRs.has(pr.url)) continue;
       processedClosedPRs.add(pr.url);
-      // Only count closed PRs with at least one matching closed label
-      if (!hasMatchingLabel(pr.labels.nodes, config.closedLabels)) continue;
 
       // Determine who closed the PR via timeline CLOSED_EVENT
       let closer: GQLActor | null = null;
