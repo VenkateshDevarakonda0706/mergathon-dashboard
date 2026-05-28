@@ -7,6 +7,8 @@ import { MergathonData } from "../../../types";
  * PageProps — Next.js App Router passes route params as a Promise.
  * For this route, the [teamName] segment becomes params.teamName.
  */
+export const dynamicParams = false;
+
 interface PageProps {
   params: Promise<{ teamName: string }>;
 }

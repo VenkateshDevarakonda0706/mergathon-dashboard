@@ -259,7 +259,7 @@ export default function TeamDetail({ teamName }: { teamName: string }) {
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "8px 12px", background: "var(--bg-tertiary)", borderRadius: "var(--radius-md)" }}>
                 <span style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "13px", color: "var(--text-secondary)", fontWeight: 500 }}>
                   <CheckCircle2 size={16} style={{ color: "var(--accent-emerald)" }} />
-                  <span>Issues Closed</span>
+                  <span>Issues & Unmerged PRs Closed</span>
                 </span>
                 <span style={{ fontWeight: 700 }}>{team.totalIssuesClosed}</span>
               </div>
@@ -306,7 +306,7 @@ export default function TeamDetail({ teamName }: { teamName: string }) {
                     <div>
                       <span style={{ fontSize: "13px", fontWeight: 700, color: "var(--text-primary)" }}>{member.username}</span>
                       <div style={{ fontSize: "11px", color: "var(--text-tertiary)" }}>
-                        {member.prsMerged} PRs · {member.issuesClosed} Issues
+                        {member.prsMerged} PRs · {member.issuesClosed} Issues/Unmerged PRs Closed
                       </div>
                     </div>
                   </div>

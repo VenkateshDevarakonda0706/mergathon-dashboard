@@ -184,9 +184,9 @@ export default function LeaderboardTable({
                   Merged PRs {getSortIcon("prsMerged")}
                 </span>
               </th>
-              <th onClick={() => handleSort("issuesClosed")} style={{ cursor: "pointer", width: "110px", textAlign: "center", padding: "16px 12px" }}>
+              <th onClick={() => handleSort("issuesClosed")} style={{ cursor: "pointer", width: "200px", textAlign: "center", padding: "16px 12px" }}>
                 <span style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "6px" }}>
-                  Issues Fixed {getSortIcon("issuesClosed")}
+                  Issues / Unmerged PRs Closed {getSortIcon("issuesClosed")}
                 </span>
               </th>
               <th onClick={() => handleSort("score")} style={{ cursor: "pointer", width: "90px", textAlign: "right", padding: "16px 12px" }}>

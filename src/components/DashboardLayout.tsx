@@ -2,6 +2,7 @@
 
 import { useData } from "../context/DataContext";
 import Header from "./Header";
+import Footer from "./Footer";
 import { Loader2, AlertCircle } from "lucide-react";
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
@@ -80,6 +81,9 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
       <main className="app-container">
         {children}
       </main>
+
+      {/* Premium Interactive Footer element */}
+      <Footer />
     </div>
   );
 }

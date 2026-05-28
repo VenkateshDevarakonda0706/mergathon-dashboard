@@ -45,7 +45,7 @@ export default function TeamCard({ team, allContributors, totalScoreCombined }: 
             <CheckCircle2 size={16} style={{ color: "var(--accent-emerald)" }} />
             <span>{team.totalIssuesClosed}</span>
           </div>
-          <div className="team-stat-label">Issues Closed</div>
+          <div className="team-stat-label">Issues & Unmerged PRs Closed</div>
         </div>
       </div>
 
