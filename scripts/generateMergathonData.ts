@@ -591,6 +591,12 @@ async function fetchLiveContributors(config: YamlConfig, pool: TokenPool): Promi
       if (!closer) continue;
       if (closer.login.endsWith("[bot]")) continue;
 
+      const closerKey = closer.login.toLowerCase();
+      if (!memberTeamMap.has(closerKey)) {
+        // Skip unmerged PRs not closed by actual Mergathon participants
+        continue;
+      }
+
       const contributor = getOrCreateContributor(closer.login, closer.avatarUrl);
       const dateStr = pr.closedAt.split("T")[0];
       contributor.issuesClosed++;
@@ -859,16 +865,16 @@ async function main(): Promise<void> {
   const daysElapsed = Math.max(0, Math.min(Math.ceil((now.getTime() - start.getTime()) / msPerDay), totalDays));
   const daysRemaining = Math.max(0, Math.ceil((end.getTime() - now.getTime()) / msPerDay));
 
+  const teamContributors = contributors.filter((c) => c.team !== "Independent");
+
   const stats: EventStats = {
-    totalContributors: contributors.filter((c) => c.score > 0).length || contributors.length,
-    totalPrsMerged: contributors.reduce((s, c) => s + c.prsMerged, 0),
-    totalPrsOpened: contributors.reduce((s, c) => s + c.prsOpened, 0),
-    totalIssuesClosed: contributors.reduce((s, c) => s + c.issuesClosed, 0),
-    totalIssuesOpened: contributors.reduce((s, c) => s + c.issuesOpened, 0),
+    totalContributors: teamContributors.filter((c) => c.score > 0).length || teamContributors.length,
+    totalPrsMerged: teamContributors.reduce((s, c) => s + c.prsMerged, 0),
+    totalPrsOpened: teamContributors.reduce((s, c) => s + c.prsOpened, 0),
+    totalIssuesClosed: teamContributors.reduce((s, c) => s + c.issuesClosed, 0),
+    totalIssuesOpened: teamContributors.reduce((s, c) => s + c.issuesOpened, 0),
     daysElapsed, daysRemaining,
   };
-
-  const teamContributors = contributors.filter((c) => c.team !== "Independent");
 
   const data: MergathonData = {
     lastUpdated: new Date().toISOString(),

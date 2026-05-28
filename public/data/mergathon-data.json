@@ -109,10 +109,10 @@
         "092vk",
         "blazethunderstorm"
       ],
-      "totalScore": 1,
+      "totalScore": 2,
       "totalPrsMerged": 0,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 1,
+      "totalIssuesClosed": 2,
       "totalIssuesOpened": 0
     }
   ],
@@ -1798,6 +1798,14 @@
           "points": 1
         },
         {
+          "type": "pr_merged",
+          "title": "build(deps): modernize frontend build toolchain (Vite 6, Vue 3.5, Pinia 3)",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1066",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-25",
+          "points": 3
+        },
+        {
           "type": "issue_closed",
           "title": "Docs/add new components",
           "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/518",
@@ -2014,6 +2022,30 @@
           "repo": "CircuitVerse/CircuitVerse",
           "date": "2026-05-27",
           "points": 1
+        }
+      ]
+    },
+    {
+      "username": "naman79820",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/159947791?u=c48301089f863779d54d2227553923ff284ac6a4&v=4",
+      "profileUrl": "https://github.com/naman79820",
+      "team": "NasaVerse",
+      "prsOpened": 0,
+      "prsMerged": 5,
+      "issuesOpened": 0,
+      "issuesClosed": 151,
+      "issuesPrClosedScore": 151,
+      "prsMergedScore": 15,
+      "score": 166,
+      "activityLevel": "High",
+      "dailyActivity": [
+        {
+          "date": "2026-05-22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 1,
+          "score": 1
         },
         {
           "type": "issue_closed",
@@ -5248,7 +5280,7 @@
           "title": "fix(#4599)-fixed back button working ",
           "url": "https://github.com/CircuitVerse/CircuitVerse/pull/4684",
           "repo": "CircuitVerse/CircuitVerse",
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "points": 1
         },
         {
@@ -5428,6 +5460,10 @@
           "score": 0
         },
         {
+          "type": "issue_closed",
+          "title": "Added documentation for forking projects",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/pull/114",
+          "repo": "CircuitVerse/CircuitVerseDocs",
           "date": "2026-05-25",
           "prsOpened": 0,
           "prsMerged": 0,
@@ -5564,6 +5600,22 @@
           "repo": "CircuitVerse/cv-frontend-vue",
           "date": "2026-05-27",
           "points": 1
+        },
+        {
+          "type": "pr_merged",
+          "title": "Merged: Fix #7197: Show 'No circuits found' message",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7423",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-26",
+          "points": 3
+        },
+        {
+          "type": "pr_merged",
+          "title": "Merged: ui : horizontal rule correction in groups",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/6900",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-26",
+          "points": 3
         },
         {
           "type": "issue_closed",
@@ -6175,10 +6227,10 @@
       "prsOpened": 0,
       "prsMerged": 0,
       "issuesOpened": 0,
-      "issuesClosed": 1,
-      "issuesPrClosedScore": 1,
+      "issuesClosed": 2,
+      "issuesPrClosedScore": 2,
       "prsMergedScore": 0,
-      "score": 1,
+      "score": 2,
       "activityLevel": "Low",
       "dailyActivity": [
         {
@@ -6234,8 +6286,8 @@
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
+          "issuesClosed": 1,
+          "score": 1
         },
         {
           "date": "2026-05-29",
@@ -6263,6 +6315,14 @@
         }
       ],
       "contributions": [
+        {
+          "type": "issue_closed",
+          "title": "docs: add npm run tauri dev and tauri build commands to README",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1028",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-28",
+          "points": 1
+        },
         {
           "type": "issue_closed",
           "title": "Prevent forked projects from being submitted to contests",
@@ -6310,7 +6370,7 @@
     {
       "date": "2026-05-26",
       "prsOpened": 0,
-      "prsMerged": 10,
+      "prsMerged": 14,
       "issuesOpened": 0,
       "issuesClosed": 113,
       "score": 143

@@ -83,7 +83,7 @@ export default function ContributorProfile({ username }: { username: string }) {
   const pieData = [
   { name: "PRs Opened", value: contributor.prsOpened, color: "var(--accent-blue)" },
   { name: "PRs Merged", value: contributor.prsMerged, color: "var(--accent-emerald)" },
-  { name: "Issues Fixed", value: contributor.issuesClosed, color: "var(--accent-amber)" },
+  { name: "Issues & Unmerged PRs Closed", value: contributor.issuesClosed, color: "var(--accent-amber)" },
   ].filter((item) => item.value > 0);
 
   // Helper to color feed items based on type
@@ -264,7 +264,7 @@ export default function ContributorProfile({ username }: { username: string }) {
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "8px 12px", background: "var(--bg-tertiary)", borderRadius: "var(--radius-md)" }}>
                 <span style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "13px", color: "var(--text-secondary)", fontWeight: 500 }}>
                   <CheckCircle2 size={16} style={{ color: "var(--accent-emerald)" }} />
-                  <span>Issues Closed</span>
+                  <span>Issues & Unmerged PRs Closed</span>
                 </span>
                 <span style={{ fontWeight: 700 }}>{contributor.issuesClosed}</span>
               </div>
