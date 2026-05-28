@@ -27,14 +27,14 @@ export default function LeaderboardPage() {
       <div className="card" style={{ marginBottom: "32px", background: "linear-gradient(135deg, rgba(59,130,246,0.05) 0%, rgba(139,92,246,0.05) 100%)", borderColor: "var(--border-primary)" }}>
         <h4 style={{ fontSize: "15px", fontWeight: 700, color: "var(--text-primary)", marginBottom: "8px" }}>How is the score calculated?</h4>
         <p style={{ fontSize: "13px", color: "var(--text-secondary)", lineHeight: 1.5 }}>
-          Points are awarded when a PR is merged or an issue is closed during the event window:
+          Points are awarded when a PR is merged, or an issue / unmerged PR is closed during the event window:
         </p>
         <div style={{ display: "flex", gap: "24px", marginTop: "10px", flexWrap: "wrap" }}>
           <span style={{ color: "var(--accent-emerald)", fontWeight: 600, fontSize: "13px" }}>✅ PR Merged: +3 pts</span>
-          <span style={{ color: "var(--accent-blue)", fontWeight: 600, fontSize: "13px" }}>🔒 Issue Closed: +1 pt</span>
+          <span style={{ color: "var(--accent-blue)", fontWeight: 600, fontSize: "13px" }}>🔒 Issue or Unmerged PR Closed: +1 pt</span>
         </div>
         <p style={{ fontSize: "12px", color: "var(--text-tertiary)", marginTop: "8px" }}>
-          Both the PR author and the maintainer who merges the PR earn +3 points. Opening PRs or issues does not award points.
+          Both the PR author and the maintainer who merges the PR earn +3 points. Closing an issue or an unmerged PR awards +1 point. Opening PRs or issues does not award points.
         </p>
       </div>
 
@@ -89,7 +89,7 @@ export default function LeaderboardPage() {
                 <div style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.04)", padding: "8px 14px", borderRadius: "var(--radius-md)", textAlign: "center", minWidth: "60px" }}>
  main
                   <div style={{ fontSize: "16px", fontWeight: 900, color: "#ffffff" }}>{team.totalIssuesClosed}</div>
-                  <div style={{ fontSize: "9px", fontWeight: 700, color: "var(--text-tertiary)", textTransform: "uppercase" }}>Issues</div>
+                  <div style={{ fontSize: "9px", fontWeight: 700, color: "var(--text-tertiary)", textTransform: "uppercase" }}>Issues / Unmerged PRs</div>
                 </div>
               </div>
             </div>

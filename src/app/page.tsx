@@ -269,7 +269,7 @@ fix-mobile-responsiveness
                   <span className="dist-val">{totalActivities > 0 ? Math.round((stats.totalPrsMerged / totalActivities) * 100) : 0}%</span>
                 </div>
                 <div className="dist-item">
-                  <div className="dist-label"><span className="dist-dot" style={{ background: "#3b82f6" }} /><span>Issue closed</span></div>
+                  <div className="dist-label"><span className="dist-dot" style={{ background: "#3b82f6" }} /><span>Issue/Unmerged PR closed</span></div>
                   <span className="dist-val">{totalActivities > 0 ? Math.round((stats.totalIssuesClosed / totalActivities) * 100) : 0}%</span>
                 </div>
                 <div className="dist-item">
@@ -293,7 +293,7 @@ fix-mobile-responsiveness
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "16px", marginTop: "4px" }}>
                 <h3 style={{ fontSize: "clamp(2rem, 6vw, 28px)", fontWeight: 900, color: "#ffffff", letterSpacing: "-0.5px", lineHeight: "1.1", }}>Team Rankings</h3>
                 <span className="event-badge-outline" style={{ margin: 0, padding: "4px 12px", fontSize: "10px" }}>
-                  PR Merged +3pts · Issue Closed +1pt
+                  PR Merged +3pts · Issue/Unmerged PR Closed +1pt
                 </span>
               </div>
 
@@ -339,7 +339,7 @@ fix-mobile-responsiveness
                       </div>
                       <div style={{ background: "rgba(255, 255, 255, 0.02)", border: "1px solid rgba(255, 255, 255, 0.04)", padding: "8px 12px", borderRadius: "var(--radius-md)", textAlign: "center", minWidth: "54px" }}>
                         <div style={{ fontSize: "16px", fontWeight: 900, color: "#ffffff" }}>{team.totalIssuesClosed}</div>
-                        <div style={{ fontSize: "9px", fontWeight: 700, color: "var(--text-tertiary)", textTransform: "uppercase" }}>Issues</div>
+                        <div style={{ fontSize: "9px", fontWeight: 700, color: "var(--text-tertiary)", textTransform: "uppercase" }}>Issues / Unmerged PRs</div>
                       </div>
                     </div>
                   </div>
