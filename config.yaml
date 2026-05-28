@@ -25,7 +25,6 @@ scoring:
       "mergathon:closed-invalid": 1
     merged:
       "mergathon:merged": 3
-      "mergathon:resolved-merged": 5
 
 thresholds:
   highActivity: 10
