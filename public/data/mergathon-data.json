@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-28T21:09:48.354Z",
+  "lastUpdated": "2026-05-28T23:18:14.929Z",
   "eventStartDate": "2026-05-22",
   "eventEndDate": "2026-05-31",
   "stats": {
     "totalContributors": 14,
     "totalPrsMerged": 51,
     "totalPrsOpened": 0,
-    "totalIssuesClosed": 853,
+    "totalIssuesClosed": 859,
     "totalIssuesOpened": 0,
     "daysElapsed": 7,
     "daysRemaining": 3
@@ -21,10 +21,10 @@
         "Asrani-Aman",
         "aryan7071"
       ],
-      "totalScore": 342,
+      "totalScore": 348,
       "totalPrsMerged": 15,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 297,
+      "totalIssuesClosed": 303,
       "totalIssuesOpened": 0
     },
     {
@@ -125,10 +125,10 @@
       "prsOpened": 0,
       "prsMerged": 5,
       "issuesOpened": 0,
-      "issuesClosed": 247,
-      "issuesPrClosedScore": 247,
+      "issuesClosed": 253,
+      "issuesPrClosedScore": 253,
       "prsMergedScore": 15,
-      "score": 262,
+      "score": 268,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -184,8 +184,8 @@
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
-          "issuesClosed": 96,
-          "score": 96
+          "issuesClosed": 102,
+          "score": 102
         },
         {
           "date": "2026-05-29",
@@ -263,6 +263,46 @@
         },
         {
           "type": "issue_closed",
+          "title": "Fix TypeError when page param is not a hash in paginate",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7238",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-28",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Add deadline status indicators for assignments",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7231",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-28",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Add model-level validation for assignment deadline",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7228",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-28",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Validate assignment deadline to prevent past dates",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7221",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-28",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Fix: Handle Recaptcha API failures gracefully (502 / invalid JSON)  #7211",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7212",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-28",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
           "title": "Fix spacing issue in assignments-submain-heading margin-top",
           "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7210",
           "repo": "CircuitVerse/CircuitVerse",
@@ -281,6 +321,14 @@
           "type": "issue_closed",
           "title": "Fix percy clean",
           "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7201",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-28",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix: show 'No circuits found' message when search returns no results",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7198",
           "repo": "CircuitVerse/CircuitVerse",
           "date": "2026-05-28",
           "points": 1
@@ -8776,8 +8824,8 @@
       "prsOpened": 0,
       "prsMerged": 24,
       "issuesOpened": 0,
-      "issuesClosed": 248,
-      "score": 320
+      "issuesClosed": 254,
+      "score": 326
     },
     {
       "date": "2026-05-29",
