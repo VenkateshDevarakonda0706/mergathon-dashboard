@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-28T03:44:39.573Z",
+  "lastUpdated": "2026-05-28T08:04:56.728Z",
   "eventStartDate": "2026-05-22",
   "eventEndDate": "2026-05-31",
   "stats": {
     "totalContributors": 27,
     "totalPrsMerged": 62,
     "totalPrsOpened": 0,
-    "totalIssuesClosed": 637,
+    "totalIssuesClosed": 648,
     "totalIssuesOpened": 0,
     "daysElapsed": 7,
     "daysRemaining": 3
@@ -36,10 +36,10 @@
         "aryanndwi123",
         "Harkeerat24"
       ],
-      "totalScore": 119,
+      "totalScore": 130,
       "totalPrsMerged": 5,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 104,
+      "totalIssuesClosed": 115,
       "totalIssuesOpened": 0
     },
     {
@@ -5797,10 +5797,10 @@
       "prsOpened": 0,
       "prsMerged": 2,
       "issuesOpened": 0,
-      "issuesClosed": 13,
-      "issuesPrClosedScore": 13,
+      "issuesClosed": 16,
+      "issuesPrClosedScore": 16,
       "prsMergedScore": 6,
-      "score": 19,
+      "score": 22,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -5856,8 +5856,8 @@
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
+          "issuesClosed": 3,
+          "score": 3
         },
         {
           "date": "2026-05-29",
@@ -5885,6 +5885,30 @@
         }
       ],
       "contributions": [
+        {
+          "type": "issue_closed",
+          "title": "🐞 Bug: Optimize 'Check it Out' Button Hover Animation for Better Accessibility",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/5310",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-28",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "feat: add import online circuit feature to vue simulator",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/720",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-28",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "refactor: removed JQuery  from layoutMode.js file",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/85",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-28",
+          "points": 1
+        },
         {
           "type": "pr_merged",
           "title": "Merged: feat(i18n): add i18n support, add support for project properties panel and element properties panel",
@@ -6004,6 +6028,176 @@
           "repo": "CircuitVerse/cv-frontend-vue",
           "date": "2026-05-26",
           "points": 1
+        }
+      ]
+    },
+    {
+      "username": "Harkeerat24",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/225462441?v=4",
+      "profileUrl": "https://github.com/Harkeerat24",
+      "team": "CtrlAltDlt",
+      "prsOpened": 0,
+      "prsMerged": 1,
+      "issuesOpened": 0,
+      "issuesClosed": 8,
+      "issuesPrClosedScore": 8,
+      "prsMergedScore": 3,
+      "score": 11,
+      "activityLevel": "High",
+      "dailyActivity": [
+        {
+          "date": "2026-05-22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 1,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 3
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 8,
+          "score": 8
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        }
+      ],
+      "contributions": [
+        {
+          "type": "issue_closed",
+          "title": "🐞 Bug: TabsBar Toggle Button Not Working",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/607",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-28",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "🐞 Bug: [ UI Issue: Dropdown Button Remains Visible Even When Tabs Bar is Not Overflowed ]",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/304",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-28",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "The Toggle button in TabsBar should be hidden when there are less Circuit Designs openned.",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/301",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-28",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "tabsbar section is behaving not optimal when we add multiple tabs",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/132",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-28",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Fix : fixed TabsBar dropdown toggle issue",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/608",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-28",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Added a shortcut + toggle button hidden when less circuits",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/450",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-28",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix(UI): tabsbar dropdown button visibility",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/305",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-28",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fixed: tabsbar section is behaving not optimal when we add multiple tabs",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/143",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-28",
+          "points": 1
+        },
+        {
+          "type": "pr_merged",
+          "title": "fix: prevent cyclic subcircuit dependency in insert dialog",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1046",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-26",
+          "points": 3
         }
       ]
     },
@@ -6292,112 +6486,6 @@
       ]
     },
     {
-      "username": "Harkeerat24",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/225462441?v=4",
-      "profileUrl": "https://github.com/Harkeerat24",
-      "team": "CtrlAltDlt",
-      "prsOpened": 0,
-      "prsMerged": 1,
-      "issuesOpened": 0,
-      "issuesClosed": 0,
-      "issuesPrClosedScore": 0,
-      "prsMergedScore": 3,
-      "score": 3,
-      "activityLevel": "Medium",
-      "dailyActivity": [
-        {
-          "date": "2026-05-22",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-23",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-24",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-25",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-26",
-          "prsOpened": 0,
-          "prsMerged": 1,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 3
-        },
-        {
-          "date": "2026-05-27",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-28",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-29",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-30",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        },
-        {
-          "date": "2026-05-31",
-          "prsOpened": 0,
-          "prsMerged": 0,
-          "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
-        }
-      ],
-      "contributions": [
-        {
-          "type": "pr_merged",
-          "title": "fix: prevent cyclic subcircuit dependency in insert dialog",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1046",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-26",
-          "points": 3
-        }
-      ]
-    },
-    {
       "username": "Aakansha-Chavan",
       "avatarUrl": "https://avatars.githubusercontent.com/u/181594189?u=270b81bb51eb0c73cc920d71dd586a149080cc57&v=4",
       "profileUrl": "https://github.com/Aakansha-Chavan",
@@ -6680,8 +6768,8 @@
       "prsOpened": 0,
       "prsMerged": 0,
       "issuesOpened": 0,
-      "issuesClosed": 0,
-      "score": 0
+      "issuesClosed": 11,
+      "score": 11
     },
     {
       "date": "2026-05-29",
