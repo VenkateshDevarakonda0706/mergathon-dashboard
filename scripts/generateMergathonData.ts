@@ -41,7 +41,6 @@ function parseConfigYaml(content: string): YamlConfig {
   };
   const mergedLabels: Record<string, number> = {
     "mergathon:merged": 3,
-    "mergathon:resolved-merged": 5,
   };
   const thresholds = { highActivity: 10, mediumActivity: 3 };
   const teams: { name: string; color: string; members: string[] }[] = [];
@@ -112,7 +111,7 @@ function getDefaultConfig(): YamlConfig {
     eventStartDate: "2026-05-22", eventEndDate: "2026-05-31",
     repos: ["CircuitVerse/CircuitVerse", "CircuitVerse/mobile-app", "CircuitVerse/Interactive-Book", "CircuitVerse/cv-frontend-vue"],
     closedLabels: { "mergathon:closed-outdated": 1, "mergathon:closed-taken-over": 1, "mergathon:closed-invalid": 1 },
-    mergedLabels: { "mergathon:merged": 3, "mergathon:resolved-merged": 5 },
+    mergedLabels: { "mergathon:merged": 3 },
     thresholds: { highActivity: 10, mediumActivity: 3 },
     teams: [
       { name: "Team Alpha", color: "#3b82f6", members: ["dev-sarah", "coder-alex"] },
@@ -125,13 +124,8 @@ function isBot(user: { login: string; type?: string }): boolean {
   return user.login.endsWith("[bot]") || user.type === "Bot";
 }
 
-function scoreFromLabels(labels: { name: string }[], scoringLabels: Record<string, number>): number {
-  let best = 0;
-  for (const label of labels) {
-    const pts = scoringLabels[label.name];
-    if (pts !== undefined && pts > best) best = pts;
-  }
-  return best;
+function hasScoringLabel(labels: { name: string }[], scoringLabels: Record<string, number>): boolean {
+  return labels.some((label) => scoringLabels[label.name] !== undefined);
 }
 
 function generateEmptyDailyActivity(startStr: string, endStr: string): DailyActivity[] {
@@ -327,7 +321,7 @@ query SearchMergedPRs($query: String!, $cursor: String) {
         mergedBy { login avatarUrl }
         author { login avatarUrl }
         repository { nameWithOwner }
-        labels(first: 10) { nodes { name } }
+        labels(first: 100) { nodes { name } }
       }
     }
   }
@@ -345,7 +339,7 @@ query SearchClosedIssues($query: String!, $cursor: String) {
         closedAt
         author { login avatarUrl }
         repository { nameWithOwner }
-        labels(first: 10) { nodes { name } }
+        labels(first: 100) { nodes { name } }
         timelineItems(last: 1, itemTypes: [CLOSED_EVENT]) {
           nodes {
             ... on ClosedEvent {
@@ -370,7 +364,7 @@ query SearchClosedPRs($query: String!, $cursor: String) {
         closedAt
         author { login avatarUrl }
         repository { nameWithOwner }
-        labels(first: 10) { nodes { name } }
+        labels(first: 100) { nodes { name } }
         timelineItems(last: 1, itemTypes: [CLOSED_EVENT]) {
           nodes {
             ... on ClosedEvent {
@@ -481,6 +475,7 @@ async function fetchLiveContributors(config: YamlConfig, pool: TokenPool): Promi
       if (!pr.url || !pr.author) continue;
       const repo = pr.repository.nameWithOwner;
       if (!reposSet.has(repo.toLowerCase())) continue;
+      if (!hasScoringLabel(pr.labels.nodes, config.mergedLabels)) continue;
       if (processedPrsMerged.has(pr.url)) continue;
       if (pr.author.login.endsWith("[bot]")) continue;
       processedPrsMerged.add(pr.url);
@@ -530,6 +525,7 @@ async function fetchLiveContributors(config: YamlConfig, pool: TokenPool): Promi
       if (!issue.url) continue;
       const repo = issue.repository.nameWithOwner;
       if (!reposSet.has(repo.toLowerCase())) continue;
+      if (!hasScoringLabel(issue.labels.nodes, config.closedLabels)) continue;
       if (processedIssuesClosed.has(issue.url)) continue;
       processedIssuesClosed.add(issue.url);
 
@@ -577,6 +573,7 @@ async function fetchLiveContributors(config: YamlConfig, pool: TokenPool): Promi
       if (!pr.url) continue;
       const repo = pr.repository.nameWithOwner;
       if (!reposSet.has(repo.toLowerCase())) continue;
+      if (!hasScoringLabel(pr.labels.nodes, config.closedLabels)) continue;
       if (processedClosedPRs.has(pr.url)) continue;
       processedClosedPRs.add(pr.url);
 
