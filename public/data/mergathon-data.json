@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-28T23:18:14.929Z",
+  "lastUpdated": "2026-05-29T03:39:51.293Z",
   "eventStartDate": "2026-05-22",
   "eventEndDate": "2026-05-31",
   "stats": {
@@ -8,8 +8,8 @@
     "totalPrsOpened": 0,
     "totalIssuesClosed": 859,
     "totalIssuesOpened": 0,
-    "daysElapsed": 7,
-    "daysRemaining": 3
+    "daysElapsed": 8,
+    "daysRemaining": 2
   },
   "teams": [
     {
