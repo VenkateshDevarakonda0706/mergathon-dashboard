@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-29T18:34:42.106Z",
+  "lastUpdated": "2026-05-29T21:08:48.543Z",
   "eventStartDate": "2026-05-22",
   "eventEndDate": "2026-05-31",
   "stats": {
     "totalContributors": 14,
     "totalPrsMerged": 54,
     "totalPrsOpened": 0,
-    "totalIssuesClosed": 712,
+    "totalIssuesClosed": 715,
     "totalIssuesOpened": 0,
     "daysElapsed": 8,
     "daysRemaining": 2
@@ -51,10 +51,10 @@
         "Radhikaa-chauhan",
         "SouparnaChatterjee"
       ],
-      "totalScore": 257,
+      "totalScore": 260,
       "totalPrsMerged": 13,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 218,
+      "totalIssuesClosed": 221,
       "totalIssuesOpened": 0
     },
     {
@@ -2151,10 +2151,10 @@
       "prsOpened": 0,
       "prsMerged": 1,
       "issuesOpened": 0,
-      "issuesClosed": 218,
-      "issuesPrClosedScore": 218,
+      "issuesClosed": 221,
+      "issuesPrClosedScore": 221,
       "prsMergedScore": 3,
-      "score": 221,
+      "score": 224,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -2218,8 +2218,8 @@
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
-          "issuesClosed": 7,
-          "score": 7
+          "issuesClosed": 10,
+          "score": 10
         },
         {
           "date": "2026-05-30",
@@ -2243,6 +2243,30 @@
           "type": "issue_closed",
           "title": "Scroll-to-top button missing from Guidelines",
           "url": "https://github.com/CircuitVerse/Interactive-Book/issues/666",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-29",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Docs: Add more content to decoders",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/442",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-29",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Restructure README.md",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/397",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-29",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Verilog Programming Language Introduction and Adding Verilog for every Sub-Circuit.",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/368",
           "repo": "CircuitVerse/Interactive-Book",
           "date": "2026-05-29",
           "points": 1
@@ -7680,8 +7704,8 @@
       "prsOpened": 0,
       "prsMerged": 18,
       "issuesOpened": 0,
-      "issuesClosed": 28,
-      "score": 82
+      "issuesClosed": 31,
+      "score": 85
     },
     {
       "date": "2026-05-30",
