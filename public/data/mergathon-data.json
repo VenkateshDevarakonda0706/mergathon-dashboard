@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-29T03:39:51.293Z",
+  "lastUpdated": "2026-05-29T07:57:53.431Z",
   "eventStartDate": "2026-05-22",
   "eventEndDate": "2026-05-31",
   "stats": {
     "totalContributors": 14,
-    "totalPrsMerged": 51,
+    "totalPrsMerged": 55,
     "totalPrsOpened": 0,
-    "totalIssuesClosed": 859,
+    "totalIssuesClosed": 865,
     "totalIssuesOpened": 0,
     "daysElapsed": 8,
     "daysRemaining": 2
@@ -36,10 +36,10 @@
         "aryanndwi123",
         "Harkeerat24"
       ],
-      "totalScore": 275,
-      "totalPrsMerged": 17,
+      "totalScore": 293,
+      "totalPrsMerged": 21,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 224,
+      "totalIssuesClosed": 230,
       "totalIssuesOpened": 0
     },
     {
@@ -5161,12 +5161,12 @@
       "profileUrl": "https://github.com/aryanndwi123",
       "team": "CtrlAltDlt",
       "prsOpened": 0,
-      "prsMerged": 13,
+      "prsMerged": 17,
       "issuesOpened": 0,
-      "issuesClosed": 60,
-      "issuesPrClosedScore": 60,
-      "prsMergedScore": 39,
-      "score": 99,
+      "issuesClosed": 66,
+      "issuesPrClosedScore": 66,
+      "prsMergedScore": 51,
+      "score": 117,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -5222,16 +5222,16 @@
           "prsOpened": 0,
           "prsMerged": 11,
           "issuesOpened": 0,
-          "issuesClosed": 47,
-          "score": 80
+          "issuesClosed": 45,
+          "score": 78
         },
         {
           "date": "2026-05-29",
           "prsOpened": 0,
-          "prsMerged": 0,
+          "prsMerged": 4,
           "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
+          "issuesClosed": 8,
+          "score": 20
         },
         {
           "date": "2026-05-30",
@@ -5251,6 +5251,102 @@
         }
       ],
       "contributions": [
+        {
+          "type": "pr_merged",
+          "title": "Merged: Refactor: Replace jQuery with Vue reactivity in OpenOffline.vue",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/487",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-29",
+          "points": 3
+        },
+        {
+          "type": "pr_merged",
+          "title": "Merged: fix: add character limit to project name input field",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/479",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-29",
+          "points": 3
+        },
+        {
+          "type": "pr_merged",
+          "title": "Merged: Refactor TS integration `cv-frontend-vue\\src\\simulator\\src\\data.js`",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/477",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-29",
+          "points": 3
+        },
+        {
+          "type": "pr_merged",
+          "title": "Merged: refactor Codebase: Replace jQuery with Vue.js in Key Components",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/465",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-29",
+          "points": 3
+        },
+        {
+          "type": "issue_closed",
+          "title": "Removal of JQuery to Vue's reactives",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/433",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-29",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Typescript Integration in `/simulator/src` files",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/414",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-29",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "🐞 Bug: Unlimited Input for Project Name Field in Simulator",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/4852",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-29",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix: replace jQuery with Vue reactives in  v0/src/components/DialogBox/OpenOffline.vue",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/579",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-29",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "refactor: remove jQuery from circuit.js and use Vue reactivity ",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/575",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-29",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "handleing opeing and closing message box by pressing enter or esc key",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/492",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-29",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Refactor: Optimize ContextMenu.vue by replacing timers with Vue lifecycle methods",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/486",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-29",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "refactor: ts in plotArea.js",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/478",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-29",
+          "points": 1
+        },
         {
           "type": "pr_merged",
           "title": "Merged: fix: auto-focus input field when modal dialog opens",
@@ -5368,14 +5464,6 @@
           "title": "Footer social media icons are not responsive on smaller screens",
           "url": "https://github.com/CircuitVerse/CircuitVerse/issues/6658",
           "repo": "CircuitVerse/CircuitVerse",
-          "date": "2026-05-28",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Removal of JQuery to Vue's reactives",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/433",
-          "repo": "CircuitVerse/cv-frontend-vue",
           "date": "2026-05-28",
           "points": 1
         },
@@ -5535,14 +5623,6 @@
           "type": "issue_closed",
           "title": "refactored load.js to load.ts and added a new file loadScope.ts in types",
           "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/460",
-          "repo": "CircuitVerse/cv-frontend-vue",
-          "date": "2026-05-28",
-          "points": 1
-        },
-        {
-          "type": "issue_closed",
-          "title": "Mahmoodalisha/patch 79622",
-          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/454",
           "repo": "CircuitVerse/cv-frontend-vue",
           "date": "2026-05-28",
           "points": 1
@@ -8824,16 +8904,16 @@
       "prsOpened": 0,
       "prsMerged": 24,
       "issuesOpened": 0,
-      "issuesClosed": 254,
-      "score": 326
+      "issuesClosed": 252,
+      "score": 324
     },
     {
       "date": "2026-05-29",
       "prsOpened": 0,
-      "prsMerged": 0,
+      "prsMerged": 8,
       "issuesOpened": 0,
-      "issuesClosed": 0,
-      "score": 0
+      "issuesClosed": 8,
+      "score": 32
     },
     {
       "date": "2026-05-30",
