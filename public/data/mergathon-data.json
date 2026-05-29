@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-29T15:34:33.936Z",
+  "lastUpdated": "2026-05-29T18:34:42.106Z",
   "eventStartDate": "2026-05-22",
   "eventEndDate": "2026-05-31",
   "stats": {
     "totalContributors": 14,
-    "totalPrsMerged": 48,
+    "totalPrsMerged": 54,
     "totalPrsOpened": 0,
-    "totalIssuesClosed": 702,
+    "totalIssuesClosed": 712,
     "totalIssuesOpened": 0,
     "daysElapsed": 8,
     "daysRemaining": 2
@@ -36,10 +36,10 @@
         "aryanndwi123",
         "Harkeerat24"
       ],
-      "totalScore": 178,
-      "totalPrsMerged": 18,
+      "totalScore": 199,
+      "totalPrsMerged": 24,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 124,
+      "totalIssuesClosed": 127,
       "totalIssuesOpened": 0
     },
     {
@@ -51,10 +51,10 @@
         "Radhikaa-chauhan",
         "SouparnaChatterjee"
       ],
-      "totalScore": 250,
+      "totalScore": 257,
       "totalPrsMerged": 13,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 211,
+      "totalIssuesClosed": 218,
       "totalIssuesOpened": 0
     },
     {
@@ -2151,10 +2151,10 @@
       "prsOpened": 0,
       "prsMerged": 1,
       "issuesOpened": 0,
-      "issuesClosed": 211,
-      "issuesPrClosedScore": 211,
+      "issuesClosed": 218,
+      "issuesPrClosedScore": 218,
       "prsMergedScore": 3,
-      "score": 214,
+      "score": 221,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -2218,8 +2218,8 @@
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
+          "issuesClosed": 7,
+          "score": 7
         },
         {
           "date": "2026-05-30",
@@ -2239,6 +2239,62 @@
         }
       ],
       "contributions": [
+        {
+          "type": "issue_closed",
+          "title": "Scroll-to-top button missing from Guidelines",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/666",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-29",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "GSoD ideas for the book ",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/270",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-29",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Flip flop State Table gives wrong results",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/142",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-29",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Edit contents of the Interactive book",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/80",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-29",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Flip flop conversion section missing",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/42",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-29",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "K map method",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/28",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-29",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Introduction of tags to lessons/chapters",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/26",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-29",
+          "points": 1
+        },
         {
           "type": "issue_closed",
           "title": "Add documentation for Force Gate component",
@@ -3943,12 +3999,12 @@
       "profileUrl": "https://github.com/aryanndwi123",
       "team": "CtrlAltDlt",
       "prsOpened": 0,
-      "prsMerged": 14,
+      "prsMerged": 19,
       "issuesOpened": 0,
-      "issuesClosed": 33,
-      "issuesPrClosedScore": 33,
-      "prsMergedScore": 42,
-      "score": 75,
+      "issuesClosed": 35,
+      "issuesPrClosedScore": 35,
+      "prsMergedScore": 57,
+      "score": 92,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -4010,10 +4066,10 @@
         {
           "date": "2026-05-29",
           "prsOpened": 0,
-          "prsMerged": 4,
+          "prsMerged": 9,
           "issuesOpened": 0,
-          "issuesClosed": 14,
-          "score": 26
+          "issuesClosed": 16,
+          "score": 43
         },
         {
           "date": "2026-05-30",
@@ -4035,6 +4091,22 @@
       "contributions": [
         {
           "type": "pr_merged",
+          "title": "Merged: build(deps): bump cv-frontend-vue from `0a1e288` to `2128705`",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7447",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-29",
+          "points": 3
+        },
+        {
+          "type": "pr_merged",
+          "title": "Merged: build(deps): bump carrierwave from 3.1.2 to 3.1.3",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7431",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-29",
+          "points": 3
+        },
+        {
+          "type": "pr_merged",
           "title": "Merged: build(deps-dev): bump fast-uri from 3.1.0 to 3.1.2",
           "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1062",
           "repo": "CircuitVerse/cv-frontend-vue",
@@ -4046,6 +4118,30 @@
           "title": "Merged: build(deps-dev): bump js-cookie from 3.0.5 to 3.0.7",
           "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1061",
           "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-29",
+          "points": 3
+        },
+        {
+          "type": "pr_merged",
+          "title": "Merged: build(deps): bump postcss from 8.4.49 to 8.5.14",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7366",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-29",
+          "points": 3
+        },
+        {
+          "type": "pr_merged",
+          "title": "Merged: build(deps): bump fast-uri from 3.0.3 to 3.1.2",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7348",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-29",
+          "points": 3
+        },
+        {
+          "type": "pr_merged",
+          "title": "Merged: fix: make search icon keyboard accessible and auto-focus input on activation",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/6996",
+          "repo": "CircuitVerse/CircuitVerse",
           "date": "2026-05-29",
           "points": 3
         },
@@ -4101,6 +4197,14 @@
           "type": "issue_closed",
           "title": "Use of PNG files for Sponsor images on CircuitVerse home page footer. ",
           "url": "https://github.com/CircuitVerse/CircuitVerse/issues/1370",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-29",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Document common Windows setup pitfalls in setup guide",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/6470",
           "repo": "CircuitVerse/CircuitVerse",
           "date": "2026-05-29",
           "points": 1
@@ -4174,6 +4278,14 @@
           "title": "refactor: ts in plotArea.js",
           "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/478",
           "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-29",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Fix(#5231) Updated navbar collapse button not to hide content below it as it opens ",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/5247",
+          "repo": "CircuitVerse/CircuitVerse",
           "date": "2026-05-29",
           "points": 1
         },
@@ -5999,12 +6111,12 @@
       "profileUrl": "https://github.com/Harkeerat24",
       "team": "CtrlAltDlt",
       "prsOpened": 0,
-      "prsMerged": 2,
+      "prsMerged": 3,
       "issuesOpened": 0,
-      "issuesClosed": 34,
-      "issuesPrClosedScore": 34,
-      "prsMergedScore": 6,
-      "score": 40,
+      "issuesClosed": 35,
+      "issuesPrClosedScore": 35,
+      "prsMergedScore": 9,
+      "score": 44,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -6066,10 +6178,10 @@
         {
           "date": "2026-05-29",
           "prsOpened": 0,
-          "prsMerged": 0,
+          "prsMerged": 1,
           "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
+          "issuesClosed": 1,
+          "score": 4
         },
         {
           "date": "2026-05-30",
@@ -6089,6 +6201,22 @@
         }
       ],
       "contributions": [
+        {
+          "type": "pr_merged",
+          "title": "fix: make search icon keyboard accessible and auto-focus input on activation",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/6996",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-29",
+          "points": 3
+        },
+        {
+          "type": "issue_closed",
+          "title": "UI Fix: UI inconsistency occurring because of default VUE icon",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/878",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-29",
+          "points": 1
+        },
         {
           "type": "pr_merged",
           "title": "fix: auto-focus input field when modal dialog opens",
@@ -7550,10 +7678,10 @@
     {
       "date": "2026-05-29",
       "prsOpened": 0,
-      "prsMerged": 8,
+      "prsMerged": 18,
       "issuesOpened": 0,
-      "issuesClosed": 18,
-      "score": 42
+      "issuesClosed": 28,
+      "score": 82
     },
     {
       "date": "2026-05-30",
