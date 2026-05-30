@@ -918,61 +918,6 @@ body {
   background: var(--bg-card);
   display: block;
 }
-fix-mobile-responsiveness
-/* Mobile navbar fixes */
-@media (max-width: 768px) {
-  .header-capsule {
-    width: calc(100% - 16px);
-    padding: 0 10px;
-    height: 54px;
-    gap: 8px;
-  }
-
-  .logo-text {
-    font-size: 14px;
-  }
-
-  .nav-tabs {
-    gap: 2px;
-    padding: 2px;
-  }
-
-  .nav-tab {
-    padding: 6px 10px;
-    font-size: 11px;
-  }
-
-  .header-status {
-    gap: 6px;
-  }
-
-  .time-badge {
-    display: none;
-  }
-
-  .header-btn {
-    width: 28px;
-    height: 28px;
-    font-size: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .header-capsule {
-    top: 10px;
-    border-radius: 20px;
-  }
-
-  .nav-tab {
-    padding: 5px 8px;
-    font-size: 10px;
-  }
-
-  .logo-text {
-    display: none;
-  }
-}
-
 
 /* Clickable Team Title hover animations */
 .clickable-team-title {
@@ -984,9 +929,6 @@ fix-mobile-responsiveness
   color: var(--accent-emerald) !important;
   text-shadow: 0 0 8px rgba(16, 185, 129, 0.3);
 }
-
-fix-mobile-responsiveness
- main
 
 /* Premium Interactive Dashboard Footer Styles */
 .dashboard-footer {
@@ -1333,4 +1275,3 @@ fix-mobile-responsiveness
 }
 
 
-main
