@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-30T17:06:12.869Z",
+  "lastUpdated": "2026-05-30T19:17:22.318Z",
   "eventStartDate": "2026-05-22",
   "eventEndDate": "2026-05-31",
   "stats": {
     "totalContributors": 14,
     "totalPrsMerged": 57,
     "totalPrsOpened": 0,
-    "totalIssuesClosed": 749,
+    "totalIssuesClosed": 751,
     "totalIssuesOpened": 0,
     "daysElapsed": 9,
     "daysRemaining": 1
@@ -21,10 +21,10 @@
         "Asrani-Aman",
         "aryan7071"
       ],
-      "totalScore": 302,
+      "totalScore": 303,
       "totalPrsMerged": 14,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 260,
+      "totalIssuesClosed": 261,
       "totalIssuesOpened": 0
     },
     {
@@ -51,10 +51,10 @@
         "Radhikaa-chauhan",
         "SouparnaChatterjee"
       ],
-      "totalScore": 275,
+      "totalScore": 276,
       "totalPrsMerged": 13,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 236,
+      "totalIssuesClosed": 237,
       "totalIssuesOpened": 0
     },
     {
@@ -125,10 +125,10 @@
       "prsOpened": 0,
       "prsMerged": 4,
       "issuesOpened": 0,
-      "issuesClosed": 237,
-      "issuesPrClosedScore": 237,
+      "issuesClosed": 238,
+      "issuesPrClosedScore": 238,
       "prsMergedScore": 12,
-      "score": 249,
+      "score": 250,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -200,8 +200,8 @@
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
+          "issuesClosed": 1,
+          "score": 1
         },
         {
           "date": "2026-05-31",
@@ -213,6 +213,14 @@
         }
       ],
       "contributions": [
+        {
+          "type": "issue_closed",
+          "title": "Feature : Dark Mode for The webiste",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/7125",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-30",
+          "points": 1
+        },
         {
           "type": "issue_closed",
           "title": "Uncaught ReferenceError: logix_project_id is not defined",
@@ -6827,10 +6835,10 @@
       "prsOpened": 0,
       "prsMerged": 12,
       "issuesOpened": 0,
-      "issuesClosed": 0,
-      "issuesPrClosedScore": 0,
+      "issuesClosed": 1,
+      "issuesPrClosedScore": 1,
       "prsMergedScore": 36,
-      "score": 36,
+      "score": 37,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -6902,8 +6910,8 @@
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
+          "issuesClosed": 1,
+          "score": 1
         },
         {
           "date": "2026-05-31",
@@ -6915,6 +6923,14 @@
         }
       ],
       "contributions": [
+        {
+          "type": "issue_closed",
+          "title": "A blank statement with the heading d should be removed ",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/660",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-30",
+          "points": 1
+        },
         {
           "type": "pr_merged",
           "title": "Merged: Fix MathJax rendering in ROM microcontroller quiz options (closes #759)",
@@ -8008,8 +8024,8 @@
       "prsOpened": 0,
       "prsMerged": 4,
       "issuesOpened": 0,
-      "issuesClosed": 34,
-      "score": 46
+      "issuesClosed": 36,
+      "score": 48
     },
     {
       "date": "2026-05-31",
