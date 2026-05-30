@@ -69,11 +69,37 @@ export default function Home() {
           <span>CircuitVerse Mergathon</span>
         </div>
 
-        <h1 className="big-brand-title">CircuitVerse</h1>
+        <h1
+          className="big-brand-title"
+          style={{
+            fontSize: "clamp(3rem, 12vw, 7rem)",
+            textAlign: "center",
+            wordBreak: "break-word",
+           }}
+        >
+           CircuitVerse
+        </h1>
 
-        <p className="hero-subtitle-text">
+        <p
+          className="hero-subtitle-text"
+          style={{
+            padding: "0 16px",
+            textAlign: "center",
+            lineHeight: "1.6",
+          
+          }}
+>
           Track merged pull requests, closed issues, and team rankings for the CircuitVerse mergathon.
         </p>
+
+fix-mobile-responsiveness
+        <div
+          className="capsule-toggle"
+          style={{
+            flexWrap: "wrap",
+            justifyContent: "center",
+          }}
+        >
 
         {countdown !== null && (
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: "16px" }}>
@@ -119,11 +145,21 @@ export default function Home() {
         )}
 
         <div className="capsule-toggle">
+ main
           <button className={`toggle-option ${view === "overview" ? "active" : ""}`} onClick={() => setView("overview")}>Overview</button>
           <button className={`toggle-option ${view === "teams" ? "active" : ""}`} onClick={() => setView("teams")}>Teams</button>
         </div>
 
-        <div className="badge-row">
+        <div
+          className="badge-row"
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            gap: "12px",
+            padding: "0 12px",
+          }}
+        >
           <span className="outlined-badge">CircuitVerse/CircuitVerse</span>
           <span className="outlined-badge" style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}>
             <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--accent-emerald)", boxShadow: "0 0 8px var(--accent-emerald)" }} />
@@ -252,18 +288,18 @@ export default function Home() {
           <div style={{ display: "grid", gridTemplateColumns: "1.3fr 1fr", gap: "32px" }} className="dashboard-columns">
 
             {/* Team Rankings */}
-            <section>
+            <section style={{ width: "100%", minWidth: 0 }}>
               <span style={{ fontSize: "11px", fontWeight: 800, color: "var(--text-tertiary)", letterSpacing: "1px", textTransform: "uppercase" }}>Leaderboard</span>
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "16px", marginTop: "4px" }}>
-                <h3 style={{ fontSize: "28px", fontWeight: 900, color: "#ffffff", letterSpacing: "-0.5px" }}>Team Rankings</h3>
+                <h3 style={{ fontSize: "clamp(2rem, 6vw, 28px)", fontWeight: 900, color: "#ffffff", letterSpacing: "-0.5px", lineHeight: "1.1", }}>Team Rankings</h3>
                 <span className="event-badge-outline" style={{ margin: 0, padding: "4px 12px", fontSize: "10px" }}>
                   PR Merged +3pts · Issue/Unmerged PR Closed +1pt
                 </span>
               </div>
 
-              <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: "12px", width: "100%", }}>
                 {teams.map((team) => (
-                  <div key={team.name} style={{ background: "rgba(255, 255, 255, 0.01)", border: "1px solid var(--border-primary)", borderRadius: "var(--radius-lg)", padding: "16px 20px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                  <div key={team.name} style={{ background: "rgba(255, 255, 255, 0.01)", border: "1px solid var(--border-primary)", borderRadius: "var(--radius-lg)", padding: "16px 20px", display: "flex",justifyContent: "space-between",alignItems: "center",flexWrap: "wrap",gap: "16px",}}>
                     <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
                       <div style={{ width: "48px", height: "48px", borderRadius: "var(--radius-md)", background: `linear-gradient(135deg, ${team.color}15, ${team.color}35)`, border: `1px solid ${team.color}30`, display: "flex", alignItems: "center", justifyContent: "center" }}>
                         <Users size={20} style={{ color: team.color }} />
@@ -285,16 +321,23 @@ export default function Home() {
                         <span style={{ fontSize: "12px", color: "var(--text-secondary)" }}>{team.members.length} contributors</span>
                       </div>
                     </div>
-                    <div style={{ display: "flex", gap: "12px" }}>
-                      <div style={{ background: "rgba(255, 255, 255, 0.02)", border: "1px solid rgba(255, 255, 255, 0.04)", padding: "8px 16px", borderRadius: "var(--radius-md)", textAlign: "center", minWidth: "80px" }}>
+                    <div
+                       style={{
+                          display: "flex",
+                          gap: "12px",
+                          flexWrap: "wrap",
+                          justifyContent: "flex-start",
+                        }}
+                    >
+                      <div style={{ background: "rgba(255, 255, 255, 0.02)", border: "1px solid rgba(255, 255, 255, 0.04)", padding: "8px 16px", borderRadius: "var(--radius-md)", textAlign: "center", minWidth: "72px" }}>
                         <div style={{ fontSize: "16px", fontWeight: 900, color: team.color }}>{team.totalScore}</div>
                         <div style={{ fontSize: "9px", fontWeight: 700, color: "var(--text-tertiary)", textTransform: "uppercase" }}>Score</div>
                       </div>
-                      <div style={{ background: "rgba(255, 255, 255, 0.02)", border: "1px solid rgba(255, 255, 255, 0.04)", padding: "8px 12px", borderRadius: "var(--radius-md)", textAlign: "center", minWidth: "60px" }}>
+                      <div style={{ background: "rgba(255, 255, 255, 0.02)", border: "1px solid rgba(255, 255, 255, 0.04)", padding: "8px 12px", borderRadius: "var(--radius-md)", textAlign: "center", minWidth: "54px" }}>
                         <div style={{ fontSize: "16px", fontWeight: 900, color: "#ffffff" }}>{team.totalPrsMerged}</div>
                         <div style={{ fontSize: "9px", fontWeight: 700, color: "var(--text-tertiary)", textTransform: "uppercase" }}>PRs</div>
                       </div>
-                      <div style={{ background: "rgba(255, 255, 255, 0.02)", border: "1px solid rgba(255, 255, 255, 0.04)", padding: "8px 12px", borderRadius: "var(--radius-md)", textAlign: "center", minWidth: "60px" }}>
+                      <div style={{ background: "rgba(255, 255, 255, 0.02)", border: "1px solid rgba(255, 255, 255, 0.04)", padding: "8px 12px", borderRadius: "var(--radius-md)", textAlign: "center", minWidth: "54px" }}>
                         <div style={{ fontSize: "16px", fontWeight: 900, color: "#ffffff" }}>{team.totalIssuesClosed}</div>
                         <div style={{ fontSize: "9px", fontWeight: 700, color: "var(--text-tertiary)", textTransform: "uppercase" }}>Issues / Unmerged PRs</div>
                       </div>
@@ -323,7 +366,13 @@ export default function Home() {
                         <div key={idx} className="timeline-item">
                           <div className="timeline-icon-box" style={{ background: `${badgeColor}15`, border: `1px solid ${badgeColor}30`, color: badgeColor }}>{badgeIcon}</div>
                           <div className="timeline-content">
-                            <div className="timeline-title">
+                            <div
+                              className="timeline-title"
+                              style={{
+                              wordBreak: "break-word",
+                              lineHeight: "1.5",
+                            }}
+                        >
                               <span style={{ fontWeight: 800, color: "var(--text-primary)" }}>{c.username}</span>
                               {" "}{c.type.replace("_", " ")}{" "}
                               <span style={{ color: "var(--text-secondary)" }}>&ldquo;{c.title}&rdquo;</span>
@@ -363,10 +412,66 @@ export default function Home() {
       )}
 
       <style jsx global>{`
-        @media (max-width: 1100px) {
-          .dashboard-columns { grid-template-columns: 1fr !important; gap: 40px !important; }
-        }
-      `}</style>
+  @media (max-width: 1100px) {
+    .dashboard-columns {
+      grid-template-columns: 1fr !important;
+      gap: 40px !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-header {
+      padding: 24px 16px !important;
+    }
+
+    .grid-card {
+      min-width: 0 !important;
+      overflow: hidden !important;
+    }
+
+    .timeline-card {
+      padding: 16px !important;
+    }
+
+    .timeline-item {
+      align-items: flex-start !important;
+    }
+
+    .timeline-content {
+      width: 100%;
+      min-width: 0;
+    }
+
+    .card-value {
+      font-size: 3rem !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .card-value {
+      font-size: 2.5rem !important;
+    }
+
+    .card-title {
+      font-size: 12px !important;
+    }
+
+    .dist-grid {
+      grid-template-columns: 1fr !important;
+    }
+    .dashboard-columns section {
+  min-width: 0 !important;
+}
+
+.timeline-title {
+  font-size: 13px !important;
+}
+
+.timeline-meta {
+  flex-wrap: wrap !important;
+}
+  }
+`}</style>
     </div>
   );
 }

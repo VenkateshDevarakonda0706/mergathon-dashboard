@@ -42,7 +42,7 @@ export default function LeaderboardPage() {
       <div className="card">
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
           {sorted.map((team, idx) => (
-            <div key={team.name} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "16px 20px", background: "rgba(255,255,255,0.01)", border: "1px solid var(--border-primary)", borderRadius: "var(--radius-lg)" }}>
+            <div key={team.name}style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", flexWrap: "wrap", gap: "16px", padding: "16px 20px", background: "rgba(255,255,255,0.01)", border: "1px solid var(--border-primary)", borderRadius: "var(--radius-lg)" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
                 {/* Rank badge */}
                 <div style={{ width: "32px", height: "32px", borderRadius: "50%", background: idx === 0 ? "rgba(245,158,11,0.15)" : idx === 1 ? "rgba(156,163,175,0.15)" : idx === 2 ? "rgba(180,83,9,0.15)" : "rgba(255,255,255,0.05)", border: `1px solid ${idx === 0 ? "#f59e0b" : idx === 1 ? "#9ca3af" : idx === 2 ? "#b45309" : "rgba(255,255,255,0.1)"}`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: "13px", fontWeight: 900, color: idx === 0 ? "#f59e0b" : idx === 1 ? "#9ca3af" : idx === 2 ? "#b45309" : "var(--text-tertiary)", flexShrink: 0 }}>
@@ -70,16 +70,24 @@ export default function LeaderboardPage() {
                 </div>
               </div>
 
-              <div style={{ display: "flex", gap: "12px" }}>
-                <div style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.04)", padding: "8px 20px", borderRadius: "var(--radius-md)", textAlign: "center", minWidth: "90px" }}>
+              <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", justifyContent: "flex-end", }}>
+                <div style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.04)", padding: "8px 20px", borderRadius: "var(--radius-md)", textAlign: "center", minWidth: "72px" }}>
                   <div style={{ fontSize: "20px", fontWeight: 900, color: team.color }}>{team.totalScore}</div>
                   <div style={{ fontSize: "9px", fontWeight: 700, color: "var(--text-tertiary)", textTransform: "uppercase" }}>Score</div>
                 </div>
-                <div style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.04)", padding: "8px 14px", borderRadius: "var(--radius-md)", textAlign: "center", minWidth: "60px" }}>
+                <div style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.04)", padding: "8px 14px", borderRadius: "var(--radius-md)", textAlign: "center", minWidth: "52px" }}>
                   <div style={{ fontSize: "16px", fontWeight: 900, color: "#ffffff" }}>{team.totalPrsMerged}</div>
                   <div style={{ fontSize: "9px", fontWeight: 700, color: "var(--text-tertiary)", textTransform: "uppercase" }}>PRs</div>
                 </div>
+                fix-mobile-responsiveness
+                <div style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.04)", padding: "8px 14px", borderRadius: "var(--radius-md)", textAlign: "center", minWidth: "52px" }}>
+                  <div style={{ fontSize: "16px", fontWeight: 900, color: "#ffffff" }}>{team.totalPrsReviewed}</div>
+                  <div style={{ fontSize: "9px", fontWeight: 700, color: "var(--text-tertiary)", textTransform: "uppercase" }}>Reviews</div>
+                </div>
+                <div style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.04)", padding: "8px 14px", borderRadius: "var(--radius-md)", textAlign: "center", minWidth: "52px" }}>
+=======
                 <div style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.04)", padding: "8px 14px", borderRadius: "var(--radius-md)", textAlign: "center", minWidth: "60px" }}>
+ main
                   <div style={{ fontSize: "16px", fontWeight: 900, color: "#ffffff" }}>{team.totalIssuesClosed}</div>
                   <div style={{ fontSize: "9px", fontWeight: 700, color: "var(--text-tertiary)", textTransform: "uppercase" }}>Issues / Unmerged PRs</div>
                 </div>
