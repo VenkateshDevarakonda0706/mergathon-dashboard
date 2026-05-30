@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-30T11:21:31.005Z",
+  "lastUpdated": "2026-05-30T13:39:58.297Z",
   "eventStartDate": "2026-05-22",
   "eventEndDate": "2026-05-31",
   "stats": {
     "totalContributors": 14,
     "totalPrsMerged": 57,
     "totalPrsOpened": 0,
-    "totalIssuesClosed": 742,
+    "totalIssuesClosed": 744,
     "totalIssuesOpened": 0,
     "daysElapsed": 9,
     "daysRemaining": 1
@@ -36,10 +36,10 @@
         "aryanndwi123",
         "Harkeerat24"
       ],
-      "totalScore": 218,
+      "totalScore": 219,
       "totalPrsMerged": 27,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 137,
+      "totalIssuesClosed": 138,
       "totalIssuesOpened": 0
     },
     {
@@ -51,10 +51,10 @@
         "Radhikaa-chauhan",
         "SouparnaChatterjee"
       ],
-      "totalScore": 274,
+      "totalScore": 275,
       "totalPrsMerged": 13,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 235,
+      "totalIssuesClosed": 236,
       "totalIssuesOpened": 0
     },
     {
@@ -2151,10 +2151,10 @@
       "prsOpened": 0,
       "prsMerged": 1,
       "issuesOpened": 0,
-      "issuesClosed": 235,
-      "issuesPrClosedScore": 235,
+      "issuesClosed": 236,
+      "issuesPrClosedScore": 236,
       "prsMergedScore": 3,
-      "score": 238,
+      "score": 239,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -2226,8 +2226,8 @@
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
-          "issuesClosed": 14,
-          "score": 14
+          "issuesClosed": 15,
+          "score": 15
         },
         {
           "date": "2026-05-31",
@@ -2308,6 +2308,14 @@
           "title": "adding footer",
           "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/348",
           "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "🐞 Bug copy & paste on Mobile Phone doesn't work",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/3687",
+          "repo": "CircuitVerse/CircuitVerse",
           "date": "2026-05-30",
           "points": 1
         },
@@ -4137,10 +4145,10 @@
       "prsOpened": 0,
       "prsMerged": 21,
       "issuesOpened": 0,
-      "issuesClosed": 42,
-      "issuesPrClosedScore": 42,
+      "issuesClosed": 43,
+      "issuesPrClosedScore": 43,
       "prsMergedScore": 63,
-      "score": 105,
+      "score": 106,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -4212,8 +4220,8 @@
           "prsOpened": 0,
           "prsMerged": 2,
           "issuesOpened": 0,
-          "issuesClosed": 7,
-          "score": 13
+          "issuesClosed": 8,
+          "score": 14
         },
         {
           "date": "2026-05-31",
@@ -4245,6 +4253,14 @@
           "type": "issue_closed",
           "title": "Footer abnormal movement in empty groups",
           "url": "https://github.com/CircuitVerse/CircuitVerse/issues/4806",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix: adding group mentor as member",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/2737",
           "repo": "CircuitVerse/CircuitVerse",
           "date": "2026-05-30",
           "points": 1
@@ -7952,8 +7968,8 @@
       "prsOpened": 0,
       "prsMerged": 4,
       "issuesOpened": 0,
-      "issuesClosed": 27,
-      "score": 39
+      "issuesClosed": 29,
+      "score": 41
     },
     {
       "date": "2026-05-31",
