@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-05-29T23:13:59.958Z",
+  "lastUpdated": "2026-05-30T03:28:33.165Z",
   "eventStartDate": "2026-05-22",
   "eventEndDate": "2026-05-31",
   "stats": {
     "totalContributors": 14,
     "totalPrsMerged": 54,
     "totalPrsOpened": 0,
-    "totalIssuesClosed": 715,
+    "totalIssuesClosed": 716,
     "totalIssuesOpened": 0,
-    "daysElapsed": 8,
-    "daysRemaining": 2
+    "daysElapsed": 9,
+    "daysRemaining": 1
   },
   "teams": [
     {
@@ -51,10 +51,10 @@
         "Radhikaa-chauhan",
         "SouparnaChatterjee"
       ],
-      "totalScore": 260,
+      "totalScore": 261,
       "totalPrsMerged": 13,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 221,
+      "totalIssuesClosed": 222,
       "totalIssuesOpened": 0
     },
     {
@@ -2151,10 +2151,10 @@
       "prsOpened": 0,
       "prsMerged": 1,
       "issuesOpened": 0,
-      "issuesClosed": 221,
-      "issuesPrClosedScore": 221,
+      "issuesClosed": 222,
+      "issuesPrClosedScore": 222,
       "prsMergedScore": 3,
-      "score": 224,
+      "score": 225,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -2226,8 +2226,8 @@
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
+          "issuesClosed": 1,
+          "score": 1
         },
         {
           "date": "2026-05-31",
@@ -2239,6 +2239,14 @@
         }
       ],
       "contributions": [
+        {
+          "type": "issue_closed",
+          "title": "Correction in Interactive-gates page",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/473",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-30",
+          "points": 1
+        },
         {
           "type": "issue_closed",
           "title": "Scroll-to-top button missing from Guidelines",
@@ -7712,8 +7720,8 @@
       "prsOpened": 0,
       "prsMerged": 0,
       "issuesOpened": 0,
-      "issuesClosed": 0,
-      "score": 0
+      "issuesClosed": 1,
+      "score": 1
     },
     {
       "date": "2026-05-31",
