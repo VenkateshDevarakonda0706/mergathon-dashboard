@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useData } from "../context/DataContext";
+import { formatToIST } from "../lib/formatDate";
 import TeamCard from "../components/TeamCard";
 import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 import { Users, GitPullRequest, CheckCircle2, AlertCircle } from "lucide-react";
@@ -329,7 +330,7 @@ export default function Home() {
                               <span style={{ color: "var(--text-secondary)" }}>&ldquo;{c.title}&rdquo;</span>
                             </div>
                             <div className="timeline-meta">
-                              <span>{c.repo}</span><span>•</span><span>{c.date}</span>
+                              <span>{c.repo}</span><span>•</span><span>{formatToIST(c.date)}</span>
                             </div>
                           </div>
                         </div>

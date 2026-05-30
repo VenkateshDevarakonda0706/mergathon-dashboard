@@ -21,6 +21,7 @@ import {
   GitMerge,
   HelpCircle
 } from "lucide-react";
+import { formatToIST } from "../../../lib/formatDate";
 
 export default function ContributorProfile({ username }: { username: string }) {
   const { data } = useData();
@@ -391,7 +392,7 @@ export default function ContributorProfile({ username }: { username: string }) {
                           {style.label}
                         </span>
                         <span style={{ fontSize: "11px", color: "var(--text-tertiary)" }}>
-                          {item.date}
+                          {formatToIST(item.date)}
                         </span>
                       </div>
 

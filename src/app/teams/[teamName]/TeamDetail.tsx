@@ -22,6 +22,7 @@ import {
   GitMerge,
   HelpCircle,
 } from "lucide-react";
+import { formatToIST } from "../../../lib/formatDate";
 
 export default function TeamDetail({ teamName }: { teamName: string }) {
   const { data } = useData();
@@ -404,7 +405,7 @@ export default function TeamDetail({ teamName }: { teamName: string }) {
                           </span>
                         </div>
                         <span style={{ fontSize: "11px", color: "var(--text-tertiary)" }}>
-                          {item.date}
+                          {formatToIST(item.date)}
                         </span>
                       </div>
 
