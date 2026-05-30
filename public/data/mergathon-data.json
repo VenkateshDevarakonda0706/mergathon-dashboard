@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-30T03:28:33.165Z",
+  "lastUpdated": "2026-05-30T06:46:29.150Z",
   "eventStartDate": "2026-05-22",
   "eventEndDate": "2026-05-31",
   "stats": {
     "totalContributors": 14,
-    "totalPrsMerged": 54,
+    "totalPrsMerged": 55,
     "totalPrsOpened": 0,
-    "totalIssuesClosed": 716,
+    "totalIssuesClosed": 718,
     "totalIssuesOpened": 0,
     "daysElapsed": 9,
     "daysRemaining": 1
@@ -36,8 +36,8 @@
         "aryanndwi123",
         "Harkeerat24"
       ],
-      "totalScore": 199,
-      "totalPrsMerged": 24,
+      "totalScore": 202,
+      "totalPrsMerged": 25,
       "totalPrsOpened": 0,
       "totalIssuesClosed": 127,
       "totalIssuesOpened": 0
@@ -51,10 +51,10 @@
         "Radhikaa-chauhan",
         "SouparnaChatterjee"
       ],
-      "totalScore": 261,
+      "totalScore": 263,
       "totalPrsMerged": 13,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 222,
+      "totalIssuesClosed": 224,
       "totalIssuesOpened": 0
     },
     {
@@ -2151,10 +2151,10 @@
       "prsOpened": 0,
       "prsMerged": 1,
       "issuesOpened": 0,
-      "issuesClosed": 222,
-      "issuesPrClosedScore": 222,
+      "issuesClosed": 224,
+      "issuesPrClosedScore": 224,
       "prsMergedScore": 3,
-      "score": 225,
+      "score": 227,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -2226,8 +2226,8 @@
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
-          "issuesClosed": 1,
-          "score": 1
+          "issuesClosed": 3,
+          "score": 3
         },
         {
           "date": "2026-05-31",
@@ -2239,6 +2239,22 @@
         }
       ],
       "contributions": [
+        {
+          "type": "issue_closed",
+          "title": "On the sidebar , the search bar comes over the content when slided down.",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/360",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "adding footer",
+          "url": "https://github.com/CircuitVerse/CircuitVerseDocs/issues/348",
+          "repo": "CircuitVerse/CircuitVerseDocs",
+          "date": "2026-05-30",
+          "points": 1
+        },
         {
           "type": "issue_closed",
           "title": "Correction in Interactive-gates page",
@@ -4031,12 +4047,12 @@
       "profileUrl": "https://github.com/aryanndwi123",
       "team": "CtrlAltDlt",
       "prsOpened": 0,
-      "prsMerged": 19,
+      "prsMerged": 20,
       "issuesOpened": 0,
       "issuesClosed": 35,
       "issuesPrClosedScore": 35,
-      "prsMergedScore": 57,
-      "score": 92,
+      "prsMergedScore": 60,
+      "score": 95,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -4106,10 +4122,10 @@
         {
           "date": "2026-05-30",
           "prsOpened": 0,
-          "prsMerged": 0,
+          "prsMerged": 1,
           "issuesOpened": 0,
           "issuesClosed": 0,
-          "score": 0
+          "score": 3
         },
         {
           "date": "2026-05-31",
@@ -4121,6 +4137,14 @@
         }
       ],
       "contributions": [
+        {
+          "type": "pr_merged",
+          "title": "Merged: docs: add common Windows/WSL setup pitfalls (closes #6469)",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7435",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-30",
+          "points": 3
+        },
         {
           "type": "pr_merged",
           "title": "Merged: build(deps): bump cv-frontend-vue from `0a1e288` to `2128705`",
@@ -7718,10 +7742,10 @@
     {
       "date": "2026-05-30",
       "prsOpened": 0,
-      "prsMerged": 0,
+      "prsMerged": 2,
       "issuesOpened": 0,
-      "issuesClosed": 1,
-      "score": 1
+      "issuesClosed": 3,
+      "score": 9
     },
     {
       "date": "2026-05-31",
