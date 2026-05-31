@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import {
   AreaChart,
   Area,
@@ -9,9 +9,9 @@ import {
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,
-  Legend,
 } from "recharts";
 import { DailyActivity } from "../types";
+import { formatToIST } from "../lib/formatDate";
 
 interface ActivityChartProps {
   data: DailyActivity[];
@@ -19,17 +19,15 @@ interface ActivityChartProps {
 }
 
 export default function ActivityChart({ data, title = "Daily Event Activity" }: ActivityChartProps) {
-  const [isMounted, setIsMounted] = useState(false);
+  const [isMounted] = useState(true);
 
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  // Format dates for the X-axis (e.g., "May 15")
-  const formatDate = (dateStr: string) => {
+  // Format dates for the X-axis (chart ticks) using IST timezone.
+  const chartTickFormatter = (dateStr: string) => {
     try {
-      const date = new Date(dateStr);
-      return date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+      const hasTime = dateStr.includes("T") || /\d{2}:\d{2}/.test(dateStr);
+      const normalized = hasTime ? dateStr : `${dateStr}T00:00:00Z`;
+      const d = new Date(normalized);
+      return new Intl.DateTimeFormat("en-US", { timeZone: "Asia/Kolkata", month: "short", day: "numeric" }).format(d);
     } catch {
       return dateStr;
     }
@@ -90,7 +88,7 @@ export default function ActivityChart({ data, title = "Daily Event Activity" }: 
             <CartesianGrid strokeDasharray="3 3" stroke="var(--border-primary)" vertical={false} />
             <XAxis 
               dataKey="date" 
-              tickFormatter={formatDate}
+              tickFormatter={chartTickFormatter}
               stroke="var(--text-tertiary)"
               fontSize={11}
               tickLine={false}
@@ -112,7 +110,7 @@ export default function ActivityChart({ data, title = "Daily Event Activity" }: 
                 fontSize: "12px",
                 boxShadow: "var(--shadow-md)"
               }}
-              labelFormatter={(label) => `Date: ${formatDate(label as string)}`}
+              labelFormatter={(label) => `Date: ${formatToIST(label as string)}`}
             />
             <Area
               type="monotone"

@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useData } from "../../../context/DataContext";
+import { formatToIST } from "../../../lib/formatDate";
 import {
   PieChart,
   Pie,
@@ -21,7 +22,6 @@ import {
   GitMerge,
   HelpCircle
 } from "lucide-react";
-import { formatToIST } from "../../../lib/formatDate";
 
 export default function ContributorProfile({ username }: { username: string }) {
   const { data } = useData();

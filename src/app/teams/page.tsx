@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useData } from "../../context/DataContext";
 import {
   AreaChart,
@@ -14,15 +14,11 @@ import {
   ResponsiveContainer,
   Cell,
 } from "recharts";
-import { Users, AlertCircle } from "lucide-react";
+import { formatToIST } from "../../lib/formatDate";
 
 export default function TeamsPage() {
   const { data } = useData();
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
+  const [isMounted] = useState(true);
 
   if (!data) return null;
 
@@ -103,8 +99,11 @@ export default function TeamsPage() {
                     tickLine={false} 
                     tickFormatter={(str) => {
                       try {
-                        const parts = str.split("-");
-                        return `${parts[1]}/${parts[2]}`; // MM/DD
+                        const hasTime = (str || "").includes("T") || /\d{2}:\d{2}/.test(str || "");
+                        const normalized = hasTime ? (str as string) : `${str}T00:00:00Z`;
+                        const d = new Date(normalized as string);
+                        // produce MM/DD in IST
+                        return new Intl.DateTimeFormat("en-US", { timeZone: "Asia/Kolkata", month: "2-digit", day: "2-digit" }).format(d);
                       } catch {
                         return str;
                       }
@@ -119,6 +118,7 @@ export default function TeamsPage() {
                       color: "var(--text-primary)",
                       fontSize: "12px",
                     }}
+                    labelFormatter={(label) => formatToIST(label as string)}
                   />
                   <Area
                     type="monotone"
