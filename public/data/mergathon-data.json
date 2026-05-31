@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-05-30T17:06:12.869Z",
+  "lastUpdated": "2026-05-31T00:01:58.736Z",
   "eventStartDate": "2026-05-22",
   "eventEndDate": "2026-05-31",
   "stats": {
-    "totalContributors": 14,
+    "totalContributors": 15,
     "totalPrsMerged": 57,
     "totalPrsOpened": 0,
-    "totalIssuesClosed": 749,
+    "totalIssuesClosed": 805,
     "totalIssuesOpened": 0,
-    "daysElapsed": 9,
-    "daysRemaining": 1
+    "daysElapsed": 10,
+    "daysRemaining": 0
   },
   "teams": [
     {
@@ -21,10 +21,10 @@
         "Asrani-Aman",
         "aryan7071"
       ],
-      "totalScore": 302,
+      "totalScore": 324,
       "totalPrsMerged": 14,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 260,
+      "totalIssuesClosed": 282,
       "totalIssuesOpened": 0
     },
     {
@@ -36,10 +36,10 @@
         "aryanndwi123",
         "Harkeerat24"
       ],
-      "totalScore": 219,
+      "totalScore": 242,
       "totalPrsMerged": 27,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 138,
+      "totalIssuesClosed": 161,
       "totalIssuesOpened": 0
     },
     {
@@ -51,10 +51,10 @@
         "Radhikaa-chauhan",
         "SouparnaChatterjee"
       ],
-      "totalScore": 275,
+      "totalScore": 286,
       "totalPrsMerged": 13,
       "totalPrsOpened": 0,
-      "totalIssuesClosed": 236,
+      "totalIssuesClosed": 247,
       "totalIssuesOpened": 0
     },
     {
@@ -125,10 +125,10 @@
       "prsOpened": 0,
       "prsMerged": 4,
       "issuesOpened": 0,
-      "issuesClosed": 237,
-      "issuesPrClosedScore": 237,
+      "issuesClosed": 259,
+      "issuesPrClosedScore": 259,
       "prsMergedScore": 12,
-      "score": 249,
+      "score": 271,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -200,8 +200,8 @@
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
+          "issuesClosed": 22,
+          "score": 22
         },
         {
           "date": "2026-05-31",
@@ -213,6 +213,182 @@
         }
       ],
       "contributions": [
+        {
+          "type": "issue_closed",
+          "title": "Feature : Dark Mode for The webiste",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/7125",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "🐞 Bug: Psych::DisallowedClass error when creating ActiveStorage Blob",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/6748",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Redirect authenticated users to dashboard on homepage visit",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/6610",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Implemented a Language Switch on the Simulator and the I18N for Brazilian Portuguese",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1041",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Fix ArgumentError in rack_attack due to invalid email encoding",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7215",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Fix: Shuffle Bias, jQuery Check, Global Scope Issues, Scroll Handling, and Outdated Configurations",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/pull/773",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Implement auto-incrementing suffixes for duplicate project and circuit names",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7107",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Fix forum linkFix broken forum link in footer",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/7023",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Fix: Improve notification message handling when user/project is deleted",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/6995",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix: prevent clock timer and clock enable crash with debouncing",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/942",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "feat(simulation): add explicit post-stabilization hook at end of play()",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/935",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Add User Manual link next to Simulator in header",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/6824",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "deploy: add Kamal 2.0 deployment configuration",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/6795",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "ux: normalize canvas cursor states",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/838",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Add subtle empty canvas onboarding hint",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/833",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "docs: add desktop application development instructions",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/821",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "refactor: convert circuitElement.js to TypeScript",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/814",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "redirect logged in users to dashborad page",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/6614",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "refactor: remove jQuery from combinationalAnalysis.js",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/765",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Multi-language support and persistence",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/744",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Add error handling and timeout for HTTP requests in verilog_cv method",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/6547",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "UI Cleanup: Improve TestBenchPanel.vue Styling (Fixes #685)",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/686",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-30",
+          "points": 1
+        },
         {
           "type": "issue_closed",
           "title": "Uncaught ReferenceError: logix_project_id is not defined",
@@ -4145,10 +4321,10 @@
       "prsOpened": 0,
       "prsMerged": 21,
       "issuesOpened": 0,
-      "issuesClosed": 43,
-      "issuesPrClosedScore": 43,
+      "issuesClosed": 65,
+      "issuesPrClosedScore": 65,
       "prsMergedScore": 63,
-      "score": 106,
+      "score": 128,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -4188,40 +4364,40 @@
           "prsOpened": 0,
           "prsMerged": 1,
           "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 3
+          "issuesClosed": 5,
+          "score": 8
         },
         {
           "date": "2026-05-27",
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
+          "issuesClosed": 1,
+          "score": 1
         },
         {
           "date": "2026-05-28",
           "prsOpened": 0,
           "prsMerged": 9,
           "issuesOpened": 0,
-          "issuesClosed": 19,
-          "score": 46
+          "issuesClosed": 26,
+          "score": 53
         },
         {
           "date": "2026-05-29",
           "prsOpened": 0,
           "prsMerged": 9,
           "issuesOpened": 0,
-          "issuesClosed": 16,
-          "score": 43
+          "issuesClosed": 18,
+          "score": 45
         },
         {
           "date": "2026-05-30",
           "prsOpened": 0,
           "prsMerged": 2,
           "issuesOpened": 0,
-          "issuesClosed": 8,
-          "score": 14
+          "issuesClosed": 15,
+          "score": 21
         },
         {
           "date": "2026-05-31",
@@ -4253,6 +4429,62 @@
           "type": "issue_closed",
           "title": "Footer abnormal movement in empty groups",
           "url": "https://github.com/CircuitVerse/CircuitVerse/issues/4806",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Change the direction of arrows when click on the navbar elements in simulator",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/issues/2627",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Responsiveness of Various Webpages#2918",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/2925",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Fixing checkbox bug",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/2875",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "remove button removes the profile picture",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/2824",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix(frontend): navbar dropdown caret fixed #2627",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/2799",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Added user to update email",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/2786",
+          "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix: checkbox not checked for restricted elements while editing",
+          "url": "https://github.com/CircuitVerse/CircuitVerse/pull/2785",
           "repo": "CircuitVerse/CircuitVerse",
           "date": "2026-05-30",
           "points": 1
@@ -4390,6 +4622,22 @@
           "title": "Enhancement: Add hover-to-open functionality for \"Getting Started\" navbar dropdown",
           "url": "https://github.com/CircuitVerse/CircuitVerse/issues/6501",
           "repo": "CircuitVerse/CircuitVerse",
+          "date": "2026-05-29",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Removal of JQuery to Vue's reactives",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/433",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-29",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Typescript Integration in `/simulator/src` files",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/414",
+          "repo": "CircuitVerse/cv-frontend-vue",
           "date": "2026-05-29",
           "points": 1
         },
@@ -4587,6 +4835,14 @@
         },
         {
           "type": "issue_closed",
+          "title": "Feature: Auto select input sections for modal popups",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/971",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-28",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
           "title": "Enhancement: Display Element Names Below Simulator Elements for Improved Usability",
           "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/406",
           "repo": "CircuitVerse/cv-frontend-vue",
@@ -4595,8 +4851,56 @@
         },
         {
           "type": "issue_closed",
+          "title": "Setting up Vite.config.ts for building Vue simulator versions",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/328",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-28",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Creating versioned Directories for Vue simulator",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/320",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-28",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
           "title": "Adding transition to dropdown arrow/",
           "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/273",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-28",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "[Feature] Improve readme",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/270",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-28",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Resp: Make mobile landscape view of the simulator.",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/209",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-28",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Add layout box, save image box, timing diagram box, report issue form i18n support",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/120",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-28",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Add context menu and hex-bin-dec converter i18n support",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/117",
           "repo": "CircuitVerse/cv-frontend-vue",
           "date": "2026-05-28",
           "points": 1
@@ -4738,12 +5042,60 @@
           "points": 1
         },
         {
+          "type": "issue_closed",
+          "title": "Add i18n support to the project properties and element properties panel",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/123",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-27",
+          "points": 1
+        },
+        {
           "type": "pr_merged",
           "title": "Merged: fix: prevent cyclic subcircuit dependency in insert dialog",
           "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/1046",
           "repo": "CircuitVerse/cv-frontend-vue",
           "date": "2026-05-26",
           "points": 3
+        },
+        {
+          "type": "issue_closed",
+          "title": "🐞 Bug: Cyclic subcircuit dependency not prevented in Insert Subcircuit dialog",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/1045",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Feature: Add JSON preview and copy to clipboard in Export as .cv File dialog",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/1005",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "`eslint-plugin-vue` plugin doesn't support typescript",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/107",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Navbar is not responsive in the simulator section. ",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/99",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-26",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Add a search functionality to Custom keyboard shortcuts section",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/48",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-26",
+          "points": 1
         }
       ]
     },
@@ -5927,10 +6279,10 @@
       "prsOpened": 0,
       "prsMerged": 4,
       "issuesOpened": 0,
-      "issuesClosed": 38,
-      "issuesPrClosedScore": 38,
+      "issuesClosed": 39,
+      "issuesPrClosedScore": 39,
       "prsMergedScore": 12,
-      "score": 50,
+      "score": 51,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -6002,8 +6354,8 @@
           "prsOpened": 0,
           "prsMerged": 1,
           "issuesOpened": 0,
-          "issuesClosed": 3,
-          "score": 6
+          "issuesClosed": 4,
+          "score": 7
         },
         {
           "date": "2026-05-31",
@@ -6027,6 +6379,14 @@
           "type": "issue_closed",
           "title": "Bug: setPlotValue() function returns immediately and does nothing",
           "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/890",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Fix ESLint unused import errors in Navbar.vue",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/863",
           "repo": "CircuitVerse/cv-frontend-vue",
           "date": "2026-05-30",
           "points": 1
@@ -6827,10 +7187,10 @@
       "prsOpened": 0,
       "prsMerged": 12,
       "issuesOpened": 0,
-      "issuesClosed": 0,
-      "issuesPrClosedScore": 0,
+      "issuesClosed": 1,
+      "issuesPrClosedScore": 1,
       "prsMergedScore": 36,
-      "score": 36,
+      "score": 37,
       "activityLevel": "High",
       "dailyActivity": [
         {
@@ -6902,8 +7262,8 @@
           "prsOpened": 0,
           "prsMerged": 0,
           "issuesOpened": 0,
-          "issuesClosed": 0,
-          "score": 0
+          "issuesClosed": 1,
+          "score": 1
         },
         {
           "date": "2026-05-31",
@@ -6915,6 +7275,14 @@
         }
       ],
       "contributions": [
+        {
+          "type": "issue_closed",
+          "title": "A blank statement with the heading d should be removed ",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/660",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-30",
+          "points": 1
+        },
         {
           "type": "pr_merged",
           "title": "Merged: Fix MathJax rendering in ROM microcontroller quiz options (closes #759)",
@@ -7450,6 +7818,184 @@
       ]
     },
     {
+      "username": "Radhikaa-chauhan",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/148184013?u=de1430db320a3e5914b04b852c9a7bd0640077be&v=4",
+      "profileUrl": "https://github.com/Radhikaa-chauhan",
+      "team": "LGTM",
+      "prsOpened": 0,
+      "prsMerged": 0,
+      "issuesOpened": 0,
+      "issuesClosed": 10,
+      "issuesPrClosedScore": 10,
+      "prsMergedScore": 0,
+      "score": 10,
+      "activityLevel": "High",
+      "dailyActivity": [
+        {
+          "date": "2026-05-22",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-23",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-24",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-25",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-26",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-27",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-28",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-29",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        },
+        {
+          "date": "2026-05-30",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 10,
+          "score": 10
+        },
+        {
+          "date": "2026-05-31",
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "score": 0
+        }
+      ],
+      "contributions": [
+        {
+          "type": "issue_closed",
+          "title": "🐞 Bug ( optimzation ) : Testbench driver location",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/420",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Missing Ruby installation gudelines on local development setup ",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/663",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "fix: when we click in \"learn logic design \" sometimes it renders blue color bug",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/659",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "circuit element section is hideen",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/issues/147",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Adding full name of binary number inventor",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/645",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Adding Live Workings in Content",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/605",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Color Bug in dark mode",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/575",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Simplifying top navigation",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/571",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "Karnaugh Map doesn't take manual input",
+          "url": "https://github.com/CircuitVerse/Interactive-Book/issues/420",
+          "repo": "CircuitVerse/Interactive-Book",
+          "date": "2026-05-30",
+          "points": 1
+        },
+        {
+          "type": "issue_closed",
+          "title": "updated circuit element section",
+          "url": "https://github.com/CircuitVerse/cv-frontend-vue/pull/154",
+          "repo": "CircuitVerse/cv-frontend-vue",
+          "date": "2026-05-30",
+          "points": 1
+        }
+      ]
+    },
+    {
       "username": "aryan7071",
       "avatarUrl": "https://avatars.githubusercontent.com/u/175052103?u=f62d36e84bc7c17026fca91206abb8e26b5f7b4b&v=4",
       "profileUrl": "https://github.com/aryan7071",
@@ -7976,40 +8522,40 @@
       "prsOpened": 0,
       "prsMerged": 10,
       "issuesOpened": 0,
-      "issuesClosed": 113,
-      "score": 143
+      "issuesClosed": 118,
+      "score": 148
     },
     {
       "date": "2026-05-27",
       "prsOpened": 0,
       "prsMerged": 6,
       "issuesOpened": 0,
-      "issuesClosed": 169,
-      "score": 187
+      "issuesClosed": 170,
+      "score": 188
     },
     {
       "date": "2026-05-28",
       "prsOpened": 0,
       "prsMerged": 20,
       "issuesOpened": 0,
-      "issuesClosed": 207,
-      "score": 267
+      "issuesClosed": 214,
+      "score": 274
     },
     {
       "date": "2026-05-29",
       "prsOpened": 0,
       "prsMerged": 18,
       "issuesOpened": 0,
-      "issuesClosed": 31,
-      "score": 85
+      "issuesClosed": 33,
+      "score": 87
     },
     {
       "date": "2026-05-30",
       "prsOpened": 0,
       "prsMerged": 4,
       "issuesOpened": 0,
-      "issuesClosed": 34,
-      "score": 46
+      "issuesClosed": 75,
+      "score": 87
     },
     {
       "date": "2026-05-31",
