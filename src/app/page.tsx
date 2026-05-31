@@ -14,7 +14,7 @@ export default function Home() {
   const [countdown, setCountdown] = useState<{ days: number; hours: number; minutes: number; seconds: number; ended: boolean } | null>(null);
 
   useEffect(() => {
-    const target = new Date("2026-05-31T23:59:59Z");
+    const target = new Date("2026-05-31T23:59:59+05:30");
 
     const tick = () => {
       const diff = target.getTime() - Date.now();
